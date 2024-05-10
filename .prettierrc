@@ -1,0 +1,14 @@
+{
+  "singleQuote": false,
+  "printWidth": 70,
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "endOfLine": "auto",
+  "no-multiple-empty-lines": [
+    "error",
+    {
+      "max": 1,
+      "maxEOF": 1
+    }
+  ]
+}
