@@ -63,6 +63,7 @@ resetRouter.post(
             15
           );
           const newUser = new User({
+            username: faker.internet.userName(),
             email: faker.internet.email().toLowerCase(),
             account: {
               username: faker.internet.displayName(),
