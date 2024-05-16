@@ -10,10 +10,10 @@ resetRouter.post(
   `/reset-places/${process.env.RESET_KEY}`,
   async (req, res) => {
     const places = await Place.find();
-    if (places.length >= 5) {
+    if (places.length <= 75) {
       try {
         await Place.deleteMany({});
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 74; i++) {
           const newPlace = new Place({
             geometry: {
               type: geoPlaces[i].geometry.type,
@@ -52,41 +52,33 @@ resetRouter.post(
 resetRouter.post(
   `/reset-users/${process.env.RESET_KEY}`,
   async (req, res) => {
-    const users = await User.find();
-    if (users.length >= 5) {
-      try {
-        await User.deleteMany({});
-        for (let i = 0; i < 5; i++) {
-          const fakepass = faker.internet.password();
-          const hashFakePass = await bcrypt.hash(
-            faker.internet.password(),
-            15
-          );
-          const newUser = new User({
-            username: faker.internet.userName(),
-            email: faker.internet.email().toLowerCase(),
-            account: {
-              username: faker.internet.displayName(),
-              avatar: faker.image.avatar(),
-            },
-            hashpass: hashFakePass,
-            fakepass: fakepass,
-          });
-          await newUser.save();
-        }
-        res.status(201).json({
-          message: `all users created count : ${
-            (await User.find()).length
-          }`,
+    try {
+      await User.deleteMany({});
+      for (let i = 0; i < 5; i++) {
+        const fakepass = faker.internet.password();
+        const hashFakePass = await bcrypt.hash(
+          faker.internet.password(),
+          15
+        );
+        const newUser = new User({
+          email: faker.internet.email().toLowerCase(),
+          account: {
+            username: faker.internet.displayName(),
+            avatar: faker.image.avatar(),
+          },
+          hashpass: hashFakePass,
+          fakepass: fakepass,
         });
-      } catch (error) {
-        res.status(500).json({
-          message: error.message,
-        });
+        await newUser.save();
       }
-    } else {
-      res.status(207).json({
-        message: "Users already reset",
+      res.status(201).json({
+        message: `all users created count : ${
+          (await User.find()).length
+        }`,
+      });
+    } catch (error) {
+      res.status(500).json({
+        message: error.message,
       });
     }
   }
