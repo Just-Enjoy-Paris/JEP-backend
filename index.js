@@ -12,15 +12,16 @@ const app = express();
 
 // Option de requette
 const corsOptions = {
-  // origin à ajouter suite à l'hébergement
-  // origin: process.env.ORIGIN,
+  origin: process.env.ORIGIN,
+  optionsSuccessStatus: 200,
   credentials: true,
 };
 
 // utilisation d'express.json() pour pouvoir récupérer des body dans nos routes
 app.use(express.json());
 // utilisation des options de cors
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+// app.use(cors());
 // utilisation de cookieparser
 app.use(cookieParser);
 
