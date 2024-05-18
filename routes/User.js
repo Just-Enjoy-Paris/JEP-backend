@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const User = require("../models/Users.model");
+const isAuthenticated = require("../middlewares/isAuth");
 
 require("dotenv").config();
 
@@ -48,24 +49,23 @@ userRouter.post("/signup", async (req, res) => {
 userRouter.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
-
     if (!email || !password) {
       return res.status(400).json({
         message: "Veuillez fournir tous les champs.",
       });
     }
 
-    const userEmail = await User.findOne({ email });
+    const user = await User.findOne({ email });
 
-    if (!userEmail) {
+    if (!user) {
       return res.status(401).json({
         message: "Email ou mot de passe incorrect.",
       });
     }
 
-    const passwordMatch = bcrypt.compare(
+    const passwordMatch = await bcrypt.compare(
       password,
-      userEmail.hashpass
+      user.hashpass
     );
 
     if (!passwordMatch) {
@@ -75,14 +75,14 @@ userRouter.post("/login", async (req, res) => {
     }
 
     const token = jwt.sign(
-      { userId: userEmail._id },
+      { userId: user._id },
       process.env.JWT_SECRET
     );
 
     res.cookie("jwt", token, {
       httpOnly: true,
       sameSite: "none",
-      secure: process.env.JWT_SECURE_COOKIE === "true",
+      secure: process.env.JWT_SECURE_COOKIE,
       maxAge: parseInt(process.env.JWT_EXPIRATION, 10),
     });
 
@@ -91,6 +91,25 @@ userRouter.post("/login", async (req, res) => {
     res.status(500).json({
       message: "Une erreur est survenue lors de la connexion.",
       error: err.message,
+    });
+  }
+});
+
+userRouter.get("/fetchuser", isAuthenticated, async (req, res) => {
+  try {
+    const user = req.user;
+    const userData = {
+      username: user.account.username,
+      avatar: user.account.avatar,
+    };
+
+    res.status(200).json({
+      userData,
+    });
+  } catch (err) {
+    res.status(500).json({
+      message: "An error has occurred",
+      err: err.message,
     });
   }
 });

@@ -9,7 +9,6 @@ const userSchema = new mongoose.Schema({
   },
   newsletter: { type: Boolean, default: false },
   hashpass: String,
-  fakepass: String,
 });
 
 const User = mongoose.model("User", userSchema);

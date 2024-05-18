@@ -10,14 +10,21 @@ require("./database/database.conection");
 const app = express();
 
 // Option de requette
-// const corsOptions = {
-//   origin: process.env.ORIGIN,
-//   credentials: true,
-// };
+const corsOptions = {
+  credentials: true,
+  optionsSuccessStatus: 200,
+  origin: process.env.ORIGIN,
+};
+
+// utilisation des options de cors
+app.use(cors(corsOptions));
 
 // utilisation d'express.json() pour pouvoir récupérer des body dans nos routes
 app.use(express.json());
-app.use(cors());
+
+// utilisation de cookieparser
+app.use(cookieParser());
+
 
 // Import des routes
 const placesRoutes = require("./routes/Places");

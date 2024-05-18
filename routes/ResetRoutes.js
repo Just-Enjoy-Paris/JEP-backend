@@ -5,6 +5,7 @@ const Place = require("../models/Places.model");
 const User = require("../models/Users.model");
 const bcrypt = require("bcrypt");
 const { faker } = require("@faker-js/faker");
+const adminUsers = require("../users.json");
 
 resetRouter.post(
   `/reset-places/${process.env.RESET_KEY}`,
@@ -52,22 +53,47 @@ resetRouter.post(
 resetRouter.post(
   `/reset-users/${process.env.RESET_KEY}`,
   async (req, res) => {
-    try {
-      await User.deleteMany({});
-      for (let i = 0; i < 5; i++) {
-        const fakepass = faker.internet.password();
-        const hashFakePass = await bcrypt.hash(
-          faker.internet.password(),
-          15
-        );
-        const newUser = new User({
-          email: faker.internet.email().toLowerCase(),
-          account: {
-            username: faker.internet.displayName(),
-            avatar: faker.image.avatar(),
-          },
-          hashpass: hashFakePass,
-          fakepass: fakepass,
+    const users = await User.find();
+    if (users.length >= 5) {
+      try {
+        await User.deleteMany({});
+        for (let i = 0; i < 5; i++) {
+          const newUser = new User({
+            username: faker.internet.userName(),
+            email: faker.internet.email().toLowerCase(),
+            account: {
+              username: faker.internet.displayName(),
+              avatar: faker.image.avatar(),
+            },
+            hashpass: faker.internet.password(),
+          });
+          await newUser.save();
+        }
+        for (let j = 0; j < adminUsers.length; j++) {
+          const hashPass = await bcrypt.hash(
+            process.env.ADMIN_PASS,
+            10
+          );
+          const newUser = new User({
+            username: adminUsers[j].username,
+            email: adminUsers[j].email,
+            account: {
+              username: adminUsers[j].account.username,
+              avatar: faker.image.avatar(),
+            },
+            hashpass: hashPass,
+          });
+          await newUser.save();
+        }
+        res.status(201).json({
+          message: `all users created count : ${
+            (await User.find()).length
+          }`,
+        });
+      } catch (error) {
+        res.status(500).json({
+          message: error.message,
+
         });
         await newUser.save();
       }
