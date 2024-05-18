@@ -18,12 +18,15 @@ const corsOptions = {
 };
 
 // utilisation des options de cors
+
 app.use(cors(corsOptions));
 
 // utilisation d'express.json() pour pouvoir récupérer des body dans nos routes
+
 app.use(express.json());
 
 // utilisation de cookieparser
+
 app.use(cookieParser());
 
 // Import des routes
