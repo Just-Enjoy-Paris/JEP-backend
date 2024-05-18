@@ -53,9 +53,9 @@ resetRouter.post(
 resetRouter.post(
   `/reset-users/${process.env.RESET_KEY}`,
   async (req, res) => {
-    const users = await User.find();
-    if (users.length >= 5) {
-      try {
+    try {
+      const users = await User.find();
+      if (users.length >= 5) {
         await User.deleteMany({});
         for (let i = 0; i < 5; i++) {
           const newUser = new User({
@@ -86,22 +86,15 @@ resetRouter.post(
           await newUser.save();
         }
         res.status(201).json({
-          message: `all users created count : ${
+          message: `All users created. Count: ${
             (await User.find()).length
           }`,
         });
-      } catch (error) {
-        res.status(500).json({
-          message: error.message,
-
+      } else {
+        res.status(400).json({
+          message: "Not enough users to reset",
         });
-        await newUser.save();
       }
-      res.status(201).json({
-        message: `all users created count : ${
-          (await User.find()).length
-        }`,
-      });
     } catch (error) {
       res.status(500).json({
         message: error.message,
