@@ -79,7 +79,7 @@ userRouter.post("/login", async (req, res) => {
       process.env.JWT_SECRET
     );
 
-    res.cookie("jwt", token, {
+    res.cookie("JEP", token, {
       httpOnly: true,
       sameSite: "none",
       secure: process.env.JWT_SECURE_COOKIE,
@@ -115,7 +115,7 @@ userRouter.get("/fetchuser", isAuthenticated, async (req, res) => {
 });
 
 userRouter.delete("/logout", async (req, res) => {
-  res.clearCookie("jwt");
+  res.clearCookie("JEP");
   res.status(200).json({ message: "Déconnecté." });
 });
 
