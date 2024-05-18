@@ -11,10 +11,10 @@ resetRouter.post(
   `/reset-places/${process.env.RESET_KEY}`,
   async (req, res) => {
     const places = await Place.find();
-    if (places.length >= 5) {
+    if (places.length <= 75) {
       try {
         await Place.deleteMany({});
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 74; i++) {
           const newPlace = new Place({
             geometry: {
               type: geoPlaces[i].geometry.type,
@@ -93,11 +93,18 @@ resetRouter.post(
       } catch (error) {
         res.status(500).json({
           message: error.message,
+
         });
+        await newUser.save();
       }
-    } else {
-      res.status(207).json({
-        message: "Users already reset",
+      res.status(201).json({
+        message: `all users created count : ${
+          (await User.find()).length
+        }`,
+      });
+    } catch (error) {
+      res.status(500).json({
+        message: error.message,
       });
     }
   }
