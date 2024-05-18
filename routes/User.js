@@ -48,7 +48,6 @@ userRouter.post("/signup", async (req, res) => {
 
 userRouter.post("/login", async (req, res) => {
   try {
-    console.log(req.body);
     const { email, password } = req.body;
     if (!email || !password) {
       return res.status(400).json({
@@ -56,17 +55,17 @@ userRouter.post("/login", async (req, res) => {
       });
     }
 
-    const userEmail = await User.findOne({ email });
+    const user = await User.findOne({ email });
 
-    if (!userEmail) {
+    if (!user) {
       return res.status(401).json({
         message: "Email ou mot de passe incorrect.",
       });
     }
 
-    const passwordMatch = bcrypt.compare(
+    const passwordMatch = await bcrypt.compare(
       password,
-      userEmail.hashpass
+      user.hashpass
     );
 
     if (!passwordMatch) {
@@ -76,21 +75,18 @@ userRouter.post("/login", async (req, res) => {
     }
 
     const token = jwt.sign(
-      { userId: userEmail._id },
+      { userId: user._id },
       process.env.JWT_SECRET
     );
 
     res.cookie("JEP", token, {
+      httpOnly: true,
       sameSite: "none",
-      secure: process.env.JWT_SECURE,
+      secure: process.env.JWT_SECURE_COOKIE,
       maxAge: parseInt(process.env.JWT_EXPIRATION, 10),
     });
 
-    // res.status(200).json({ message: "Connexion réussie." });
-    res
-      .status(200)
-      .json({ ...userEmail._doc, password: undefined, token });
-    console.log({ ...userEmail._doc, password: undefined, token });
+    res.status(200).json({ message: "Connexion réussie." });
   } catch (err) {
     res.status(500).json({
       message: "Une erreur est survenue lors de la connexion.",
@@ -99,11 +95,17 @@ userRouter.post("/login", async (req, res) => {
   }
 });
 
-userRouter.get("/refresh", isAuthenticated, async (req, res) => {
+userRouter.get("/fetchuser", isAuthenticated, async (req, res) => {
   try {
     const user = req.user;
+    const userData = {
+      username: user.account.username,
+      avatar: user.account.avatar,
+    };
 
-    res.status(200).json({ ...user._doc, password: undefined });
+    res.status(200).json({
+      userData,
+    });
   } catch (err) {
     res.status(500).json({
       message: "An error has occurred",

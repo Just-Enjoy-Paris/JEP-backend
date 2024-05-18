@@ -12,13 +12,13 @@ const isAuthenticated = async (req, res, next) => {
     const { userId } = jwt.verify(token, process.env.JWT_SECRET);
 
     if (!userId) {
-      return res.status(401).json({ message: "Unauthorized , id" });
+      return res.status(401).json({ message: "Unauthorized" });
     }
 
     const user = await User.findById(userId);
 
     if (!user) {
-      return res.status(401).json({ message: "Unauthorized , user" });
+      return res.status(401).json({ message: "Unauthorized" });
     }
 
     req.user = user;

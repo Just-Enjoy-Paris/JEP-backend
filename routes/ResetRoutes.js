@@ -5,6 +5,7 @@ const Place = require("../models/Places.model");
 const User = require("../models/Users.model");
 const bcrypt = require("bcrypt");
 const { faker } = require("@faker-js/faker");
+const adminUsers = require("../users.json");
 
 resetRouter.post(
   `/reset-places/${process.env.RESET_KEY}`,
@@ -57,11 +58,6 @@ resetRouter.post(
       try {
         await User.deleteMany({});
         for (let i = 0; i < 5; i++) {
-          const fakepass = faker.internet.password();
-          const hashFakePass = await bcrypt.hash(
-            faker.internet.password(),
-            15
-          );
           const newUser = new User({
             username: faker.internet.userName(),
             email: faker.internet.email().toLowerCase(),
@@ -69,8 +65,23 @@ resetRouter.post(
               username: faker.internet.displayName(),
               avatar: faker.image.avatar(),
             },
-            hashpass: hashFakePass,
-            fakepass: fakepass,
+            hashpass: faker.internet.password(),
+          });
+          await newUser.save();
+        }
+        for (let j = 0; j < adminUsers.length; j++) {
+          const hashPass = await bcrypt.hash(
+            process.env.ADMIN_PASS,
+            10
+          );
+          const newUser = new User({
+            username: adminUsers[j].username,
+            email: adminUsers[j].email,
+            account: {
+              username: adminUsers[j].account.username,
+              avatar: faker.image.avatar(),
+            },
+            hashpass: hashPass,
           });
           await newUser.save();
         }
