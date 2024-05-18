@@ -1,6 +1,7 @@
 // import d'express, mongoose, cors
 const express = require("express");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
 require("dotenv").config();
 
 // Je me connecte au serveur de BDD
@@ -17,14 +18,16 @@ const corsOptions = {
 };
 
 // utilisation des options de cors
+
 app.use(cors(corsOptions));
 
 // utilisation d'express.json() pour pouvoir récupérer des body dans nos routes
+
 app.use(express.json());
 
 // utilisation de cookieparser
-app.use(cookieParser());
 
+app.use(cookieParser());
 
 // Import des routes
 const placesRoutes = require("./routes/Places");
