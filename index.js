@@ -1,6 +1,7 @@
 // import d'express, mongoose, cors
 const express = require("express");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
 require("dotenv").config();
 
 // Je me connecte au serveur de BDD
@@ -27,7 +28,6 @@ app.use(express.json());
 // utilisation de cookieparser
 
 app.use(cookieParser());
-
 
 // Import des routes
 const placesRoutes = require("./routes/Places");
