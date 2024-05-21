@@ -1,0 +1,1094 @@
+[
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.2944383813103615, 48.858663008336]
+    },
+    "properties": {
+      "name": "Tour Eiffel",
+      "address": "Av. Gustave Eiffel, 75007 Paris",
+      "category": [
+        "monument"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "L'emblème de Paris, une tour emblématique offrant une vue panoramique sur la ville depuis ses plateformes d'observation.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3375796236383612, 48.86084752809984]
+    },
+    "properties": {
+      "name": "Musée du Louvre",
+      "address": "8 rue Sainte-Anne, 75001 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un des plus grands musées d'art et d'antiquités au monde, abritant des milliers d'œuvres d'art célèbres, dont la Joconde et la Vénus de Milo.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3499450119984826, 48.85311642072705]
+    },
+    "properties": {
+      "name": "Cathédrale Notre-Dame de Paris",
+      "address": "6 Parvis Notre-Dame - Pl Jean-Paul II, 75004 Paris",
+      "category": [
+        "monument"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Une magnifique cathédrale gothique située sur l'île de la Cité, célèbre pour ses vitraux et ses gargouilles.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.343147212000544, 48.88696912365311]
+    },
+    "properties": {
+      "name": "Montmartre et la basilique du Sacré-Cœur",
+      "address": "35 Rue du Chevalier de la Barre, 75018 Paris",
+      "category": [
+        "quartier",
+        "monument"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un quartier pittoresque de Paris connu pour ses artistes de rue, ses cafés et sa superbe vue depuis la basilique du Sacré-Cœur.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.295006038983425, 48.87391868941147]
+    },
+    "properties": {
+      "name": "Champs-Élysées et l'Arc de Triomphe",
+      "address": "Pl Charles de Gaulle, 75008 Paris",
+      "category": [
+        "avenue",
+        "monument"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Une célèbre avenue bordée de boutiques de luxe et de cafés, menant à l'imposant Arc de Triomphe.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.326733058031628, 48.86015548023645]
+    },
+    "properties": {
+      "name": "Musée d'Orsay",
+      "address": "Esplanade Valéry Giscard d'Estaing, 75007 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée abritant une vaste collection d'œuvres d'art impressionnistes et post-impressionnistes, logé dans une ancienne gare ferroviaire.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3464245254898954, 48.846334738511665]
+    },
+    "properties": {
+      "name": "Panthéon",
+      "address": "Pl du Panthéon, 75005 Paris",
+      "category": [
+        "monument"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un monument néo-classique abritant les tombes de nombreuses figures historiques françaises, dont Voltaire, Rousseau et Victor Hugo.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.356554596654207, 48.85210822735995]
+    },
+    "properties": {
+      "name": "Île Saint-Louis",
+      "address": "21 Rue des Deux Ponts, 75004 Paris",
+      "category": [
+        "île"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Une charmante île sur la Seine, célèbre pour ses rues pavées, ses boutiques artisanales et ses vues sur la ville.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3315799389833014, 48.87212492125974]
+    },
+    "properties": {
+      "name": "Opéra Garnier",
+      "address": "Pl de l'Opéra, 75009 Paris",
+      "category": [
+        "opéra"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un somptueux opéra de style néo-baroque, célèbre pour son architecture spectaculaire et ses spectacles d'opéra et de ballet.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.315835396654404, 48.85542717717504]
+    },
+    "properties": {
+      "name": "Musée Rodin",
+      "address": "77 Rue de Varenne, 75007 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée dédié à l'œuvre du sculpteur français Auguste Rodin, situé dans un hôtel particulier entouré de jardins où sont exposées certaines de ses sculptures les plus célèbres.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.352255725490774, 48.860776081197145]
+    },
+    "properties": {
+      "name": "Centre Pompidou",
+      "address": "Pl Georges-Pompidou, 75004 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un centre culturel et artistique abritant le musée national d'art moderne, ainsi que des expositions temporaires, des bibliothèques et des espaces dédiés à la musique et au cinéma.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3588037966546116, 48.85882992771426]
+    },
+    "properties": {
+      "name": "Le Marais",
+      "address": "54 Rue Vieille du Temple, 75003 Paris",
+      "category": [
+        "quartier"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un quartier historique de Paris, connu pour ses ruelles pittoresques, ses hôtels particuliers, ses galeries d'art et ses boutiques branchées.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3655373254904757, 48.85574549467509]
+    },
+    "properties": {
+      "name": "Place des Vosges",
+      "address": "Pl des Vosges, 75004 Paris",
+      "category": [
+        "place"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "La plus ancienne place de Paris, célèbre pour son architecture élégante et ses arcades, entourée de bâtiments du XVIIe siècle.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3629008119987676, 48.85717981404598]
+    },
+    "properties": {
+      "name": "Musée Carnavalet",
+      "address": "23 Rue de Sévigné, 75003 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée consacré à l'histoire de Paris, situé dans un hôtel particulier du Marais, présentant des collections d'œuvres d'art, de mobilier et d'objets historiques.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3297405254912213, 48.86783161972076]
+    },
+    "properties": {
+      "name": "Place Vendôme",
+      "address": "14 Pl Vendôme, 75001 Paris",
+      "category": [
+        "place"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Une place prestigieuse bordée de boutiques de luxe et de grands hôtels, dominée par la colonne Vendôme érigée en l'honneur de la victoire de Napoléon à Austerlitz.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3634111708906738, 48.875192479649456]
+    },
+    "properties": {
+      "name": "Canal Saint-Martin",
+      "address": "115-109 Quai de Valmy, 75010 Paris",
+      "category": [
+        "canal"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un canal pittoresque traversant les quartiers du 10e et 11e arrondissement, bordé de cafés, de restaurants et de boutiques branchées.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.312939583162743, 48.858279546661635]
+    },
+    "properties": {
+      "name": "Musée de l'Armée (Hôtel des Invalides)",
+      "address": "129 Rue de Grenelle, 75007 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée d'histoire militaire abritant une vaste collection d'armes, d'uniformes et de souvenirs militaires, situé dans un monument historique.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3389817985075334, 48.867335591131614]
+    },
+    "properties": {
+      "name": "Bibliothèque nationale de France (Site Richelieu-Louvois)",
+      "address": "5 Rue Vivienne, 75002 Paris",
+      "category": [
+        "bibliothèque"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Une bibliothèque prestigieuse abritant une vaste collection de livres, de manuscrits et de documents historiques, située dans un bâtiment néo-classique du XVIIe siècle.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.321214238982918, 48.86588361974433]
+    },
+    "properties": {
+      "name": "Place de la Concorde",
+      "address": "Pl de la Concorde",
+      "category": [
+        "place"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "La plus grande place de Paris, célèbre pour son obélisque égyptien, ses fontaines et ses statues, offrant une vue panoramique sur les Champs-Élysées et le Jardin des Tuileries.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.355615196655059, 48.866195139658394]
+    },
+    "properties": {
+      "name": "Musée des Arts et Métiers",
+      "address": "60 Rue Réaumur, 75003 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée des sciences et des techniques abritant une impressionnante collection d'instruments scientifiques, de machines et d'objets technologiques historiques.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.342156023639045, 48.87195773754527]
+    },
+    "properties": {
+      "name": "Musée Grévin",
+      "address": "10 Bd Montmartre, 75009 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée de cire présentant des personnages célèbres de l'histoire, de la politique, du sport et du divertissement, offrant une expérience ludique et interactive.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3691663410970234, 48.85333609431414]
+    },
+    "properties": {
+      "name": "Place de la Bastille",
+      "address": "Pl de la Bastille, 75004 Paris",
+      "category": [
+        "place"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Une place historique associée à la Révolution française, où se trouve la colonne de Juillet commémorant les événements de 1830, entourée de cafés, de théâtres et de boutiques.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3493263254898205, 48.84511050506572]
+    },
+    "properties": {
+      "name": "Quartier Latin",
+      "address": "1 Rue Mouffetard, 75005 Paris",
+      "category": [
+        "quartier"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un quartier animé de Paris, connu pour ses universités, ses librairies, ses cafés et ses rues étroites remplies de charme et d'histoire.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3626123522119475, 48.859796829879706]
+    },
+    "properties": {
+      "name": "Musée Picasso",
+      "address": "5 Rue de Thorigny, 75003 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée dédié à l'œuvre du célèbre artiste espagnol Pablo Picasso, abritant une vaste collection de peintures, de sculptures, de dessins et d'archives.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3523920389823414, 48.85661669234102]
+    },
+    "properties": {
+      "name": "Hôtel de Ville",
+      "address": "Pl de l'Hôtel de Ville, 75004 Paris",
+      "category": [
+        "monument"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Le bâtiment de la mairie de Paris, un magnifique édifice de style néo-Renaissance, souvent utilisé pour des expositions, des concerts et des événements culturels.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.2433220254925654, 48.8904124102621]
+    },
+    "properties": {
+      "name": "La Défense",
+      "address": "1 parvis de La Défense, 92800 Puteaux",
+      "category": [
+        "quartier"
+      ],
+      "social_network": [
+        {
+          "instagram": "-------------A REVOIR------------"
+        }
+      ],
+      "website": "",
+      "description": "Le quartier d'affaires moderne de Paris, célèbre pour ses gratte-ciel, son centre commercial géant et son impressionnante arche de la Défense.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3135911831630858, 48.86402651452376]
+    },
+    "properties": {
+      "name": "Pont Alexandre III",
+      "address": "Pont Alexandre III, 75008 Paris",
+      "category": [
+        "pont"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un pont emblématique de Paris, richement décoré avec des sculptures, des lampadaires en bronze et une vue magnifique sur la Seine et les Invalides.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.297765250622035, 48.86113944349554]
+    },
+    "properties": {
+      "name": "Musée du Quai Branly - Jacques Chirac",
+      "address": "37 Quai Jacques Chirac, 75007 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée des arts et des civilisations d'Afrique, d'Asie, d'Océanie et des Amériques, conçu par l'architecte Jean Nouvel, abritant une collection éclectique d'objets et d'artefacts.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3440807966541093, 48.85063152808468]
+    },
+    "properties": {
+      "name": "Musée de Cluny - Musée national du Moyen Âge",
+      "address": "28 Rue du Sommerard, 75005 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans un ancien hôtel particulier médiéval, abritant une collection d'art et d'objets du Moyen Âge, dont la célèbre tapisserie de la Dame à la licorne.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3449565579690677, 48.855487304304695]
+    },
+    "properties": {
+      "name": "Sainte-Chapelle",
+      "address": "10 Bd du Palais, 75001 Paris",
+      "category": [
+        "monument"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Une chapelle gothique située sur l'île de la Cité, célèbre pour ses vitraux colorés et ses magnifiques décorations médiévales.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3454758232348247, 48.856332005107475]
+    },
+    "properties": {
+      "name": "La Conciergerie",
+      "address": "2 Bd du Palais, 75001 Paris",
+      "category": [
+        "monument"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Ancienne résidence royale transformée en prison pendant la Révolution française, où Marie-Antoinette a été détenue avant son exécution, maintenant ouverte au public comme musée.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3105507426883216, 48.87584580776689]
+    },
+    "properties": {
+      "name": "Musée Jacquemart-André",
+      "address": "158 Bd Haussmann, 75008 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans un somptueux hôtel particulier du XIXe siècle, abritant une collection d'œuvres d'art, de mobilier et d'objets précieux.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3599465850198396, 48.93578016363523]
+    },
+    "properties": {
+      "name": "Basilique Saint-Denis",
+      "address": "1 Rue de la Légion d'Honneur, 93200 Saint-Denis",
+      "category": [
+        "monument"
+      ],
+      "social_network": [
+        {
+          "instagram": "-------------A REVOIR------------"
+        }
+      ],
+      "website": "",
+      "description": "Une basilique gothique située dans la banlieue nord de Paris, abritant les tombes des rois et des reines de France, considérée comme le berceau de l'art gothique.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3879854273453267, 48.89588749043146]
+    },
+    "properties": {
+      "name": "La Cité des Sciences et de l'Industrie",
+      "address": "30 Av. Corentin Cariou, 75019 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un grand complexe de musées et d'expositions scientifiques, offrant des activités interactives et éducatives pour les enfants et les adultes.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3336101120002124, 48.881560880991586]
+    },
+    "properties": {
+      "name": "Musée de la Vie Romantique",
+      "address": "16 Rue Chaptal, 75009 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans un charmant hôtel particulier du XIXe siècle, consacré à l'art et à la culture de l'époque romantique.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3058086506222186, 48.86434582274863]
+    },
+    "properties": {
+      "name": "Bateaux-Mouches sur la Seine",
+      "address": "Port de la Conférence, 75008 Paris",
+      "category": [
+        "activité"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Des croisières en bateau sur la Seine offrant une vue panoramique sur les principaux monuments de Paris, notamment la Tour Eiffel, Notre-Dame et le Louvre.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.340640910148183, 48.88785711783238]
+    },
+    "properties": {
+      "name": "Musée de Montmartre",
+      "address": "12 Rue Cortot, 75018 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans l'un des plus anciens bâtiments de Montmartre, présentant l'histoire et l'art du quartier, ainsi que des expositions sur des artistes comme Toulouse-Lautrec et Renoir.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.2869336850153497, 48.86148712519764]
+    },
+    "properties": {
+      "name": "Musée de l'Homme",
+      "address": "17 Pl du Trocadéro et du 11 Novembre, 75116 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée d'anthropologie situé dans le palais de Chaillot, abritant des collections sur l'évolution de l'homme, les sociétés humaines et la diversité culturelle.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.358667092949941, 48.861724457045256]
+    },
+    "properties": {
+      "name": "Musée de la Chasse et de la Nature",
+      "address": "62 Rue des Archives, 75003 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée consacré à la chasse et à la relation entre l'homme et la nature, situé dans un hôtel particulier du XVIIIe siècle, avec des collections d'œuvres d'art, de trophées et d'objets liés à la chasse.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3024831966548263, 48.86285911639415]
+    },
+    "properties": {
+      "name": "Musée des Égouts de Paris",
+      "address": "Esplanade Habib Bourguiba, Pont de l'Alma, 75007 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée insolite situé dans les égouts de Paris, offrant une visite fascinante de l'histoire et du fonctionnement du système d'égouts de la ville.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.339796354329427, 48.903385162174736]
+    },
+    "properties": {
+      "name": "Le Marché aux Puces de Saint-Ouen",
+      "address": "110 Rue des Rosiers, 93400 Saint-Ouen-sur-Seine",
+      "category": [
+        "marché"
+      ],
+      "social_network": [
+        {
+          "instagram": "-------------A REVOIR------------"
+        }
+      ],
+      "website": "",
+      "description": "Le plus grand marché aux puces d'Europe, offrant une expérience de shopping unique avec des stands vendant des antiquités, des vêtements vintage, des meubles et des objets insolites.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3611408659657998, 48.85329255813519]
+    },
+    "properties": {
+      "name": "Le Musée de la Magie et le Musée des Automates",
+      "address": "11 Rue Saint-Paul, 75004 Paris",
+      "category": [
+        "musée"
+      ],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Deux musées situés dans le même bâtiment, offrant des expositions sur l'histoire de la magie et des automates, avec des démonstrations de tours de magie et des spectacles.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3481955813098008, 48.84951559134476]
+    },
+    "properties": {
+      "name": "Le Musée de la Préfecture de Police",
+      "address": "4 Rue de la Montagne Sainte-Geneviève, 75005 Paris",
+      "category": ["musée"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans le 5ème arrondissement, abritant une collection d'objets et de documents sur l'histoire de la police et de la criminalité à Paris, ainsi que des expositions temporaires.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3556111966547477, 48.86108075499945]
+    },
+    "properties": {
+      "name": "Le Musée d'Art et d'Histoire du Judaïsme",
+      "address": "71 Rue du Temple, 75003 Paris",
+      "category": ["musée"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans le Marais, abritant une collection d'objets et de documents sur l'histoire et la culture juives, ainsi que des expositions temporaires.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.287365711999068, 48.86247518602612]
+    },
+    "properties": {
+      "name": "Le Musée de la Marine",
+      "address": "1 Pl. du Trocadéro et du 11 Novembre, 75016 Paris",
+      "category": ["musée"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans le 16ème arrondissement, abritant une collection d'objets et de documents sur l'histoire et la culture de la marine française, ainsi que des expositions temporaires.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3615163254906384, 48.8583289289859]
+    },
+    "properties": {
+      "name": "Le Musée Cognacq-Jay",
+      "address": "8 Rue Elzévir, 75003 Paris",
+      "category": ["musée"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans le Marais, abritant une collection d'objets et de documents sur l'histoire et la culture du XVIIIème siècle français, ainsi que des expositions temporaires.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.334387865967298, 48.87805554686817]
+    },
+    "properties": {
+      "name": "Le Musée Gustave Moreau",
+      "address": "14 Rue de la Rochefoucauld, 75009 Paris",
+      "category": ["musée"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans le 9ème arrondissement, abritant une collection d'objets et de documents sur l'histoire et la culture de l'artiste Gustave Moreau, ainsi que des expositions temporaires.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.314460850622327, 48.866312532916425]
+    },
+    "properties": {
+      "name": "Le Petit Palais",
+      "address": "Avenue Winston Churchill, 75008 Paris",
+      "category": ["musée"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans le 8ème arrondissement, abritant une collection d'objets et de documents sur l'histoire et la culture de l'art et de l'architecture, ainsi que des expositions temporaires.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.31283017708184, 48.87895243384251]
+    },
+    "properties": {
+      "name": "Le Musée Nissim de Camondo",
+      "address": "63 Rue de Monceau, 75008 Paris",
+      "category": ["musée"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé dans le 8ème arrondissement, abritant une collection d'objets et de documents sur l'histoire et la culture de l'art décoratif français, ainsi que des expositions temporaires.",
+      "picture": ""
+    }
+  },   {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.352486711998414, 48.85199376992355]
+    },
+    "properties": {
+      "name": "Le Mémorial des Martyrs de la Déportation",
+      "address": "Square de l'Île-de-France, 75004 Paris",
+      "category": ["musée"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un musée situé sur l'île de la Cité, dédié à la mémoire des victimes de la déportation pendant la Seconde Guerre mondiale, avec des expositions et des témoignages.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3359590543269966, 48.86371898933017]
+    },
+    "properties": {
+      "name": "Comédie-Française",
+      "address": "1 Place Colette, 75001 Paris",
+      "category": ["théâtre"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Le théâtre national situé dans le Palais-Royal, fondé en 1680.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.290386323636527, 48.83036022487581]
+    },
+    "properties": {
+      "name": "Parc des Expositions de la Porte de Versailles",
+      "address": "1 Place de la Porte de Versailles, 75015 Paris",
+      "category": ["expositions"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Le plus grand parc d'expositions de France, situé dans le 15ème arrondissement.",
+      "picture": ""
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.298312223638071, 48.856154095828835]
+    },
+    "properties": {
+      "name": "Champ de Mars",
+      "address": "2 Allée Adrienne Lecouvreur, 75007 Paris",
+      "category": ["parc"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Un grand parc public ouvert situé entre la Tour Eiffel et l'École militaire.",
+      "picture": ""
+    }
+  }
+]

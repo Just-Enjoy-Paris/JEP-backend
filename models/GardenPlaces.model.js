@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const placeSchema = new mongoose.Schema({
+const GardenPlaceSchema = new mongoose.Schema({
   geometry: {
     type: {
       type: String,
@@ -14,17 +14,17 @@ const placeSchema = new mongoose.Schema({
   },
   properties: {
     name: { type: String, required: true },
-    picture: { type: String, required: true },
+    picture: String,
     address: { type: String, required: true },
     category: { type: [String], required: true },
     social_network: [Object],
     website: String,
     description: { type: String, required: true },
-    positive_review: { type: Number, default: 0 },
-    negative_review: { type: Number, default: 0 },
+    // positive_review: { type: Number, default: 0 },
+    // negative_review: { type: Number, default: 0 },
   },
 });
 
-const Place = mongoose.model("Place", placeSchema);
+const GardenPlace = mongoose.model("GardenPlace", GardenPlaceSchema);
 
-module.exports = Place;
+module.exports = GardenPlace;

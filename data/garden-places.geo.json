@@ -1,0 +1,261 @@
+[
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.3362665236375197,
+        48.84676263953973
+      ]
+    },
+    "properties": {
+      "name": "Jardin du Luxembourg",
+      "address": "Rue de Médicis, Rue de Vaugirard, 75006 Paris, France",
+      "category": [
+        "parc"
+      ],
+      "social_network": [
+        {
+          "instagram": "luxembourg_garden"
+        }
+      ],
+      "website": "https://www.senat.fr/visite/jardin/index.html",
+      "description": "Situé dans le 6ème arrondissement, ce jardin à la française est l'un des plus célèbres de Paris. Il abrite le Palais du Luxembourg, des statues, des fontaines et un bassin où l'on peut louer des bateaux à voile.",
+      "picture": "https://source.unsplash.com/1600x900/?luxembourg-garden,paris"
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.3274299236385367,
+        48.86363273156397
+      ]
+    },
+    "properties": {
+      "name": "Jardin des Tuileries",
+      "address": "113 Rue de Rivoli, 75001 Paris, France",
+      "category": [
+        "parc"
+      ],
+      "social_network": [
+        {
+          "instagram": "tuileriesgarden"
+        }
+      ],
+      "website": "https://www.louvre.fr/en/tuileries-garden",
+      "description": "Situé entre le Louvre et la Place de la Concorde, ce jardin à la française est un lieu de promenade populaire pour les Parisiens et les touristes. Il abrite des statues, des fontaines et deux musées : le Musée de l'Orangerie et le Jeu de Paume.",
+      "picture": "https://source.unsplash.com/1600x900/?tuileries-garden,paris"
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.382771625492016,
+        48.88109773785652
+      ]
+    },
+    "properties": {
+      "name": "Parc des Buttes-Chaumont",
+      "address": "1 Rue Botzaris, 75019 Paris, France",
+      "category": [
+        "parc"
+      ],
+      "social_network": [
+        {
+          "instagram": "butteschaumont"
+        }
+      ],
+      "website": "https://www.paris.fr/equipements/parc-des-buttes-chaumont-3957",
+      "description": "Situé dans le 19ème arrondissement, ce parc est l'un des plus grands de Paris. Il abrite un lac, des grottes, des cascades, des ponts suspendus et un temple de la Sibylle sur une falaise.",
+      "picture": "https://source.unsplash.com/1600x900/?buttes-chaumont,paris"
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.308912081311635,
+        48.88000450636433
+      ]
+    },
+    "properties": {
+      "name": "Parc Monceau",
+      "address": "35 Boulevard de Courcelles, 75008 Paris, France",
+      "category": [
+        "parc"
+      ],
+      "social_network": [
+        {
+          "instagram": "parcmonceau"
+        }
+      ],
+      "website": "https://www.paris.fr/equipements/parc-monceau-3947",
+      "description": "Situé dans le 8ème arrondissement, ce parc à l'anglaise est connu pour ses belles statues, ses colonnades et son arc de triomphe miniature. Il est entouré de magnifiques hôtels particuliers.",
+      "picture": "https://source.unsplash.com/1600x900/?parc-monceau,paris"
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.4331615696691546,
+        48.82841386788401
+      ]
+    },
+    "properties": {
+      "name": "Bois de Vincennes",
+      "address": "Route de la Pyramide, 75012 Paris, France",
+      "category": [
+        "parc"
+      ],
+      "social_network": [
+        {
+          "instagram": "boisdevincennes"
+        }
+      ],
+      "website": "https://www.paris.fr/equipements/bois-de-vincennes-4003",
+      "description": "Situé à l'est de Paris, ce parc est l'un des plus grands d'Europe. Il abrite un lac, un zoo, un parc floral, un hippodrome et de nombreuses installations sportives.",
+      "picture": "https://source.unsplash.com/1600x900/?bois-de-vincennes,paris"
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.249161967818774,
+        48.8625742763792
+      ]
+    },
+    "properties": {
+      "name": "Bois de Boulogne",
+      "address": "75016 Paris, France",
+      "category": [
+        "parc"
+      ],
+      "social_network": [
+        {
+          "instagram": "boisdeboulogne"
+        }
+      ],
+      "website": "https://www.paris.fr/equipements/bois-de-boulogne-4002",
+      "description": "Situé à l'ouest de Paris, ce parc est également l'un des plus grands d'Europe. Il abrite un lac, un jardin d'acclimatation, un parc des princes, un hippodrome et de nombreuses installations sportives.",
+      "picture": "https://source.unsplash.com/1600x900/?bois-de-boulogne,paris"
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.3593501812618105,
+        48.84365186767478
+      ]
+    },
+    "properties": {
+      "name": "Jardin des Plantes",
+      "address": "57 Rue Cuvier, 75005 Paris, France",
+      "category": [
+        "parc"
+      ],
+      "social_network": [
+        {
+          "instagram": "jardindesplantes"
+        }
+      ],
+      "website": "https://www.jardindesplantes.fr/en",
+      "description": "Situé dans le 5ème arrondissement, ce jardin botanique abrite un musée d'histoire naturelle, une ménagerie, des serres et des jardins thématiques.",
+      "picture": "https://source.unsplash.com/1600x900/?jardin-des-plantes,paris"
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.3902385389846166,
+        48.89408517104067
+      ]
+    },
+    "properties": {
+      "name": "Parc de la Villette",
+      "address": "211 Avenue Jean Jaurès, 75019 Paris, France",
+      "category": [
+        "parc"
+      ],
+      "social_network": [
+        {
+          "instagram": "parcdelavillette"
+        }
+      ],
+      "website": "https://www.parcdelavillette.com/en",
+      "description": "Situé dans le 19ème arrondissement, ce parc est connu pour ses bâtiments futuristes, ses jardins thématiques, ses installations sportives et ses salles de concert.",
+      "picture": "https://source.unsplash.com/1600x900/?parc-de-la-villette,paris"
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.3378275543271143,
+        48.86507108061438
+      ]
+    },
+    "properties": {
+      "name": "Jardin du Palais Royal",
+      "address": "8 Rue de Montpensier, 75001 Paris, France",
+      "category": [
+        "parc"
+      ],
+      "social_network": [
+        {
+          "instagram": "palaisroyal"
+        }
+      ],
+      "website": "https://www.paris.fr/equipements/jardin-du-palais-royal-3940",
+      "description": "Situé dans le 1er arrondissement, ce jardin à la française est entouré de magnifiques arcades et abrite des statues et des fontaines.",
+      "picture": "https://source.unsplash.com/1600x900/?palais-royal,paris"
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.269830562852268,
+        48.87801979096921
+      ]
+    },
+    "properties": {
+      "name": "Jardin d'Acclimatation",
+      "address": "Bois de Boulogne, 75116 Paris, France",
+      "category": [
+        "parc"
+      ],
+      "social_network": [
+        {
+          "instagram": "jardindacclimatation"
+        }
+      ],
+      "website": "https://www.jardindacclimatation.fr/en",
+      "description": "Situé dans le Bois de Boulogne, ce parc d'attractions est conçu pour les enfants et les familles. Il abrite des manèges, des spectacles, des animaux et des jardins thématiques.",
+      "picture": "https://source.unsplash.com/1600x900/?jardin-dacclimatation,paris"
+    }
+  },
+  {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.3550070280541604, 48.86159482801582]
+    },
+    "properties": {
+      "name": "Le Jardin Anne-Frank",
+      "address": "14 Impasse Berthaud, 75003 Paris",
+      "category": ["jardin"],
+      "social_network": [
+        {
+          "instagram": ""
+        }
+      ],
+      "website": "",
+      "description": "Jardin retiré en hommage à Anne Frank avec des bancs et une aire de jeux pour enfants dans un cadre paisible.",
+      "picture": ""
+    }
+  }
+]

@@ -1,6 +1,8 @@
 const express = require("express");
 const placesRouter = express.Router();
 const Place = require("../models/Places.model");
+const GardenPlace = require("../models/GardenPlaces.model");
+const TouristPlace = require("../models/TouristPlaces.model");
 
 placesRouter.post("/add-places", async (req, res) => {
   try {
@@ -54,12 +56,18 @@ placesRouter.post("/add-places", async (req, res) => {
   }
 });
 
-placesRouter.get("/allplaces", async (req, res) => {
+placesRouter.get("/places", async (req, res) => {
   try {
     // Récupérer tous les lieux
     const places = await Place.find();
+    const gardenPlaces = await GardenPlace.find();
+    const touristPlaces = await TouristPlace.find();
 
-    res.json({ count: places.length, places: places });
+    res.json({
+      places,
+      gardenPlaces,
+      touristPlaces,
+    });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
