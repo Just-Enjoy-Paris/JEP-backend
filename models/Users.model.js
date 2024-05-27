@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
   account: {
     username: { type: String, required: true },
     avatar: { type: mongoose.Schema.Types.Mixed, default: {} },
-    favPlaces: [],
+    favPlaces: [{}],
   },
   newsletter: { type: Boolean, default: false },
   hashpass: String,
