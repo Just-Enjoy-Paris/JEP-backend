@@ -1,12 +1,11 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-  username: String,
   email: String,
   account: {
     username: { type: String, required: true },
     avatar: { type: mongoose.Schema.Types.Mixed, default: {} },
-    favPlaces: [{}],
+    favPlaces: [{ type: Object, default: {} }],
   },
   newsletter: { type: Boolean, default: false },
   hashpass: String,
