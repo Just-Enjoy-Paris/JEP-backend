@@ -129,10 +129,9 @@ resetRouter.post(
         await User.deleteMany({});
         for (let i = 0; i < 5; i++) {
           const newUser = new User({
-            username: faker.internet.userName(),
             email: faker.internet.email().toLowerCase(),
             account: {
-              username: faker.internet.displayName(),
+              username: faker.internet.userName(),
               avatar: faker.image.avatar(),
             },
             hashpass: faker.internet.password(),
@@ -145,7 +144,6 @@ resetRouter.post(
             10
           );
           const newUser = new User({
-            username: adminUsers[j].username,
             email: adminUsers[j].email,
             account: {
               username: adminUsers[j].account.username,
