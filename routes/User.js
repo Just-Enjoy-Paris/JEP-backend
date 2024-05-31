@@ -116,8 +116,8 @@ userRouter.put(
   isAuthenticated,
   async (req, res) => {
     try {
-      const { newEmail, newPassword, newAvatar, newUsername } =
-        req.body;
+      const { newEmail, newPassword, newUsername } = req.body;
+      const newAvatar = req.file;
 
       const user = req.user;
 
