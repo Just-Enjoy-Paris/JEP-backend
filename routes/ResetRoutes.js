@@ -8,7 +8,7 @@ const Place = require("../models/Places.model");
 const GardenPlace = require("../models/GardenPlaces.model");
 const TouristPlace = require("../models/TouristPlaces.model");
 const User = require("../models/Users.model");
-const bcrypt = require("bcrypt");
+const { hashPassword } = require("../utils/hashpass");
 const { faker } = require("@faker-js/faker");
 
 resetRouter.post(
@@ -139,10 +139,7 @@ resetRouter.post(
           await newUser.save();
         }
         for (let j = 0; j < adminUsers.length; j++) {
-          const hashPass = await bcrypt.hash(
-            process.env.ADMIN_PASS,
-            10
-          );
+          const hashPass = await hashPassword(process.env.ADMIN_PASS);
           const newUser = new User({
             email: adminUsers[j].email,
             account: {

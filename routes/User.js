@@ -1,6 +1,6 @@
 const express = require("express");
 const userRouter = express.Router();
-const bcrypt = require("bcrypt");
+const { hashPassword, verifyPassword } = require("../utils/hashpass");
 const jwt = require("jsonwebtoken");
 
 const User = require("../models/Users.model");
@@ -42,13 +42,12 @@ userRouter.post("/signup", async (req, res) => {
         .json({ message: "L'email est déjà utilisé." });
     }
 
-    const hashPassw = await bcrypt.hash(password, 15);
     const newUser = new User({
       email,
       account: {
         username,
       },
-      hashpass: hashPassw,
+      hashpass: hashPassword(password),
     });
 
     await newUser.save();
@@ -79,9 +78,9 @@ userRouter.post("/login", async (req, res) => {
       });
     }
 
-    const passwordMatch = await bcrypt.compare(
-      password,
-      user.hashpass
+    const passwordMatch = await verifyPassword(
+      user.hashpass,
+      password
     );
 
     if (!passwordMatch) {
@@ -134,8 +133,7 @@ userRouter.put(
 
       // Mise à jour du mot de passe si fourni
       if (newPassword) {
-        const hashPassword = await bcrypt.hash(newPassword, 15);
-        user.hashpass = hashPassword;
+        user.hashpass = hashPassword(newPassword);
       }
 
       // Mise à jour de l'avatar si fourni
