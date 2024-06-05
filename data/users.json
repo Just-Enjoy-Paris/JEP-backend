@@ -25,5 +25,14 @@
       "avatar": {}
     },
     "newsletter": true
+  },
+  {
+    "username": "Elbehisy",
+    "email": "elbehisy@proto.com",
+    "account": {
+      "username": "Elbehisy2024",
+      "avatar": {}
+    },
+    "newsletter": true
   }
 ]
