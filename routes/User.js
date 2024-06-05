@@ -120,7 +120,6 @@ userRouter.put(
   async (req, res) => {
     try {
       const { newEmail, newPassword, newUsername } = req.body;
-
       const user = req.user;
 
       // Mise à jour de l'email si fourni et s'il est différent de l'actuel
