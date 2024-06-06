@@ -37,9 +37,7 @@ userRouter.post("/signup", async (req, res) => {
     const userEmail = await User.findOne({ email });
 
     if (userEmail) {
-      return res
-        .status(400)
-        .json({ message: "L'email est déjà utilisé." });
+      return res.status(400).json({ message: "L'email est déjà utilisé." });
     }
 
     const newUser = new User({
@@ -78,10 +76,7 @@ userRouter.post("/login", async (req, res) => {
       });
     }
 
-    const passwordMatch = await verifyPassword(
-      user.hashpass,
-      password
-    );
+    const passwordMatch = await verifyPassword(user.hashpass, password);
 
     if (!passwordMatch) {
       return res.status(401).json({
@@ -89,10 +84,7 @@ userRouter.post("/login", async (req, res) => {
       });
     }
 
-    const token = jwt.sign(
-      { userId: user._id },
-      process.env.JWT_SECRET
-    );
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
 
     res.cookie("JEP", token, {
       httpOnly: true,
@@ -110,52 +102,87 @@ userRouter.post("/login", async (req, res) => {
   }
 });
 
-userRouter.put("/addFav",
-  isAuthenticated,
-  async (req, res) => {
+// userRouter.put("/addFav", isAuthenticated, async (req, res) => {
+//   try {
+//     const { id } = req.body;
+//     const user = req.user;
+
+//     if (!id) {
+//       return res.status(400).json({
+//         message: "Aucun favori à ajouter",
+//       });
+//     }
+
+//     if (user.account.favPlaces.includes(id)) {
+//       user.account.favPlaces.delete(id);
+
+//       await user.save();
+//       console.log(user.account.favPlaces);
+//       res.json({
+//         message: "Favori supprimé",
+//       });
+//     } else if (!user.account.favPlaces.includes(id)) {
+//       user.account.favPlaces.push(id);
+
+//       await user.save();
+//       console.log(user.account.favPlaces);
+//       res.json({
+//         message: "Favori ajouté",
+//         favPlaces: user.account.favPlaces,
+//       });
+//     }
+//   } catch (err) {
+//     res.status(500).json({
+//       message: "Une erreur est survenue lors de la mise à jour des favoris.",
+//       error: err.message,
+//     });
+//   }
+// });
+
+userRouter.put("/addFav", isAuthenticated, async (req, res) => {
   try {
-    const id =  req.body;
+    const { id } = req.body;
     const user = req.user;
-    if(!id){
-      return res.status(400).json({
+
+    if (!id) {
+      res.status(400).json({
         message: "Aucun favori à ajouter",
       });
     }
-    if(user.account.favPlaces.includes(id)){
-      user.account.favPlaces.delete(id);
-      res.json({
-        message: "Favori supprimé",
-      });
-    } else if(!user.account.favPlaces.includes(id)){
+    if (!user.account.favPlaces.includes(id)) {
       user.account.favPlaces.push(id);
-      res.json({
-        message: "Favori ajouté", favPlaces: user.account.favPlaces
-    });
+
+      await user.save();
+
+      console.log(user.account.favPlaces);
+      res.status(201).json({
+        message: "Favori ajouté",
+        favPlaces: user.account.favPlaces,
+      });
+    } else if (user.account.favPlaces.includes(id)) {
+      res.json({ message: "favori déja ajouté" });
     }
-    await user.save();
   } catch (err) {
     res.status(500).json({
-      message:"Une erreur est survenue lors de la mise à jour des favoris.",
-      error:err.message,
+      message: "Une erreur est survenue lors de la mise à jour des favoris.",
+      error: err.message,
     });
   }
-  })
+});
 
 userRouter.get("/getFavs", isAuthenticated, async (req, res) => {
   try {
     const user = req.user;
 
-    if (!user.account.favPlaces || user.account.favPlaces.length === 0) {
+    if (user.account.favPlaces.length === 0) {
       return res.status(200).json({
         message: "Aucun favori trouvé",
-        favPlaces: [],
       });
-    }
-
-    return res.status(200).json({
-      message: "Favoris récupérés avec succès",
-      favPlaces: user.account.favPlaces,
-    });
+    } else
+      return res.status(200).json({
+        message: "Favoris récupérés avec succès",
+        favPlaces: user.account.favPlaces,
+      });
   } catch (err) {
     res.status(500).json({
       message: "Une erreur est survenue lors de la récupération des favoris.",
@@ -164,56 +191,49 @@ userRouter.get("/getFavs", isAuthenticated, async (req, res) => {
   }
 });
 
-userRouter.put(
-  "/updateprofile",
-  isAuthenticated,
-  async (req, res) => {
-    try {
-      const { newEmail, newPassword, newUsername } = req.body;
-      const newAvatar = req.file;
+userRouter.put("/updateprofile", isAuthenticated, async (req, res) => {
+  try {
+    const { newEmail, newPassword, newUsername } = req.body;
+    const newAvatar = req.file;
 
-      const user = req.user;
+    const user = req.user;
 
-      // Mise à jour de l'email si fourni et s'il est différent de l'actuel
-      if (newEmail && newEmail !== user.email) {
-        const emailExists = await User.findOne({ email: newEmail });
-        if (emailExists) {
-          return res.status(400).json({
-            message: "L'email est déjà utilisé par un autre compte.",
-          });
-        }
-        user.email = newEmail;
+    // Mise à jour de l'email si fourni et s'il est différent de l'actuel
+    if (newEmail && newEmail !== user.email) {
+      const emailExists = await User.findOne({ email: newEmail });
+      if (emailExists) {
+        return res.status(400).json({
+          message: "L'email est déjà utilisé par un autre compte.",
+        });
       }
-
-      // Mise à jour du mot de passe si fourni
-      if (newPassword) {
-        user.hashpass = hashPassword(newPassword);
-      }
-
-      // Mise à jour de l'avatar si fourni
-      if (newAvatar) {
-        user.account.avatar = newAvatar;
-      }
-
-      // Mise à jour de usename si fourni
-      if (newUsername) {
-        user.account.username = newUsername;
-      }
-
-      await user.save();
-
-      res
-        .status(200)
-        .json({ message: "Profil mis à jour avec succès." });
-    } catch (err) {
-      res.status(500).json({
-        message:
-          "Une erreur est survenue lors de la mise à jour du profil.",
-        error: err.message,
-      });
+      user.email = newEmail;
     }
+
+    // Mise à jour du mot de passe si fourni
+    if (newPassword) {
+      user.hashpass = hashPassword(newPassword);
+    }
+
+    // Mise à jour de l'avatar si fourni
+    if (newAvatar) {
+      user.account.avatar = newAvatar;
+    }
+
+    // Mise à jour de usename si fourni
+    if (newUsername) {
+      user.account.username = newUsername;
+    }
+
+    await user.save();
+
+    res.status(200).json({ message: "Profil mis à jour avec succès." });
+  } catch (err) {
+    res.status(500).json({
+      message: "Une erreur est survenue lors de la mise à jour du profil.",
+      error: err.message,
+    });
   }
-);
+});
 
 userRouter.delete("/logout", async (req, res) => {
   res.clearCookie("JEP");
