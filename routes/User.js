@@ -170,6 +170,32 @@ userRouter.put("/addFav", isAuthenticated, async (req, res) => {
   }
 });
 
+userRouter.delete("/rmFav", isAuthenticated, async (req, res) => {
+  try {
+    const { id } = req.body;
+    const user = req.user;
+
+    if (!id) {
+      return res.status(400).json({
+        message: "Aucun ID reçu",
+      });
+    }
+
+    user.account.favPlaces = user.account.favPlaces.filter(favId => favId !== id);
+    await user.save();
+
+    return res.status(200).json({
+      message: "Favori supprimé",
+      favPlaces: user.account.favPlaces,
+    });
+  } catch (err) {
+    return res.status(500).json({
+      message: "Une erreur est survenue lors de la suppression du favori.",
+      error: err.message,
+    });
+  }
+});
+
 userRouter.get("/getFavs", isAuthenticated, async (req, res) => {
   try {
     const user = req.user;
