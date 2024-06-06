@@ -170,7 +170,7 @@ userRouter.put("/addFav", isAuthenticated, async (req, res) => {
   }
 });
 
-userRouter.delete("/rmFav", isAuthenticated, async (req, res) => {
+userRouter.put("/rmFav", isAuthenticated, async (req, res) => {
   try {
     const { id } = req.body;
     const user = req.user;
