@@ -40,9 +40,7 @@ userRouter.post("/signup", async (req, res) => {
     const userEmail = await User.findOne({ email });
 
     if (userEmail) {
-      return res
-        .status(400)
-        .json({ message: "L'email est déjà utilisé." });
+      return res.status(400).json({ message: "L'email est déjà utilisé." });
     }
 
     const newUser = new User({
@@ -81,10 +79,7 @@ userRouter.post("/login", async (req, res) => {
       });
     }
 
-    const passwordMatch = await verifyPassword(
-      user.hashpass,
-      password
-    );
+    const passwordMatch = await verifyPassword(user.hashpass, password);
 
     if (!passwordMatch) {
       return res.status(401).json({
@@ -92,10 +87,7 @@ userRouter.post("/login", async (req, res) => {
       });
     }
 
-    const token = jwt.sign(
-      { userId: user._id },
-      process.env.JWT_SECRET
-    );
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
 
     res.cookie("JEP", token, {
       httpOnly: true,
@@ -123,7 +115,7 @@ userRouter.put(
       const user = req.user;
 
       // Mise à jour de l'email si fourni et s'il est différent de l'actuel
-      if (newEmail !== "" && newEmail !== user.email) {
+      if (newEmail && newEmail !== user.email) {
         const emailExists = await User.findOne({ email: newEmail });
         if (emailExists) {
           return res.status(400).json({
@@ -133,35 +125,32 @@ userRouter.put(
         user.email = newEmail;
       }
 
+      // Mise à jour de l'avatar si fourni
+      if (req.files && req.files.newAvatar) {
+        const avatarFile = req.files.newAvatar;
+        const AvatarToString = convertToBase64(avatarFile);
+        const avatarToSave = await cloudinary.uploader.upload(AvatarToString, {
+          folder: "jep/users/avatar",
+        });
+        user.account.avatar = avatarToSave.secure_url;
+      }
+
       // Mise à jour du mot de passe si fourni
       if (newPassword) {
         user.hashpass = hashPassword(newPassword);
       }
 
-      // Mise à jour de l'avatar si fourni
-      if (req.files.newAvatar) {
-        const AvatarToString = convertToBase64(req.files.newAvatar);
-        const avatarToSave = await cloudinary.uploader.upload(
-          AvatarToString,
-          { folder: "jep/users/avatar" }
-        );
-        user.account.avatar = avatarToSave.secure_url;
-      }
-
-      // Mise à jour de usename si fourni
+      // Mise à jour de username si fourni
       if (newUsername) {
         user.account.username = newUsername;
       }
 
       await user.save();
 
-      res
-        .status(200)
-        .json({ message: "Profil mis à jour avec succès." });
+      res.status(200).json({ message: "Profil mis à jour avec succès." });
     } catch (err) {
       res.status(500).json({
-        message:
-          "Une erreur est survenue lors de la mise à jour du profil.",
+        message: "Une erreur est survenue lors de la mise à jour du profil.",
         error: err.message,
       });
     }
@@ -172,5 +161,86 @@ userRouter.delete("/logout", async (req, res) => {
   res.clearCookie("JEP");
   res.status(200).json({ message: "Déconnecté." });
 });
+
+userRouter.put("/addFav", isAuthenticated, async (req, res) => {
+  try {
+    const { id } = req.body;
+    const user = req.user;
+
+    if (!id) {
+      return res.status(400).json({
+        message: "Aucun favori à ajouter",
+      });
+    }
+    if (user.account.favPlaces.includes(id)) {
+      return res.json({ message: "favori déja ajouté" });
+    }
+    if (!user.account.favPlaces.includes(id)) {
+      user.account.favPlaces.push(id);
+
+      await user.save();
+
+      console.log(user.account.favPlaces);
+      res.status(201).json({
+        message: "Favori ajouté",
+        favPlaces: user.account.favPlaces,
+      });
+    }
+  } catch (err) {
+    res.status(500).json({
+      message: "Une erreur est survenue lors de la mise à jour des favoris.",
+      error: err.message,
+    });
+  }
+});
+
+userRouter.put("/rmFav", isAuthenticated, async (req, res) => {
+  try {
+    const { id } = req.body;
+    const user = req.user;
+
+    if (!id) {
+      return res.status(400).json({
+        message: "Aucun ID reçu",
+      });
+    }
+
+    user.account.favPlaces = user.account.favPlaces.filter(
+      favId => favId !== id
+    );
+    await user.save();
+    console.log(user.account.favPlaces);
+    res.status(200).json({
+      message: "Favori supprimé",
+      favPlaces: user.account.favPlaces,
+    });
+  } catch (err) {
+    res.status(500).json({
+      message: "Une erreur est survenue lors de la suppression du favori.",
+      error: err.message,
+    });
+  }
+});
+
+// userRouter.get("/getFavs", isAuthenticated, async (req, res) => {
+//   try {
+//     const user = req.user;
+
+//     if (user.account.favPlaces.length === 0) {
+//       return res.status(200).json({
+//         message: "Aucun favori trouvé",
+//       });
+//     }
+//     res.status(200).json({
+//       message: "Favoris récupérés avec succès",
+//       favPlaces: user.account.favPlaces,
+//     });
+//   } catch (err) {
+//     res.status(500).json({
+//       message: "Une erreur est survenue lors de la récupération des favoris.",
+//       error: err.message,
+//     });
+//   }
+// });
 
 module.exports = userRouter;
