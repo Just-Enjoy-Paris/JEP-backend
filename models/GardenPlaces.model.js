@@ -4,7 +4,7 @@ const GardenPlaceSchema = new mongoose.Schema({
   geometry: {
     type: {
       type: String,
-      enum: ["Point"],
+      default: ["Point"],
       required: true,
     },
     coordinates: {
@@ -20,8 +20,13 @@ const GardenPlaceSchema = new mongoose.Schema({
     social_network: [Object],
     website: String,
     description: { type: String, required: true },
-    // positive_review: { type: Number, default: 0 },
-    // negative_review: { type: Number, default: 0 },
+    rate: { type: Number, default: 0 },
+    rateCount: { type: Number, default: 0 },
+    rateSum: { type: Number, default: 0 },
+    ratedBy: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    posiveReview: { type: Number, default: 0 },
+    negativeReview: { type: Number, default: 0 },
+    reviewedBy: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
   },
 });
 
