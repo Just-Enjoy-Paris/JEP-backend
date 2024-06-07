@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const placeSchema = new mongoose.Schema({
   geometry: {
     type: {
-      type: String,
-      enum: ["Point"],
+      type: Array,
+      default: ["Point"],
       required: true,
     },
     coordinates: {
@@ -23,6 +23,10 @@ const placeSchema = new mongoose.Schema({
     rate: { type: Number, default: 0 },
     rateCount: { type: Number, default: 0 },
     rateSum: { type: Number, default: 0 },
+    ratedBy: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    posiveReview: { type: Number, default: 0 },
+    negativeReview: { type: Number, default: 0 },
+    reviewedBy: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
   },
 });
 

@@ -21,16 +21,26 @@ const getPlaces = async (req, res) => {
 
 const updateRating = async (req, res) => {
   const { placeId, newRate } = req.body;
+  const user = req.user;
+
   try {
     const place = await Place.findById(placeId);
     if (!place) {
       return res.status(400).json("Place not found");
     }
+    if (place.properties.ratedBy.includes(user._id)) {
+      return res.status(400).json({ message: "User already rate this place" });
+    }
 
-    place.properties.rateSum += newRate;
-    place.properties.rateCount += 1;
-    place.properties.rate =
-      place.properties.rateSum / place.properties.rateCount;
+    const rateSum = parseFloat(place.properties.rateSum) + parseFloat(newRate);
+    const rateCount = place.properties.rateCount + 1;
+    const newAverage = rateSum / rateCount;
+
+    place.properties.rateSum = rateSum;
+    place.properties.rateCount = rateCount;
+    place.properties.rate = newAverage;
+
+    place.properties.ratedBy.push(user._id);
 
     await place.save();
     const places = await Place.find();
@@ -66,8 +76,7 @@ const addPlaces = async (req, res) => {
       !coordinates
     ) {
       return res.status(400).json({
-        message:
-          "Veuillez fournir toutes les informations nécessaires.",
+        message: "Veuillez fournir toutes les informations nécessaires.",
       });
     }
 
