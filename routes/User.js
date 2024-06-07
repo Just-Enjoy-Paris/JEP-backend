@@ -2,6 +2,9 @@ const express = require("express");
 const userRouter = express.Router();
 const { hashPassword, verifyPassword } = require("../utils/hashpass");
 const jwt = require("jsonwebtoken");
+const convertToBase64 = require("../utils/convertToBase64");
+const fileUpload = require("express-fileupload");
+const cloudinary = require("cloudinary").v2;
 
 const User = require("../models/Users.model");
 const isAuthenticated = require("../middlewares/isAuth");
@@ -102,20 +105,34 @@ userRouter.post("/login", async (req, res) => {
   }
 });
 
-userRouter.put("/updateprofile", isAuthenticated, async (req, res) => {
-  try {
-    const { newEmail, newPassword, newUsername } = req.body;
-    const newAvatar = req.file;
 
-    const user = req.user;
+userRouter.put(
+  "/updateprofile",
+  isAuthenticated,
+  fileUpload(),
+  async (req, res) => {
+    try {
+      const { newEmail, newPassword, newUsername } = req.body;
+      const user = req.user;
 
-    // Mise à jour de l'email si fourni et s'il est différent de l'actuel
-    if (newEmail && newEmail !== user.email) {
-      const emailExists = await User.findOne({ email: newEmail });
-      if (emailExists) {
-        return res.status(400).json({
-          message: "L'email est déjà utilisé par un autre compte.",
-        });
+      // Mise à jour de l'email si fourni et s'il est différent de l'actuel
+      if (newEmail !== "" && newEmail !== user.email) {
+        const emailExists = await User.findOne({ email: newEmail });
+        if (emailExists) {
+          return res.status(400).json({
+            message: "L'email est déjà utilisé par un autre compte.",
+          });
+        }
+        user.email = newEmail;
+      }
+      // Mise à jour de l'avatar si fourni
+      if (req.files.newAvatar) {
+        const AvatarToString = convertToBase64(req.files.newAvatar);
+        const avatarToSave = await cloudinary.uploader.upload(
+          AvatarToString,
+          { folder: "jep/users/avatar" }
+        );
+        user.account.avatar = avatarToSave.secure_url;
       }
       user.email = newEmail;
     }

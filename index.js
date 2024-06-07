@@ -3,9 +3,18 @@ const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
+const cloudinary = require("cloudinary").v2;
 
 // Je me connecte au serveur de BDD
 require("./database/database.conection");
+
+// Je me connecte à cloudinary
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+  secure: true,
+});
 
 // Création du serveur
 const app = express();
