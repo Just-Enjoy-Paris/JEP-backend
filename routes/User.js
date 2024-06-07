@@ -102,52 +102,18 @@ userRouter.post("/login", async (req, res) => {
   }
 });
 
-// userRouter.put("/addFav", isAuthenticated, async (req, res) => {
-//   try {
-//     const { id } = req.body;
-//     const user = req.user;
-
-//     if (!id) {
-//       return res.status(400).json({
-//         message: "Aucun favori à ajouter",
-//       });
-//     }
-
-//     if (user.account.favPlaces.includes(id)) {
-//       user.account.favPlaces.delete(id);
-
-//       await user.save();
-//       console.log(user.account.favPlaces);
-//       res.json({
-//         message: "Favori supprimé",
-//       });
-//     } else if (!user.account.favPlaces.includes(id)) {
-//       user.account.favPlaces.push(id);
-
-//       await user.save();
-//       console.log(user.account.favPlaces);
-//       res.json({
-//         message: "Favori ajouté",
-//         favPlaces: user.account.favPlaces,
-//       });
-//     }
-//   } catch (err) {
-//     res.status(500).json({
-//       message: "Une erreur est survenue lors de la mise à jour des favoris.",
-//       error: err.message,
-//     });
-//   }
-// });
-
 userRouter.put("/addFav", isAuthenticated, async (req, res) => {
   try {
     const { id } = req.body;
     const user = req.user;
 
     if (!id) {
-      res.status(400).json({
+      return res.status(400).json({
         message: "Aucun favori à ajouter",
       });
+    }
+    if (user.account.favPlaces.includes(id)) {
+      return res.json({ message: "favori déja ajouté" });
     }
     if (!user.account.favPlaces.includes(id)) {
       user.account.favPlaces.push(id);
@@ -159,8 +125,6 @@ userRouter.put("/addFav", isAuthenticated, async (req, res) => {
         message: "Favori ajouté",
         favPlaces: user.account.favPlaces,
       });
-    } else if (user.account.favPlaces.includes(id)) {
-      res.json({ message: "favori déja ajouté" });
     }
   } catch (err) {
     res.status(500).json({
@@ -181,41 +145,43 @@ userRouter.put("/rmFav", isAuthenticated, async (req, res) => {
       });
     }
 
-    user.account.favPlaces = user.account.favPlaces.filter(favId => favId !== id);
+    user.account.favPlaces = user.account.favPlaces.filter(
+      favId => favId !== id
+    );
     await user.save();
-
-    return res.status(200).json({
+    console.log(user.account.favPlaces);
+    res.status(200).json({
       message: "Favori supprimé",
       favPlaces: user.account.favPlaces,
     });
   } catch (err) {
-    return res.status(500).json({
+    res.status(500).json({
       message: "Une erreur est survenue lors de la suppression du favori.",
       error: err.message,
     });
   }
 });
 
-userRouter.get("/getFavs", isAuthenticated, async (req, res) => {
-  try {
-    const user = req.user;
+// userRouter.get("/getFavs", isAuthenticated, async (req, res) => {
+//   try {
+//     const user = req.user;
 
-    if (user.account.favPlaces.length === 0) {
-      return res.status(200).json({
-        message: "Aucun favori trouvé",
-      });
-    } else
-      return res.status(200).json({
-        message: "Favoris récupérés avec succès",
-        favPlaces: user.account.favPlaces,
-      });
-  } catch (err) {
-    res.status(500).json({
-      message: "Une erreur est survenue lors de la récupération des favoris.",
-      error: err.message,
-    });
-  }
-});
+//     if (user.account.favPlaces.length === 0) {
+//       return res.status(200).json({
+//         message: "Aucun favori trouvé",
+//       });
+//     }
+//     res.status(200).json({
+//       message: "Favoris récupérés avec succès",
+//       favPlaces: user.account.favPlaces,
+//     });
+//   } catch (err) {
+//     res.status(500).json({
+//       message: "Une erreur est survenue lors de la récupération des favoris.",
+//       error: err.message,
+//     });
+//   }
+// });
 
 userRouter.put("/updateprofile", isAuthenticated, async (req, res) => {
   try {
