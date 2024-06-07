@@ -102,6 +102,55 @@ userRouter.post("/login", async (req, res) => {
   }
 });
 
+userRouter.put("/updateprofile", isAuthenticated, async (req, res) => {
+  try {
+    const { newEmail, newPassword, newUsername } = req.body;
+    const newAvatar = req.file;
+
+    const user = req.user;
+
+    // Mise à jour de l'email si fourni et s'il est différent de l'actuel
+    if (newEmail && newEmail !== user.email) {
+      const emailExists = await User.findOne({ email: newEmail });
+      if (emailExists) {
+        return res.status(400).json({
+          message: "L'email est déjà utilisé par un autre compte.",
+        });
+      }
+      user.email = newEmail;
+    }
+
+    // Mise à jour du mot de passe si fourni
+    if (newPassword) {
+      user.hashpass = hashPassword(newPassword);
+    }
+
+    // Mise à jour de l'avatar si fourni
+    if (newAvatar) {
+      user.account.avatar = newAvatar;
+    }
+
+    // Mise à jour de usename si fourni
+    if (newUsername) {
+      user.account.username = newUsername;
+    }
+
+    await user.save();
+
+    res.status(200).json({ message: "Profil mis à jour avec succès." });
+  } catch (err) {
+    res.status(500).json({
+      message: "Une erreur est survenue lors de la mise à jour du profil.",
+      error: err.message,
+    });
+  }
+});
+
+userRouter.delete("/logout", async (req, res) => {
+  res.clearCookie("JEP");
+  res.status(200).json({ message: "Déconnecté." });
+});
+
 userRouter.put("/addFav", isAuthenticated, async (req, res) => {
   try {
     const { id } = req.body;
@@ -182,54 +231,5 @@ userRouter.put("/rmFav", isAuthenticated, async (req, res) => {
 //     });
 //   }
 // });
-
-userRouter.put("/updateprofile", isAuthenticated, async (req, res) => {
-  try {
-    const { newEmail, newPassword, newUsername } = req.body;
-    const newAvatar = req.file;
-
-    const user = req.user;
-
-    // Mise à jour de l'email si fourni et s'il est différent de l'actuel
-    if (newEmail && newEmail !== user.email) {
-      const emailExists = await User.findOne({ email: newEmail });
-      if (emailExists) {
-        return res.status(400).json({
-          message: "L'email est déjà utilisé par un autre compte.",
-        });
-      }
-      user.email = newEmail;
-    }
-
-    // Mise à jour du mot de passe si fourni
-    if (newPassword) {
-      user.hashpass = hashPassword(newPassword);
-    }
-
-    // Mise à jour de l'avatar si fourni
-    if (newAvatar) {
-      user.account.avatar = newAvatar;
-    }
-
-    // Mise à jour de usename si fourni
-    if (newUsername) {
-      user.account.username = newUsername;
-    }
-
-    await user.save();
-
-    res.status(200).json({ message: "Profil mis à jour avec succès." });
-  } catch (err) {
-    res.status(500).json({
-      message: "Une erreur est survenue lors de la mise à jour du profil.",
-      error: err.message,
-    });
-  }
-});
-
-userRouter.delete("/logout", async (req, res) => {
-  res.clearCookie("JEP");
-  res.status(200).json({ message: "Déconnecté." });
-});
 
 module.exports = userRouter;
