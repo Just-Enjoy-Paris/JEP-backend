@@ -105,7 +105,6 @@ userRouter.post("/login", async (req, res) => {
   }
 });
 
-
 userRouter.put(
   "/updateprofile",
   isAuthenticated,
@@ -116,7 +115,7 @@ userRouter.put(
       const user = req.user;
 
       // Mise à jour de l'email si fourni et s'il est différent de l'actuel
-      if (newEmail !== "" && newEmail !== user.email) {
+      if (newEmail && newEmail !== user.email) {
         const emailExists = await User.findOne({ email: newEmail });
         if (emailExists) {
           return res.status(400).json({
@@ -125,43 +124,38 @@ userRouter.put(
         }
         user.email = newEmail;
       }
+
       // Mise à jour de l'avatar si fourni
-      if (req.files.newAvatar) {
-        const AvatarToString = convertToBase64(req.files.newAvatar);
-        const avatarToSave = await cloudinary.uploader.upload(
-          AvatarToString,
-          { folder: "jep/users/avatar" }
-        );
+      if (req.files && req.files.newAvatar) {
+        const avatarFile = req.files.newAvatar;
+        const AvatarToString = convertToBase64(avatarFile);
+        const avatarToSave = await cloudinary.uploader.upload(AvatarToString, {
+          folder: "jep/users/avatar",
+        });
         user.account.avatar = avatarToSave.secure_url;
       }
-      user.email = newEmail;
+
+      // Mise à jour du mot de passe si fourni
+      if (newPassword) {
+        user.hashpass = hashPassword(newPassword);
+      }
+
+      // Mise à jour de username si fourni
+      if (newUsername) {
+        user.account.username = newUsername;
+      }
+
+      await user.save();
+
+      res.status(200).json({ message: "Profil mis à jour avec succès." });
+    } catch (err) {
+      res.status(500).json({
+        message: "Une erreur est survenue lors de la mise à jour du profil.",
+        error: err.message,
+      });
     }
-
-    // Mise à jour du mot de passe si fourni
-    if (newPassword) {
-      user.hashpass = hashPassword(newPassword);
-    }
-
-    // Mise à jour de l'avatar si fourni
-    if (newAvatar) {
-      user.account.avatar = newAvatar;
-    }
-
-    // Mise à jour de usename si fourni
-    if (newUsername) {
-      user.account.username = newUsername;
-    }
-
-    await user.save();
-
-    res.status(200).json({ message: "Profil mis à jour avec succès." });
-  } catch (err) {
-    res.status(500).json({
-      message: "Une erreur est survenue lors de la mise à jour du profil.",
-      error: err.message,
-    });
   }
-});
+);
 
 userRouter.delete("/logout", async (req, res) => {
   res.clearCookie("JEP");
