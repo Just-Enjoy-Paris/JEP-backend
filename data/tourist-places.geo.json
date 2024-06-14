@@ -7,9 +7,7 @@
     "properties": {
       "name": "Tour Eiffel",
       "address": "Av. Gustave Eiffel, 75007 Paris",
-      "category": [
-        "monument"
-      ],
+      "category": ["monument"],
       "social_network": [
         {
           "instagram": ""
@@ -28,9 +26,7 @@
     "properties": {
       "name": "Musée du Louvre",
       "address": "8 rue Sainte-Anne, 75001 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -49,9 +45,7 @@
     "properties": {
       "name": "Cathédrale Notre-Dame de Paris",
       "address": "6 Parvis Notre-Dame - Pl Jean-Paul II, 75004 Paris",
-      "category": [
-        "monument"
-      ],
+      "category": ["monument"],
       "social_network": [
         {
           "instagram": ""
@@ -70,10 +64,7 @@
     "properties": {
       "name": "Montmartre et la basilique du Sacré-Cœur",
       "address": "35 Rue du Chevalier de la Barre, 75018 Paris",
-      "category": [
-        "quartier",
-        "monument"
-      ],
+      "category": ["monument", "quartier"],
       "social_network": [
         {
           "instagram": ""
@@ -92,10 +83,7 @@
     "properties": {
       "name": "Champs-Élysées et l'Arc de Triomphe",
       "address": "Pl Charles de Gaulle, 75008 Paris",
-      "category": [
-        "avenue",
-        "monument"
-      ],
+      "category": ["avenue", "monument"],
       "social_network": [
         {
           "instagram": ""
@@ -114,9 +102,7 @@
     "properties": {
       "name": "Musée d'Orsay",
       "address": "Esplanade Valéry Giscard d'Estaing, 75007 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -135,9 +121,7 @@
     "properties": {
       "name": "Panthéon",
       "address": "Pl du Panthéon, 75005 Paris",
-      "category": [
-        "monument"
-      ],
+      "category": ["monument"],
       "social_network": [
         {
           "instagram": ""
@@ -156,9 +140,7 @@
     "properties": {
       "name": "Île Saint-Louis",
       "address": "21 Rue des Deux Ponts, 75004 Paris",
-      "category": [
-        "île"
-      ],
+      "category": ["île"],
       "social_network": [
         {
           "instagram": ""
@@ -177,9 +159,7 @@
     "properties": {
       "name": "Opéra Garnier",
       "address": "Pl de l'Opéra, 75009 Paris",
-      "category": [
-        "opéra"
-      ],
+      "category": ["opéra"],
       "social_network": [
         {
           "instagram": ""
@@ -198,9 +178,7 @@
     "properties": {
       "name": "Musée Rodin",
       "address": "77 Rue de Varenne, 75007 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -219,9 +197,7 @@
     "properties": {
       "name": "Centre Pompidou",
       "address": "Pl Georges-Pompidou, 75004 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -240,9 +216,7 @@
     "properties": {
       "name": "Le Marais",
       "address": "54 Rue Vieille du Temple, 75003 Paris",
-      "category": [
-        "quartier"
-      ],
+      "category": ["quartier"],
       "social_network": [
         {
           "instagram": ""
@@ -261,9 +235,7 @@
     "properties": {
       "name": "Place des Vosges",
       "address": "Pl des Vosges, 75004 Paris",
-      "category": [
-        "place"
-      ],
+      "category": ["place"],
       "social_network": [
         {
           "instagram": ""
@@ -282,9 +254,7 @@
     "properties": {
       "name": "Musée Carnavalet",
       "address": "23 Rue de Sévigné, 75003 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -303,9 +273,7 @@
     "properties": {
       "name": "Place Vendôme",
       "address": "14 Pl Vendôme, 75001 Paris",
-      "category": [
-        "place"
-      ],
+      "category": ["place"],
       "social_network": [
         {
           "instagram": ""
@@ -324,9 +292,7 @@
     "properties": {
       "name": "Canal Saint-Martin",
       "address": "115-109 Quai de Valmy, 75010 Paris",
-      "category": [
-        "canal"
-      ],
+      "category": ["canal"],
       "social_network": [
         {
           "instagram": ""
@@ -345,9 +311,7 @@
     "properties": {
       "name": "Musée de l'Armée (Hôtel des Invalides)",
       "address": "129 Rue de Grenelle, 75007 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -366,9 +330,7 @@
     "properties": {
       "name": "Bibliothèque nationale de France (Site Richelieu-Louvois)",
       "address": "5 Rue Vivienne, 75002 Paris",
-      "category": [
-        "bibliothèque"
-      ],
+      "category": ["bibliothèque"],
       "social_network": [
         {
           "instagram": ""
@@ -387,9 +349,7 @@
     "properties": {
       "name": "Place de la Concorde",
       "address": "Pl de la Concorde",
-      "category": [
-        "place"
-      ],
+      "category": ["place"],
       "social_network": [
         {
           "instagram": ""
@@ -408,9 +368,7 @@
     "properties": {
       "name": "Musée des Arts et Métiers",
       "address": "60 Rue Réaumur, 75003 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -429,9 +387,7 @@
     "properties": {
       "name": "Musée Grévin",
       "address": "10 Bd Montmartre, 75009 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -450,9 +406,7 @@
     "properties": {
       "name": "Place de la Bastille",
       "address": "Pl de la Bastille, 75004 Paris",
-      "category": [
-        "place"
-      ],
+      "category": ["place"],
       "social_network": [
         {
           "instagram": ""
@@ -471,9 +425,7 @@
     "properties": {
       "name": "Quartier Latin",
       "address": "1 Rue Mouffetard, 75005 Paris",
-      "category": [
-        "quartier"
-      ],
+      "category": ["quartier"],
       "social_network": [
         {
           "instagram": ""
@@ -492,9 +444,7 @@
     "properties": {
       "name": "Musée Picasso",
       "address": "5 Rue de Thorigny, 75003 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -513,9 +463,7 @@
     "properties": {
       "name": "Hôtel de Ville",
       "address": "Pl de l'Hôtel de Ville, 75004 Paris",
-      "category": [
-        "monument"
-      ],
+      "category": ["monument"],
       "social_network": [
         {
           "instagram": ""
@@ -534,9 +482,7 @@
     "properties": {
       "name": "La Défense",
       "address": "1 parvis de La Défense, 92800 Puteaux",
-      "category": [
-        "quartier"
-      ],
+      "category": ["quartier"],
       "social_network": [
         {
           "instagram": "-------------A REVOIR------------"
@@ -555,9 +501,7 @@
     "properties": {
       "name": "Pont Alexandre III",
       "address": "Pont Alexandre III, 75008 Paris",
-      "category": [
-        "pont"
-      ],
+      "category": ["pont"],
       "social_network": [
         {
           "instagram": ""
@@ -576,9 +520,7 @@
     "properties": {
       "name": "Musée du Quai Branly - Jacques Chirac",
       "address": "37 Quai Jacques Chirac, 75007 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -597,9 +539,7 @@
     "properties": {
       "name": "Musée de Cluny - Musée national du Moyen Âge",
       "address": "28 Rue du Sommerard, 75005 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -618,9 +558,7 @@
     "properties": {
       "name": "Sainte-Chapelle",
       "address": "10 Bd du Palais, 75001 Paris",
-      "category": [
-        "monument"
-      ],
+      "category": ["monument"],
       "social_network": [
         {
           "instagram": ""
@@ -639,9 +577,7 @@
     "properties": {
       "name": "La Conciergerie",
       "address": "2 Bd du Palais, 75001 Paris",
-      "category": [
-        "monument"
-      ],
+      "category": ["monument"],
       "social_network": [
         {
           "instagram": ""
@@ -660,9 +596,7 @@
     "properties": {
       "name": "Musée Jacquemart-André",
       "address": "158 Bd Haussmann, 75008 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -681,9 +615,7 @@
     "properties": {
       "name": "Basilique Saint-Denis",
       "address": "1 Rue de la Légion d'Honneur, 93200 Saint-Denis",
-      "category": [
-        "monument"
-      ],
+      "category": ["monument"],
       "social_network": [
         {
           "instagram": "-------------A REVOIR------------"
@@ -702,9 +634,7 @@
     "properties": {
       "name": "La Cité des Sciences et de l'Industrie",
       "address": "30 Av. Corentin Cariou, 75019 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -723,9 +653,7 @@
     "properties": {
       "name": "Musée de la Vie Romantique",
       "address": "16 Rue Chaptal, 75009 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -744,9 +672,7 @@
     "properties": {
       "name": "Bateaux-Mouches sur la Seine",
       "address": "Port de la Conférence, 75008 Paris",
-      "category": [
-        "activité"
-      ],
+      "category": ["activité"],
       "social_network": [
         {
           "instagram": ""
@@ -765,9 +691,7 @@
     "properties": {
       "name": "Musée de Montmartre",
       "address": "12 Rue Cortot, 75018 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -786,9 +710,7 @@
     "properties": {
       "name": "Musée de l'Homme",
       "address": "17 Pl du Trocadéro et du 11 Novembre, 75116 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -807,9 +729,7 @@
     "properties": {
       "name": "Musée de la Chasse et de la Nature",
       "address": "62 Rue des Archives, 75003 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -828,9 +748,7 @@
     "properties": {
       "name": "Musée des Égouts de Paris",
       "address": "Esplanade Habib Bourguiba, Pont de l'Alma, 75007 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -849,9 +767,7 @@
     "properties": {
       "name": "Le Marché aux Puces de Saint-Ouen",
       "address": "110 Rue des Rosiers, 93400 Saint-Ouen-sur-Seine",
-      "category": [
-        "marché"
-      ],
+      "category": ["marché"],
       "social_network": [
         {
           "instagram": "-------------A REVOIR------------"
@@ -870,9 +786,7 @@
     "properties": {
       "name": "Le Musée de la Magie et le Musée des Automates",
       "address": "11 Rue Saint-Paul, 75004 Paris",
-      "category": [
-        "musée"
-      ],
+      "category": ["musée"],
       "social_network": [
         {
           "instagram": ""
@@ -1015,7 +929,8 @@
       "description": "Un musée situé dans le 8ème arrondissement, abritant une collection d'objets et de documents sur l'histoire et la culture de l'art décoratif français, ainsi que des expositions temporaires.",
       "picture": ""
     }
-  },   {
+  },
+  {
     "geometry": {
       "type": "Point",
       "coordinates": [2.352486711998414, 48.85199376992355]
