@@ -24,19 +24,13 @@ const TouristPlaceSchema = new mongoose.Schema({
     rateCount: { type: Number, default: 0 },
     rateSum: { type: Number, default: 0 },
     ratedBy: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
-    review: {
-      positiveReviewedBy: [
-        { type: mongoose.Schema.Types.ObjectId, ref: "User" },
-      ],
-      negativeReviewedBy: [
-        { type: mongoose.Schema.Types.ObjectId, ref: "User" },
-      ],
-      positiveReview: { type: Number, default: 0 },
-      negativeReview: { type: Number, default: 0 },
-      reviewCount: { type: Number, default: 0 },
-      positivePercentage: { type: Number, default: 0 },
-      negativePercentage: { type: Number, default: 0 },
-    },
+    positiveReviewedBy: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    negativeReviewedBy: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    positiveReview: { type: Number, default: 0 },
+    negativeReview: { type: Number, default: 0 },
+    reviewCount: { type: Number, default: 0 },
+    positivePercentage: { type: Number, default: 0 },
+    negativePercentage: { type: Number, default: 0 },
   },
 });
 
