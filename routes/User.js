@@ -37,7 +37,7 @@ userRouter.put("/rmFav", isAuthenticated, (req, res) => {
 
 userRouter.delete("/logout", async (req, res) => {
   res.clearCookie("JEP");
-  res.status(200).json({ message: "Déconnecté." });
+  res.status(200).json({ message: "Disconnected." });
 });
 
 module.exports = userRouter;

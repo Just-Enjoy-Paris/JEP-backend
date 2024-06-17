@@ -5,13 +5,14 @@ const cloudinary = require("cloudinary").v2;
 const convertToBase64 = require("../utils/convertToBase64");
 require("dotenv").config();
 
+// Function to get the logged-in user's information
 const getUser = async (req, res) => {
   try {
     const user = req.user;
-    const userData = { ...user._doc, hashpass: undefined };
+    const userData = { ...user._doc, hashpass: undefined }; // Remove the password hash from user data
 
     res.status(200).json({
-      userData,
+      userData, // Send user data without the password hash
     });
   } catch (err) {
     res.status(500).json({
@@ -21,20 +22,21 @@ const getUser = async (req, res) => {
   }
 };
 
+// Function for user signup
 const signup = async (req, res) => {
   try {
-    const { email, username, password } = req.body;
+    const { email, username, password } = req.body; // Get signup details from the request body
 
     if (!email || !username || !password) {
       return res.status(400).json({
-        message: "Veuillez fournir tous les champs.",
+        message: "Please provide all fields.", // Ensure all fields are provided
       });
     }
 
-    const userEmail = await User.findOne({ email });
+    const userEmail = await User.findOne({ email }); // Check if the email is already in use
 
     if (userEmail) {
-      return res.status(400).json({ message: "L'email est déjà utilisé." });
+      return res.status(400).json({ message: "The email is already in use." });
     }
 
     const newUser = new User({
@@ -42,46 +44,47 @@ const signup = async (req, res) => {
       account: {
         username,
       },
-      hashpass: hashPassword(password),
+      hashpass: hashPassword(password), // Hash the password before storing
     });
 
-    await newUser.save();
+    await newUser.save(); // Save the new user in the database
 
-    res.status(201).json({ message: "Inscription réussie." });
+    res.status(201).json({ message: "Signup successful." });
   } catch (err) {
     res.status(500).json({
-      message: "Une erreur est survenue lors de l'inscription.",
+      message: "An error occurred during signup.",
       error: err.message,
     });
   }
 };
 
+// Function for user login
 const login = async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { email, password } = req.body; // Get login details from the request body
     if (!email || !password) {
       return res.status(400).json({
-        message: "Veuillez fournir tous les champs.",
+        message: "Please provide all fields.",
       });
     }
 
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ email }); // Find the user in the database
 
     if (!user) {
       return res.status(401).json({
-        message: "Email ou mot de passe incorrect.",
+        message: "Incorrect email or password.",
       });
     }
 
-    const passwordMatch = await verifyPassword(user.hashpass, password);
+    const passwordMatch = await verifyPassword(user.hashpass, password); // Verify the password
 
     if (!passwordMatch) {
       return res.status(401).json({
-        message: "Email ou mot de passe incorrect.",
+        message: "Incorrect email or password.",
       });
     }
 
-    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET); // Generate a JWT token
 
     res.cookie("JEP", token, {
       httpOnly: true,
@@ -90,32 +93,33 @@ const login = async (req, res) => {
       maxAge: parseInt(process.env.JWT_EXPIRATION, 10),
     });
 
-    res.status(200).json({ message: "Connexion réussie." });
+    res.status(200).json({ message: "Login successful." });
   } catch (err) {
     res.status(500).json({
-      message: "Une erreur est survenue lors de la connexion.",
+      message: "An error occurred during login.",
       error: err.message,
     });
   }
 };
 
+// Function to update user profile
 const updateprofile = async (req, res) => {
   try {
     const { newEmail, newPassword, newUsername } = req.body;
     const user = req.user;
 
-    // Mise à jour de l'email si fourni et s'il est différent de l'actuel
+    // Update email if provided and different from the current one
     if (newEmail && newEmail !== user.email) {
       const emailExists = await User.findOne({ email: newEmail });
       if (emailExists) {
         return res.status(400).json({
-          message: "L'email est déjà utilisé par un autre compte.",
+          message: "The email is already in use by another account.",
         });
       }
       user.email = newEmail;
     }
 
-    // Mise à jour de l'avatar si fourni
+    // Update avatar if provided
     if (req.files && req.files.newAvatar) {
       const avatarFile = req.files.newAvatar;
       const AvatarToString = convertToBase64(avatarFile);
@@ -125,27 +129,28 @@ const updateprofile = async (req, res) => {
       user.account.avatar = avatarToSave.secure_url;
     }
 
-    // Mise à jour du mot de passe si fourni
+    // Update password if provided
     if (newPassword) {
       user.hashpass = hashPassword(newPassword);
     }
 
-    // Mise à jour de username si fourni
+    // Update username if provided
     if (newUsername) {
       user.account.username = newUsername;
     }
 
-    await user.save();
+    await user.save(); // Save the updated user details
 
-    res.status(200).json({ message: "Profil mis à jour avec succès." });
+    res.status(200).json({ message: "Profile updated successfully." });
   } catch (err) {
     res.status(500).json({
-      message: "Une erreur est survenue lors de la mise à jour du profil.",
+      message: "An error occurred while updating the profile.",
       error: err.message,
     });
   }
 };
 
+// Function to add a favorite place
 const addFav = async (req, res) => {
   try {
     const { id } = req.body;
@@ -153,31 +158,32 @@ const addFav = async (req, res) => {
 
     if (!id) {
       return res.status(400).json({
-        message: "Aucun favori à ajouter",
+        message: "No favorite to add",
       });
     }
     if (user.account.favPlaces.includes(id)) {
-      return res.json({ message: "favori déja ajouté" });
+      return res.json({ message: "Favorite already added" });
     }
     if (!user.account.favPlaces.includes(id)) {
       user.account.favPlaces.push(id);
 
-      await user.save();
+      await user.save(); // Save the updated favorites
 
       console.log(user.account.favPlaces);
       res.status(201).json({
-        message: "Favori ajouté",
+        message: "Favorite added",
         favPlaces: user.account.favPlaces,
       });
     }
   } catch (err) {
     res.status(500).json({
-      message: "Une erreur est survenue lors de la mise à jour des favoris.",
+      message: "An error occurred while updating favorites.",
       error: err.message,
     });
   }
 };
 
+// Function to remove a favorite place
 const rmFav = async (req, res) => {
   try {
     const { id } = req.body;
@@ -185,22 +191,22 @@ const rmFav = async (req, res) => {
 
     if (!id) {
       return res.status(400).json({
-        message: "Aucun ID reçu",
+        message: "No ID received",
       });
     }
 
     user.account.favPlaces = user.account.favPlaces.filter(
       favId => favId !== id
     );
-    await user.save();
+    await user.save(); // Save the updated favorites list
     console.log(user.account.favPlaces);
     res.status(200).json({
-      message: "Favori supprimé",
+      message: "Favorite removed",
       favPlaces: user.account.favPlaces,
     });
   } catch (err) {
     res.status(500).json({
-      message: "Une erreur est survenue lors de la suppression du favori.",
+      message: "An error occurred while removing the favorite.",
       error: err.message,
     });
   }
