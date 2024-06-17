@@ -5,6 +5,7 @@ const {
   updateRating,
   addPlaces,
   getPlaces,
+  updateReview,
 } = require("../controllers/places.controllers");
 
 placesRouter.get("/places", (req, res) => {
@@ -17,6 +18,10 @@ placesRouter.post("/add-places", isAuthenticated, (req, res) => {
 
 placesRouter.put("/rating-place", isAuthenticated, (req, res) => {
   updateRating(req, res);
+});
+
+placesRouter.put("/update-review", isAuthenticated, (req, res) => {
+  updateReview(req, res);
 });
 
 module.exports = placesRouter;
