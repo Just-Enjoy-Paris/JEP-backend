@@ -41,10 +41,11 @@ const updateRating = async (req, res) => {
     const rateSum = parseFloat(place.properties.rateSum) + parseFloat(newRate);
     const rateCount = place.properties.rateCount + 1;
     const newAverage = rateSum / rateCount;
+    const roundedAverage = Math.round(newAverage * 10) / 10;
 
     place.properties.rateSum = rateSum;
     place.properties.rateCount = rateCount;
-    place.properties.rate = newAverage;
+    place.properties.rate = roundedAverage;
 
     place.properties.ratedBy.push(user._id);
 
