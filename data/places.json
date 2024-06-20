@@ -84,7 +84,7 @@
       "social_network": [],
       "website": "",
       "description": "description5",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207911/places2/A0185343-4F1C-4F46-9CAA-A262530524D7_4_5005_c_lddxp8.jpg"
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207911/places2/La%20mercerie%20du%206%C2%B0.jpg"
     }
   },
   {
@@ -608,7 +608,7 @@
   {
     "properties": {
       "name": "La Cour du Faubourg",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207903/places2/La%20Cour%20du%20Fg.jpg",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207903/places2/La%20Cour%20du%20Faubourg.jpg",
       "address": "29 Rue du Fg Saint-Antoine, 75011 Paris",
       "category": ["Restaurant", "Hotel"],
       "social_network": {
@@ -778,7 +778,7 @@
   {
     "properties": {
       "name": "Ground Control",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207885/places2/Ground%20Control.jpg",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1718792987/places2/ground%20control.jpg",
       "address": "81 Rue du Charolais, 75012 Paris",
       "category": ["Bar", "Boutique"],
       "social_network": {
@@ -847,7 +847,7 @@
   {
     "properties": {
       "name": "Mangez et cassez-vous",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207879/places2/Mangez%20et%20cassez-vous.jpg",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1718792776/places2/mangz%20et%20cassez%20vous.jpg",
       "address": "64 Rue Alexandre Dumas, 75011 Paris",
       "category": ["Fast food", "Restaurant de Hamburgers"],
       "social_network": {
@@ -1075,7 +1075,7 @@
   {
     "properties": {
       "name": "Les Cascades",
-      "picture": "picture65",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207864/places2/Bistrot%20Litt%C3%A9raire%20Les%20Cascades.jpg",
       "address": "82 Rue des Cascades, 75020 Paris",
       "category": ["Bar", "Restaurant"],
       "social_network": {
