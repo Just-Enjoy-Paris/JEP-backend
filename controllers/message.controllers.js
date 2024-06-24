@@ -15,7 +15,11 @@ const addMessage = async (req, res) => {
 const getMessages = async (req, res) => {
   try {
     const messages = await Message.find({});
-    res.json(messages);
+    const formattedMessages = messages.map((message) => {
+      const formattedDate = message.formatDate();
+      return { ...message.toObject(), date: formattedDate };
+    });
+    res.json(formattedMessages);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Une erreur est survenue lors de la récupération des messages." });

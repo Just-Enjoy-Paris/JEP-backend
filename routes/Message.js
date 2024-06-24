@@ -10,7 +10,7 @@ const {
 messageRouter.post("/addMessage", (req, res) => {
   addMessage(req, res)
 });
-messageRouter.get("/messages", isAuthenticated, (req, res) => {
+messageRouter.get("/messages", (req, res) => {
   getMessages(req, res)
 });
 

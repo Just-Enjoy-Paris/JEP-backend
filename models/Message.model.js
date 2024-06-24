@@ -20,6 +20,11 @@ const messageSchema = new mongoose.Schema({
   },
 });
 
+messageSchema.methods.formatDate = function () {
+  const date = this.date.toISOString();
+  return date.substring(0, 10) + " " + date.substring(11, 19);
+};
+
 const Message = mongoose.model("Message", messageSchema);
 
 module.exports = Message;
