@@ -12,7 +12,7 @@
         { "instagram": "https://www.instagram.com/emmaduvere/" }
       ],
       "website": "https://www.emmaduvere.fr/",
-      "description": "description1",
+      "description": "Véritable commerce de quartier niché au cœur du 11ème arrondissement. Leur mission est de vous offrir une alimentation à la fois savoureuse, respectueuse de l'environnement et de votre santé.",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1712184090/places2/emma-duver%C3%A9r%C3%A9.jpg"
     }
   },
@@ -33,7 +33,7 @@
         }
       ],
       "website": "https://so-hotels.com/fr/paris/",
-      "description": "description2",
+      "description": "l’hôtel offre un panorama inédit sur tout Paris permettant de profiter d'une vue spectaculaire sur la capitale. Ce lieu propose également un restaurant/bar raffiné ainsi qu’un hammam et un spa offrant des soins luxueux dans un cadre apaisant.",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207899/places2/So%20Paris%20Hotel.jpg"
     }
   },
@@ -51,7 +51,7 @@
         { "facebook": "https://www.facebook.com/Legrandbreguet/" }
       ],
       "website": "https://legrandbreguet.com/",
-      "description": "description3",
+      "description": "Le lieu idéal pour savourer des tapas, brunchs végans et bières artisanales dans un espace branché et coloré. Avec ses fresques murales vibrantes et sa terrasse accueillante, l'atmosphère y est à la fois conviviale et tendance. ",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1713207901/places2/Le%20Grand%20Breguet.jpg"
     }
   },
@@ -68,7 +68,7 @@
         { "instagram": "https://www.instagram.com/ninas_bagel/" }
       ],
       "website": "https://ninasbagel.fr/",
-      "description": "description4",
+      "description": "Situé au cœur du 6ème arrondissement, ce lieu offre des bagels réalisés avec des produits bio et une charcuterie de chez Panzer, enseigne parisienne de renom. Profitez d’un moment convivial autour d’un délicieux bagel de qualité.",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1712136365/places2/nina-bagel.jpg"
     }
   },
@@ -83,7 +83,7 @@
       "category": ["Restaurant"],
       "social_network": [],
       "website": "",
-      "description": "description5",
+      "description": "Petit restaurant de quartier, ce lieu charmant propose une cuisine authentique et savoureuse, parfaite pour un repas en famille ou entre amis. Avec ses plats préparés à partir de produits frais et locaux.",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207911/places2/La%20mercerie%20du%206%C2%B0.jpg"
     }
   },
@@ -103,7 +103,7 @@
         { "instagram": "https://www.instagram.com/les_saisonniers/" }
       ],
       "website": "https://les-saisonniers.fr/",
-      "description": "description6",
+      "description": "Situé à Saint-Placide, Les Saisonniers voient le jour en 2019 avec une ambition : rapprocher les villes et les campagnes voisines. Fondé par Margaux et Thomas, ce supermarché paysan collabore avec une dizaine de producteurs de l’Île-de-France. ",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207910/places2/Les%20Saisoniers.jpg"
     }
   },
@@ -118,7 +118,7 @@
       "category": ["Bijouterie", "Boutique"],
       "social_network": [],
       "website": "https://www.gudule.com/",
-      "description": "description7",
+      "description": "Gudule sélectionne une large gamme de bijoux modernes et anciens à découvrir. Vous y trouverez des bijoux en argent, tels que bagues, bracelets, colliers, boucles d’oreilles, pendentifs et broches du monde entier, ainsi que des pierres fines et perles au détail, comme turquoise, ambre et corail. Les stocks de bijoux sont renouvelés tout au long de l’année.",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207914/places2/Gudule.jpg"
     }
   },
@@ -133,7 +133,7 @@
       "category": ["Boutique de Porcelaine"],
       "social_network": [],
       "website": "https://www.degrenne.fr/",
-      "description": "description8",
+      "description": "Le spécialiste de l'art de la table, transforme chaque instant en une occasion d'émotion. Avec panache, humour et élégance, DEGRENNE cultive l'Art de Vivre, offrant des créations qui subliment vos moments de convivialité.",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207916/places2/Degrenne.jpg"
     }
   },
@@ -145,7 +145,7 @@
       "category": ["Restaurant", "Brasserie"],
       "social_network": [],
       "website": "",
-      "description": "description9"
+      "description": "Situé dans le 14ème arrondissement, ce restaurant offre une ambiance chaleureuse et authentique, parfaite pour déguster des spécialités régionales. De la truffade aux fromages affinés, chaque plat est préparé avec des produits locaux de qualité."
     },
     "geometry": {
       "type": "Point",
@@ -160,7 +160,7 @@
       "category": ["Bar", "Restaurant", "Brasserie"],
       "social_network": [{}],
       "website": "",
-      "description": "description10"
+      "description": "Idéalement situé entre la Maison de la Radio et le Trocadéro, en retrait des quais de Seine, le Tournesol vous accueille 7 jours sur 7, midi et soir, pour déguster des mets de sa carte, renouvelée au gré des saisons. Le restaurant a été entièrement décoré dans un esprit début XXe siècle."
     },
     "geometry": {
       "type": "Point",
@@ -178,7 +178,7 @@
         "instagram": "https://www.instagram.com/lebullierparis/"
       },
       "website": "https://lebullier.com/",
-      "description": "description11"
+      "description": "Nommé en hommage au célèbre bal situé en face de la station « Port Royal », fait revivre l’esprit de convivialité qui animait autrefois le quartier. À l'angle du boulevard Montparnasse et de l’Observatoire, cet établissement propose une cuisine traditionnelle française avec une touche de modernité. "
     },
     "geometry": {
       "type": "Point",
@@ -195,7 +195,7 @@
         "instagram": "https://www.instagram.com/artisanat.monastique/"
       },
       "website": "https://www.artisanatmonastique.com/",
-      "description": "description12"
+      "description": "L'Artisanat Monastique, c'est une aventure commune initiée en 1951 par des abbayes qui se regroupent pour diffuser ensemble leurs produits et reverser les bénéfices aux plus nécessiteux. Les produits des monastères, dont beaucoup sont labellisés bio, allient amour du travail bien fait et qualité."
     },
     "geometry": {
       "type": "Point",
@@ -212,7 +212,7 @@
         "instagram": "https://www.instagram.com/leCafépaulette/"
       },
       "website": "https://www.leCafépaulette.com/",
-      "description": "description13"
+      "description": "Niché dans le 13ème arrondissement, le Café Paulette vous accueille dans une ambiance chaleureuse et conviviale. Que ce soit pour une pause matinale, un déjeuner entre amis ou un après-midi détente, le Café Paulette offre un havre de tranquillité au cœur de Paris. "
     },
     "geometry": {
       "type": "Point",
@@ -229,7 +229,7 @@
         "instagram": "https://www.instagram.com/habibiresto.paris/"
       },
       "website": "https://habibi-paris.fr/",
-      "description": "description14"
+      "description": "Situé dans le 13ème arrondissement, Habibi vous invite à découvrir les saveurs authentiques de la cuisine syrienne. Plongez dans un univers de délices où les épices exotiques et les recettes traditionnelles se marient pour éveiller vos papilles. "
     },
     "geometry": {
       "type": "Point",
@@ -247,7 +247,7 @@
         "instagram": "https://www.instagram.com/theirishman.paris/"
       },
       "website": "https://irishman.paris/",
-      "description": "description15"
+      "description": "Votre destination irlandaise au cœur du 13ème arrondissement. Plongez dans une ambiance authentique où la convivialité règne en maître, accompagnée d'une sélection de bières pression et de whiskies irlandais. "
     },
     "geometry": {
       "type": "Point",
@@ -264,7 +264,7 @@
         "instagram": "https://www.instagram.com/adresse.paris/"
       },
       "website": "https://adresse.paris/",
-      "description": "description16"
+      "description": "Véritable sanctuaire pour les amoureux de la mode éthique et éco-responsable. Leur sélection soigneusement choisie offre des vêtements fabriqués dans le respect de l'environnement et des conditions de travail équitables, leur boutique propose une gamme variée pour répondre à tous les styles et besoins. "
     },
     "geometry": {
       "type": "Point",
@@ -281,7 +281,7 @@
         "instagram": "https://www.instagram.com/adnconcept_paris/"
       },
       "website": "",
-      "description": "description17, Site e-commerce à venir (adnconcept.fr)"
+      "description": "Située dans le 3ème arrondissement, ADN Concept offre une immersion dans l'art contemporain le plus innovant. Découvrez des artistes émergents et établis à travers des expositions captivantes pour les passionnés de peinture, de photographie ou de sculptures. "
     },
     "geometry": {
       "type": "Point",
@@ -296,7 +296,7 @@
       "category": ["Service d'impression 3D"],
       "social_network": [],
       "website": "https://www.costa3d.fr/",
-      "description": "description18"
+      "description": "Minimoi offre la possibilité de créer des figurines 3D à votre effigie ou celle de vos proches, chaque figurine est une reproduction fidèle qui capture l'essence de son modèle. "
     },
     "geometry": {
       "type": "Point",
@@ -314,7 +314,7 @@
         "facebook": "https://www.facebook.com/bistrochezlui"
       },
       "website": "",
-      "description": "description19"
+      "description": "Situé dans la rue Saint Maur, lieu de convivialité où l'atmosphère chaleureuse vous invite à la détente. Découvrez une sélection de plats délicieux accompagnés d'une cave à vins soigneusement choisie, que ce soit pour un dîner entre amis ou un verre après le travail. "
     },
     "geometry": {
       "type": "Point",
@@ -332,7 +332,7 @@
         "facebook": "https://www.facebook.com/bontempspatisserie"
       },
       "website": "https://bontemps.paris/",
-      "description": "description20"
+      "description": "Franchissez la porte et entrez dans un monde rétro et enchanté où la vaisselle en porcelaine, les carreaux de grès anciens et les suspensions en opaline vous séduiront. Leurs délicieux gâteaux sont faits maison avec amour et passion. "
     },
     "geometry": {
       "type": "Point",
@@ -350,7 +350,7 @@
         "facebook": ""
       },
       "website": "https://www.cma-paris.fr/boutique/",
-      "description": "description21"
+      "description": "La boutique 10SIGN Artisanat Paris est née de la volonté de la Chambre de Métiers et de l'Artisanat d'Île-de-France - Paris d'offrir aux artisans parisiens une vitrine en plein cœur de la ville. Située dans le 4ème arrondissement, cette boutique dans le quartier du Marais permet aux entreprises artisanales de présenter leurs savoir-faire et de vendre leurs créations. "
     },
     "geometry": {
       "type": "Point",
@@ -368,7 +368,7 @@
         "facebook": "https://www.facebook.com/latelierparfum/"
       },
       "website": "https://latelierparfum.com/",
-      "description": "description22"
+      "description": "L'Atelier Parfum célèbre la création d'émotions à travers ses fragrances uniques. Chaque rencontre avec un parfum est un moment suspendu, précieux, parfois bouleversant, aussi éphémère qu'éternel. "
     },
     "geometry": {
       "type": "Point",
@@ -386,7 +386,7 @@
         "facebook": ""
       },
       "website": "http://ulysse.fr/",
-      "description": "description23"
+      "description": "Catherine Domain, exploratrice passionnée et fondatrice de multiples clubs et prix prestigieux, a décidé de créer une Librairie de Voyage, installée sur l'Île Saint Louis à Paris."
     },
     "geometry": {
       "type": "Point",
@@ -404,7 +404,7 @@
         "facebook": ""
       },
       "website": "https://www.kozy.fr/",
-      "description": "description24"
+      "description": "Kozy Paris, c'est un lieu de rendez-vous incontournable pour les amateurs de brunch et de café. Dans une atmosphère chaleureuse, ils vous invitent à profiter de leur offre de petit-déjeuner et brunch disponibles toute la journée. "
     },
     "geometry": {
       "type": "Point",
@@ -421,7 +421,7 @@
         "instagram": "https://www.instagram.com/chezlelibanais/"
       },
       "website": "",
-      "description": "description25"
+      "description": "Situé dans le 6ème arrondissement, ce restaurant est un véritable petit coin de Liban à Paris. Allez découvrir leurs délicieux sandwichs, mezzés et pâtisseries typiques, à emporter ou à déguster sur place dans leur ambiance conviviale."
     },
     "geometry": {
       "type": "Point",
@@ -439,7 +439,7 @@
         "facebook": "https://www.facebook.com/marchestgermain/"
       },
       "website": "https://marchesaintgermain.fr/",
-      "description": "description26"
+      "description": "Au cœur de Saint-Germain-des-Prés, le Marché Saint-Germain est un lieu emblématique de vie où se mêlent diverses grandes enseignes. N’y manquez pas le bistrot Avant-Comptoir du Marché, dirigé par le chef renommé Yves Camdeborde."
     },
     "geometry": {
       "type": "Point",
@@ -456,7 +456,7 @@
         "instagram": "https://www.instagram.com/creperieduclown/"
       },
       "website": "",
-      "description": "description27"
+      "description": "Savourez des crêpes, des galettes et du cidres dans un cadre accueillant, conviviale et décontractée, parfaite pour une pause gourmande entre amis ou en famille."
     },
     "geometry": {
       "type": "Point",
@@ -474,7 +474,7 @@
         "facebook": "https://www.facebook.com/Cafédefloreofficial/"
       },
       "website": "https://Cafédeflore.fr/",
-      "description": "description28"
+      "description": "Emblématique café-restaurant parisien du quartier Saint-Germain-des-Prés, est un véritable haut lieu de l'histoire parisienne. Cette institution incarne l'essence même du tout-Paris « rive gauche », associé à la culture littéraire, philosophique, artistique et au tourisme international."
     },
     "geometry": {
       "type": "Point",
@@ -492,7 +492,7 @@
         "facebook": "https://www.facebook.com/ldbparis/"
       },
       "website": "https://ldbparis.com/",
-      "description": "description29"
+      "description": "LDB incarne l'art du prêt-à-porter français. Leurs vêtements sont confectionnés à partir de matières 100% naturelles, garantissant confort et qualité. Ils proposent une livraison internationale pour que chacun puisse profiter de leurs créations où qu'il soit dans le monde."
     },
     "geometry": {
       "type": "Point",
@@ -510,7 +510,7 @@
         "facebook": "https://www.facebook.com/littletemplebarparis/"
       },
       "website": "https://www.littletemplebar.fr/",
-      "description": "description30"
+      "description": "Au cœur du quartier Saint-Germain-des-Prés se trouve un authentique Irish Pub, c'est l'adresse incontournable des amateurs de pub anglo-saxon."
     },
     "geometry": {
       "type": "Point",
@@ -528,7 +528,7 @@
         "facebook": "https://www.facebook.com/leloirdanslatheiere75004/"
       },
       "website": "http://leloirdanslatheiere.com/",
-      "description": "description31"
+      "description": "Niché dans le quartier du Marais, ce véritable havre de paix où l'on peut déguster de délicieuses pâtisseries maison dans une ambiance chaleureuse et conviviale. Avec son décor cosy et son menu varié, c'est l'endroit parfait pour une pause gourmande au cœur de Paris."
     },
     "geometry": {
       "type": "Point",
@@ -546,7 +546,7 @@
         "facebook": "https://www.facebook.com/autrappisteparis/"
       },
       "website": "",
-      "description": "description32"
+      "description": "Au Trappiste, découvrez une grande sélection de bières artisanales et trappistes belges, accompagnées de délicieuses moules-frites et grillades. Dans une ambiance décontractée et conviviale Le Trappiste vous invite à savourer l'authenticité de la cuisine belge et des bières d'exception."
     },
     "geometry": {
       "type": "Point",
@@ -564,7 +564,7 @@
         "facebook": "https://www.facebook.com/CaféOzChatelet/"
       },
       "website": "https://Café-oz.com/",
-      "description": "description33"
+      "description": "Plongez dans l'ambiance décontractée de l'Australie au cœur de Paris. Avec son décor typique et ses spécialités australiennes, c'est l'endroit idéal pour siroter un cocktail entre amis. "
     },
     "geometry": {
       "type": "Point",
@@ -581,7 +581,7 @@
         "instagram": "https://www.instagram.com/clarkhotdog/"
       },
       "website": "https://clarkhotdog.fr/",
-      "description": "description34"
+      "description": "Avec leurs créations uniques et leurs recettes savoureuses, c'est l'endroit parfait pour les amateurs de street food. Dégustez leurs délicieux hot-dogs dans un cadre accueillant et laissez-vous séduire par l'originalité de leurs saveurs."
     },
     "geometry": {
       "type": "Point",
@@ -598,7 +598,7 @@
         "instagram": "https://www.instagram.com/lacourduFg/"
       },
       "website": "",
-      "description": "description35"
+      "description": "Plongez dans l'authenticité de la cuisine libanaise au cœur du 3ème arrondissement. Découvrez une explosion de saveurs méditerranéennes avec leurs délicieux falafels, préparés selon des recettes traditionnelles. "
     },
     "geometry": {
       "type": "Point",
@@ -615,7 +615,7 @@
         "instagram": "https://www.instagram.com/lacourduFg/"
       },
       "website": "https://la-cour-du-Fg.paris/",
-      "description": "description36"
+      "description": "Explorez une cuisine raffinée et créative au cœur du 11ème arrondissement. Dans un cadre élégant et chaleureux, découvrez une carte inspirée par les saisons et les produits du terroir."
     },
     "geometry": {
       "type": "Point",
@@ -633,7 +633,7 @@
         "facebook": "https://www.facebook.com/emmausalternatives"
       },
       "website": "https://www.emmaus-alternatives.org/",
-      "description": "description37"
+      "description": "Découvrez bien plus qu'un simple magasin de seconde main. C'est un lieu de solidarité et d'engagement social, offrant une large sélection d'articles d'occasion à des prix abordables. "
     },
     "geometry": {
       "type": "Point",
@@ -651,7 +651,7 @@
         "facebook": "https://www.facebook.com/aucoeurdumarais/"
       },
       "website": "",
-      "description": "description38"
+      "description": "Découvrez une brasserie aux couleurs vives et à l'ambiance rétro. Dotée de tables en terrasse, elle vous invite à savourer des plats typiquement français dans un cadre convivial et animé. "
     },
     "geometry": {
       "type": "Point",
@@ -668,7 +668,7 @@
         "instagram": "https://www.instagram.com/shakespeareandcoparis/"
       },
       "website": "https://www.shakespeareandcompany.com/",
-      "description": "description40"
+      "description": "Plongez dans l'univers magique de la littérature au cœur de Paris. Cette librairie emblématique, située sur les quais de la Seine, est un véritable trésor pour les amateurs de livres. "
     },
     "geometry": {
       "type": "Point",
@@ -683,7 +683,7 @@
       "category": ["Restaurant"],
       "social_network": {},
       "website": "",
-      "description": "description41"
+      "description": "Situé dans le 4ème arrondissement, découvrez un lieu convivial et animé au cœur de Paris. Avec son ambiance chaleureuse et son atmosphère accueillante, c'est l'endroit idéal pour se retrouver entre amis ou pour une pause détente en solo. "
     },
     "geometry": {
       "type": "Point",
@@ -701,7 +701,7 @@
         "facebook": "https://www.facebook.com/titipalacioparis"
       },
       "website": "https://www.titipalacio.com/",
-      "description": "description42"
+      "description": "Une jungle urbaine colorée et conviviale près du Marais. Profitez de finger food toute la journée et d'une cuisine authentique en soirée. Avec sa programmation festive incluant concerts, DJ sets et Karaoké, le Titi est un lieu de rencontre animé pour les parisiens et les voyageurs de l'hôtel The People Paris Marais."
     },
     "geometry": {
       "type": "Point",
@@ -716,7 +716,7 @@
       "category": ["Bar", "Brasserie"],
       "social_network": {},
       "website": "",
-      "description": "description43"
+      "description": "Un lieu contemporain et accueillant au cœur de la ville. Avec son ambiance chaleureuse et son décor élégant, c'est l'endroit idéal pour savourer un café ou se détendre avec des amis. Profitez d'une sélection de boissons chaudes et froides ainsi que de délicieuses pâtisseries faites maison. "
     },
     "geometry": {
       "type": "Point",
@@ -734,7 +734,7 @@
         "facebook": "https://www.facebook.com/edlamusardine/"
       },
       "website": "https://www.lamusardine.com/",
-      "description": "description45"
+      "description": "Une librairie emblématique du 11ème arrondissement de Paris. Explorez ses rayons remplis de trésors littéraires et laissez-vous séduire par son charme et son ambiance conviviale. Un incontournable pour les passionnés de littérature et les curieux en quête de lectures captivantes."
     },
     "geometry": {
       "type": "Point",
@@ -751,7 +751,7 @@
         "instagram": "https://www.instagram.com/madameguan/"
       },
       "website": "https://madameguan.eatbu.com/",
-      "description": "description46"
+      "description": "Dans le 11ème arrondissement de Paris, plongez dans un voyage culinaire authentique avec ses raviolis faits maison, remplis de saveurs exquises. Situé dans un quartier animé, ce restaurant vous invite à savourer des plats traditionnels chinois dans une ambiance conviviale. "
     },
     "geometry": {
       "type": "Point",
@@ -768,7 +768,7 @@
         "instagram": "https://www.instagram.com/leremontalou/"
       },
       "website": "https://leremontalou.fr/",
-      "description": "description47"
+      "description": "L'endroit idéal pour une soirée festive entre amis, offrant un cadre classique et raffiné. Découvrez une carte variée de boissons incluant bières, vins et cocktails classiques, avec des happy hours tous les jours de 17h à 21h. Plongez dans une ambiance atypique et savourez des plats succulents, à déguster sur place ou à emporter."
     },
     "geometry": {
       "type": "Point",
@@ -786,7 +786,7 @@
         "facebook": "https://www.facebook.com/RadioGroundControl/"
       },
       "website": "https://www.groundcontrolparis.com/",
-      "description": "Espace industriel original avec une terrasse, des boutiques et une halle où est servie une cuisine locale et internationale."
+      "description": "Une destination incontournable dans le 12ème arrondissement de Paris. Plongez dans une ambiance conviviale, parfaite pour se retrouver entre amis. Profitez d'une sélection variée de boissons, dans un cadre moderne et accueillant. "
     },
     "geometry": {
       "type": "Point",
@@ -804,7 +804,7 @@
         "facebook": "https://www.facebook.com/bonjourmadame.paris11/"
       },
       "website": "",
-      "description": "description49"
+      "description": "Bonjour Madame est un bar engagé féministe et queer situé en plein cœur de la ville. Ce lieu convivial et inclusif est dédié à la célébration et à la promotion de la diversité sous toutes ses formes."
     },
     "geometry": {
       "type": "Point",
@@ -819,7 +819,7 @@
       "category": ["Boulangerie"],
       "social_network": {},
       "website": "",
-      "description": "description50"
+      "description": "Une boulangerie artisanale située dans le 20ème arrondissement de Paris. Spécialisée dans les pains au levain faits maison, cette boulangerie met l'accent sur la qualité, la tradition et le goût authentique."
     },
     "geometry": {
       "type": "Point",
@@ -837,7 +837,7 @@
         "facebook": "https://www.facebook.com/ChezTanteFarida/"
       },
       "website": "",
-      "description": "description51"
+      "description": "Découvrez les saveurs authentiques de l'Algérie à travers une street food généreuse et savoureuse. Préparées avec des ingrédients frais et de qualité, vous trouverez des spécialités comme les délicieux bourek, et les irrésistibles sandwiches garnis de viandes épicées et de légumes croquants."
     },
     "geometry": {
       "type": "Point",
@@ -854,7 +854,7 @@
         "instagram": "https://www.instagram.com/mangezetcassezvous/"
       },
       "website": "",
-      "description": "description52"
+      "description": "Ce spot décontracté et branché est l'endroit idéal pour savourer des burgers gourmands, préparés avec des ingrédients frais et de qualité. Chaque burger, élaboré avec soin, met en avant des recettes créatives et délicieuses qui raviront les amateurs de bonnes choses."
     },
     "geometry": {
       "type": "Point",
@@ -869,7 +869,7 @@
       "category": ["Bubble tea", "Pâtisserie"],
       "social_network": {},
       "website": "https://guzao-restaurant.eatbu.com/",
-      "description": "description53"
+      "description": "Ce charmant établissement invite les gourmands à découvrir une variété de pâtisseries authentiques, préparées avec des ingrédients de haute qualité. De l'irrésistible tarte aux œufs aux délicates brioches vapeur, chaque création chez Guzao est un véritable hommage à l'art de la pâtisserie taïwanaise."
     },
     "geometry": {
       "type": "Point",
@@ -887,7 +887,7 @@
         "facebook": "https://www.facebook.com/ciore.pizzeria/"
       },
       "website": "",
-      "description": "description54"
+      "description": "Ce charmant établissement offre une expérience gastronomique unique, mettant en avant des ingrédients frais et de qualité importée directement d'Italie. Le menu de Ciore propose une variété de spécialités italiennes avec une ambiance chaleureuse et un service attentionné."
     },
     "geometry": {
       "type": "Point",
@@ -905,7 +905,7 @@
         "facebook": "https://www.facebook.com/people/JAPAN-BLUE-PARIS/100064492460331/"
       },
       "website": "",
-      "description": "description55"
+      "description": "Cette boutique élégante et raffinée propose une sélection de vêtements confectionnés avec des textiles traditionnels japonais, célèbres pour leur durabilité, leur confort et leur esthétique unique. Les collections de Japan Blue Paris allient le savoir-faire artisanal japonais à des designs contemporains.tion55"
     },
     "geometry": {
       "type": "Point",
@@ -923,7 +923,7 @@
         "facebook": "https://www.facebook.com/p/ROCK-HAIR-100064768248684/"
       },
       "website": "https://www.rockhairbastille.fr/",
-      "description": "description56"
+      "description": "Salon de coiffure branché situé dans le quartier de Bastille à Paris. Connu pour son ambiance moderne et énergique, Rock Hair offre une gamme complète de services de coiffure, allant des coupes classiques aux styles les plus audacieux."
     },
     "geometry": {
       "type": "Point",
@@ -941,7 +941,7 @@
         "facebook": "https://www.facebook.com/leflaneurparis/"
       },
       "website": "",
-      "description": "description57"
+      "description": "Café-bistrot charmant et accueillant, niché dans le 11ème arrondissement de Paris. Ce lieu convivial est parfait pour ceux qui aiment prendre leur temps, déguster une boisson chaude ou savourer une cuisine maison dans une ambiance décontractée."
     },
     "geometry": {
       "type": "Point",
@@ -959,7 +959,7 @@
         "facebook": "https://www.facebook.com/people/Glace-BACHIR/100064738720921/"
       },
       "website": "https://bachir.fr/",
-      "description": "description58"
+      "description": "Une oasis de délices glacés située au cœur de la ville. Réputée pour ses créations originales et rafraîchissantes, ce glacier libanais artisanale propose une variété de parfums uniques qui éveillent les papilles."
     },
     "geometry": {
       "type": "Point",
@@ -977,7 +977,7 @@
         "facebook": "https://www.facebook.com/boutiquemonsieurpoulet"
       },
       "website": "https://www.biotifulapparel.com/",
-      "description": "description59"
+      "description": "Monsieur Poulet est bien plus qu'une simple boutique de vêtements, c'est une ode à la durabilité et à l'éthique dans la mode. Spécialisée dans les vêtements bio et organiques, cette boutique propose une gamme de vêtements pour hommes, femmes et enfants, tous fabriqués avec des matériaux respectueux de l'environnement et des processus de production équitables."
     },
     "geometry": {
       "type": "Point",
@@ -995,7 +995,7 @@
         "facebook": "https://www.facebook.com/soberinggalerie/"
       },
       "website": "https://soberinggalerie.com/",
-      "description": "description60"
+      "description": "Fondée sur le principe de soutenir et de promouvoir les artistes contemporains émergents, cette galerie offre une plateforme pour présenter des œuvres variées et inspirantes. La Sobering Galerie se distingue par son engagement envers la diversité des expressions artistiques."
     },
     "geometry": {
       "type": "Point",
@@ -1013,7 +1013,7 @@
         "facebook": "https://www.facebook.com/Cafélaperleparis"
       },
       "website": "https://Cafélaperle.com/",
-      "description": "description61"
+      "description": "Petit café situé à proximité du musée Picasso dans le 3ème arrondissement, offre un cadre idéal pour se détendre et profiter d'un moment de tranquillité après avoir exploré les trésors artistiques"
     },
     "geometry": {
       "type": "Point",
@@ -1031,7 +1031,7 @@
         "facebook": "https://www.facebook.com/lebonpatisserieparis/"
       },
       "website": "",
-      "description": "description62"
+      "description": "Une petite pâtisserie charmante nichée dans le 11ème arrondissement de Paris. Cet établissement est connu pour ses délices sucrés préparés avec amour et savoir-faire, l'endroit parfait pour satisfaire vos envies sucrées"
     },
     "geometry": {
       "type": "Point",
@@ -1048,7 +1048,7 @@
         "instagram": "https://www.instagram.com/cavessaintgillesofficiel/"
       },
       "website": "https://www.cavessaintgilles.com/",
-      "description": "description63"
+      "description": "1er bar à tapas parisien depuis 1992. Retrouvez toute l'atmosphère d'une bodega Espagnole au cœur du Marais, L'atmosphère chaleureuse et conviviale vous invite à la détente et à la socialisation autour de délicieux tapas et de verres de vin."
     },
     "geometry": {
       "type": "Point",
@@ -1065,7 +1065,7 @@
         "instagram": "https://www.instagram.com/greenowl_france/"
       },
       "website": "https://greenowl.fr/",
-      "description": "description64"
+      "description": "Cette enseigne propose une large gamme de produits à base de cannabidiol (CBD), offrant aux clients une expérience unique et apaisante. Que ce soit pour des huiles, des capsules, des cosmétiques ou des produits comestibles, sélectionné soigneusement auprès de fournisseurs réputés pour leur qualité et leur pureté."
     },
     "geometry": {
       "type": "Point",
@@ -1082,7 +1082,7 @@
         "facebook": "https://fr-fr.facebook.com/people/Bistrot-litt%C3%A9raire-Les-Cascades/100063786423491/"
       },
       "website": "https://bistrotlitterairelescascades.eatbu.com/",
-      "description": "description65"
+      "description": "Avec son atmosphère chaleureuse et son décor traditionnel, cette brasserie incarne l'esprit convivial et authentique des bistros parisiens. Le menu de la Brasserie Les Cascades propose une cuisine française classique, mettant en valeur des plats savoureux et généreux."
     },
     "geometry": {
       "type": "Point",
@@ -1099,7 +1099,7 @@
         "instagram": "https://www.instagram.com/hamady.gaye.bijoutier/"
       },
       "website": "",
-      "description": "description66"
+      "description": "Artisan créateur de bijoux spécialisé dans le filigrane, une technique délicate de travail du métal. Transmis de père en fils, cet artisan perpétue un savoir-faire artisanal précieux et traditionnel."
     },
     "geometry": {
       "type": "Point",
@@ -1116,7 +1116,7 @@
         "facebook": "https://m.facebook.com/people/Lannexe-kawa/100063581590092/"
       },
       "website": "",
-      "description": "description67"
+      "description": "L'Annexe Kawa est un lieu prisé par de nombreux visiteurs avides de découvrir un couscous aussi délicieux qu'authentique. Cette adresse incontournable attire les gourmets en quête de saveurs exquises et de traditions culinaires bien ancrées"
     },
     "geometry": {
       "type": "Point",
@@ -1134,7 +1134,7 @@
         "facebook": "https://www.facebook.com/people/Acid-Violette-Vintage/100076321682614/"
       },
       "website": "",
-      "description": "description68"
+      "description": "Située dans un quartier animé de la ville, cette friperie propose une sélection soigneusement choisie de vêtements, accessoires et objets rétro des décennies passées. Des pièces uniques des années 60 aux tendances grunges des années 90, c'est une véritable caverne d'Ali Baba pour les amoureux de la mode vintage."
     },
     "geometry": {
       "type": "Point",
@@ -1152,7 +1152,7 @@
         "facebook": "https://www.facebook.com/velovintageparis/"
       },
       "website": "https://velovintageparis.com/",
-      "description": "description69"
+      "description": "La boutique idéal pour la réparation et l’achat de vélo vintage sur paris, allant des vélos de courses classiques aux vélos de villes élégants. Les passionnés peuvent également trouver des accessoires rétro et des pièces détachées pour personnaliser leur monture."
     },
     "geometry": {
       "type": "Point",
@@ -1169,7 +1169,7 @@
         "instagram": "https://www.instagram.com/face_b___/"
       },
       "website": "",
-      "description": "description70"
+      "description": "un bar animé et branché qui offre une expérience nocturne unique. Avec son ambiance décontractée et sa décoration éclectique, ce bar est un lieu de rendez-vous prisé par les habitants du quartier et les noctambules en quête d'animations."
     },
     "geometry": {
       "type": "Point",
@@ -1187,7 +1187,7 @@
         "facebook": "https://www.facebook.com/pages/Chez-Janou/556351424411518"
       },
       "website": "https://www.chezjanou.com",
-      "description": "description71"
+      "description": "une adresse prisée par les amoureux de la cuisine provençale et méditerranéenne. Avec son ambiance chaleureuse et son décor rustique, Chez Janou vous transporte dans un véritable coin de Provence au cœur de la capitale."
     },
     "geometry": {
       "type": "Point",
@@ -1204,7 +1204,7 @@
         "instagram": "https://www.instagram.com/malabavo/"
       },
       "website": "https://mala-bavo-paris.fr/",
-      "description": "description72"
+      "description": "Une adresse appréciée pour sa cuisine authentique et ses saveurs envoûtantes venues tout droit du Kurdistan. Dans une atmosphère conviviale et chaleureuse, les convives peuvent déguster une variété de plats traditionnels préparés avec des ingrédients frais et des épices aromatiques."
     },
     "geometry": {
       "type": "Point",
@@ -1222,7 +1222,7 @@
         "facebook": "https://www.facebook.com/patricksparis/"
       },
       "website": "",
-      "description": "description73"
+      "description": "Un authentique pub irlandais situé dans le cœur de Paris, réputé pour son ambiance chaleureuse et son atmosphère conviviale. Inspiré par les pubs traditionnels d'Irlande, cet établissement est le lieu idéal pour les amateurs de rugby."
     },
     "geometry": {
       "type": "Point",
@@ -1240,7 +1240,7 @@
         "facebook": "https://www.facebook.com/lebecsaleparis"
       },
       "website": "https://www.lebecsale.com/",
-      "description": "description74"
+      "description": "une brasserie conviviale située dans le quartier animé du 11ème arrondissement de Paris. Cette adresse, appréciée des habitants du quartier et des visiteurs, propose une cuisine française traditionnelle dans un cadre décontracté et accueillant."
     },
     "geometry": {
       "type": "Point",
@@ -1255,7 +1255,7 @@
       "category": ["Café", "Café-Théâtre"],
       "social_network": {},
       "website": "website39",
-      "description": "description39"
+      "description": "La Comédie Café est un lieu animé situé dans le 1er arrondissement de Paris, offrant une combinaison unique de divertissement et de gastronomie. Ce café-théâtre propose une programmation variée comprenant des spectacles d'humour, des concerts, des performances artistiques et bien plus encore."
     },
     "geometry": {
       "type": "Point",
@@ -1272,7 +1272,7 @@
         "instagram": "https://www.instagram.com/chez_prune_bistrot_canal/"
       },
       "website": "",
-      "description": "description75"
+      "description": "Un bistrot emblématique du 10ème arrondissement de Paris, situé dans le quartier animé du Canal Saint-Martin. Ouvert depuis les années 1920, ce bistrot traditionnel a conservé son charme d'antan avec son décor authentique, ses grandes vitrines et son ambiance conviviale."
     },
     "geometry": {
       "type": "Point",

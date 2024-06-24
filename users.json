@@ -1,0 +1,29 @@
+[
+  {
+    "username": "Mahmoud",
+    "email": "mahmoud@example.com",
+    "account": {
+      "username": "mahmoud2024",
+      "avatar": {}
+    },
+    "newsletter": true
+  },
+  {
+    "username": "Antoine",
+    "email": "antoine@example.com",
+    "account": {
+      "username": "antoine2024",
+      "avatar": {}
+    },
+    "newsletter": false
+  },
+  {
+    "username": "Stefane",
+    "email": "stefane@example.com",
+    "account": {
+      "username": "stefane2024",
+      "avatar": {}
+    },
+    "newsletter": true
+  }
+]
