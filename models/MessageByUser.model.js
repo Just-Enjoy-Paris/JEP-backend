@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-const messageSchema = new mongoose.Schema({
+const messageByUserSchema = new mongoose.Schema({
+  id: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   email: {
     type: String,
     required: true,
@@ -20,6 +21,6 @@ const messageSchema = new mongoose.Schema({
   },
 });
 
-const Message = mongoose.model("Message", messageSchema);
+const UserMessage = mongoose.model("UserMessage", messageByUserSchema);
 
-module.exports = Message;
+module.exports = UserMessage;
