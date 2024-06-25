@@ -8,6 +8,7 @@ require("dotenv").config();
 const getUser = async (req, res) => {
   try {
     const user = req.user;
+
     const userData = { ...user._doc, hashpass: undefined };
 
     res.status(200).json({
