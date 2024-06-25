@@ -1,4 +1,7 @@
 const mongoose = require("mongoose");
+// retirer username du message et refaire un model pour les messages
+//des users avec un compte(inclure id : ref user, message et date)
+// la methode en bas ne sert a rien , le .now le fait automatiquement
 
 const messageSchema = new mongoose.Schema({
   username: {
@@ -8,7 +11,7 @@ const messageSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
-    match: /.+\@.+\..+/, // Simple regex for email validation
+    match: /.+\@.+\..+/,
   },
   message: {
     type: String,
@@ -19,11 +22,6 @@ const messageSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
-
-messageSchema.methods.formatDate = function () {
-  const date = this.date.toISOString();
-  return date.substring(0, 10) + " " + date.substring(11, 19);
-};
 
 const Message = mongoose.model("Message", messageSchema);
 
