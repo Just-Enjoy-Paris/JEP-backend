@@ -11,44 +11,41 @@ const User = require("../models/Users.model");
 const { hashPassword } = require("../utils/hashpass");
 const { faker } = require("@faker-js/faker");
 
-resetRouter.post(
-  `/reset/places/${process.env.RESET_KEY}`,
-  async (req, res) => {
-    try {
-      // Supprimer tous les lieux existants
-      await Place.deleteMany({});
+resetRouter.post(`/reset/places/${process.env.RESET_KEY}`, async (req, res) => {
+  try {
+    // Supprimer tous les lieux existants
+    await Place.deleteMany({});
 
-      // Créer tous les lieux par lot
-      const newGeoPlaces = geoPlaces.map(geoPlace => ({
-        geometry: {
-          type: geoPlace.geometry.type,
-          coordinates: geoPlace.geometry.coordinates,
-        },
-        properties: {
-          name: geoPlace.properties.name,
-          picture: geoPlace.properties.picture,
-          address: geoPlace.properties.address,
-          category: geoPlace.properties.category,
-          social_network: geoPlace.properties.social_network,
-          website: geoPlace.properties.website,
-          description: geoPlace.properties.description,
-        },
-      }));
+    // Créer tous les lieux par lot
+    const newGeoPlaces = geoPlaces.map(geoPlace => ({
+      geometry: {
+        type: geoPlace.geometry.type,
+        coordinates: geoPlace.geometry.coordinates,
+      },
+      properties: {
+        name: geoPlace.properties.name,
+        picture: geoPlace.properties.picture,
+        address: geoPlace.properties.address,
+        category: geoPlace.properties.category,
+        social_network: geoPlace.properties.social_network,
+        website: geoPlace.properties.website,
+        description: geoPlace.properties.description,
+      },
+    }));
 
-      // Insérer en lot le documents
-      await Place.insertMany(newGeoPlaces);
+    // Insérer en lot le documents
+    await Place.insertMany(newGeoPlaces);
 
-      // réponse avec le nombre de lieux créés
-      res.status(201).json({
-        message: `All places created. Count: ${newGeoPlaces.length}`,
-      });
-    } catch (error) {
-      res.status(500).json({
-        message: error.message,
-      });
-    }
+    // réponse avec le nombre de lieux créés
+    res.status(201).json({
+      message: `All places created. Count: ${newGeoPlaces.length}`,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: error.message,
+    });
   }
-);
+});
 
 resetRouter.post(
   `/reset/garden-places/${process.env.RESET_KEY}`,
@@ -120,52 +117,48 @@ resetRouter.post(
   }
 );
 
-resetRouter.post(
-  `/reset/users/${process.env.RESET_KEY}`,
-  async (req, res) => {
-    try {
-      const users = await User.find();
-      if (users.length >= 5) {
-        await User.deleteMany({});
-        for (let i = 0; i < 5; i++) {
-          const newUser = new User({
-            email: faker.internet.email().toLowerCase(),
-            account: {
-              username: faker.internet.userName(),
-              avatar: faker.image.avatar(),
-            },
-            hashpass: faker.internet.password(),
-          });
-          await newUser.save();
-        }
-        for (let j = 0; j < adminUsers.length; j++) {
-          const hashPass = await hashPassword(process.env.ADMIN_PASS);
-          const newUser = new User({
-            email: adminUsers[j].email,
-            account: {
-              username: adminUsers[j].account.username,
-              avatar: faker.image.avatar(),
-            },
-            hashpass: hashPass,
-          });
-          await newUser.save();
-        }
-        res.status(201).json({
-          message: `All users created. Count: ${
-            (await User.find()).length
-          }`,
+resetRouter.post(`/reset/users/${process.env.RESET_KEY}`, async (req, res) => {
+  try {
+    const users = await User.find();
+    if (users.length >= 5) {
+      await User.deleteMany({});
+      for (let i = 0; i < 5; i++) {
+        const newUser = new User({
+          email: faker.internet.email().toLowerCase(),
+          account: {
+            username: faker.internet.userName(),
+            avatar: faker.image.avatar(),
+          },
+          hashpass: faker.internet.password(),
         });
-      } else {
-        res.status(400).json({
-          message: "Not enough users to reset",
-        });
+        await newUser.save();
       }
-    } catch (error) {
-      res.status(500).json({
-        message: error.message,
+      for (let j = 0; j < adminUsers.length; j++) {
+        const hashPass = await hashPassword(process.env.ADMIN_PASS);
+        const newUser = new User({
+          email: adminUsers[j].email,
+          account: {
+            username: adminUsers[j].account.username,
+            avatar: faker.image.avatar(),
+          },
+          role: "superadmin",
+          hashpass: hashPass,
+        });
+        await newUser.save();
+      }
+      res.status(201).json({
+        message: `All users created. Count: ${(await User.find()).length}`,
+      });
+    } else {
+      res.status(400).json({
+        message: "Not enough users to reset",
       });
     }
+  } catch (error) {
+    res.status(500).json({
+      message: error.message,
+    });
   }
-);
+});
 
 module.exports = resetRouter;
