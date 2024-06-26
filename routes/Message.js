@@ -7,6 +7,10 @@ const {
   getMessages,
 } = require("../controllers/message.controllers");
 
+const {
+  sendMessageByUser,
+} = require("../controllers/messageByUser.controllers");
+
 messageRouter.post("/sendMessage", (req, res) => {
   sendMessage(req, res);
 });
