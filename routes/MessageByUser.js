@@ -9,8 +9,5 @@ const {
 messageByUserRouter.post("/user/sendMessage", (req, res) => {
   sendMessage(req, res)
 });
-/*messageByUserRouter.get("/messages", (req, res) => {
-  getMessages(req, res)
-});*/
 
 module.exports = messageByUserRouter;
