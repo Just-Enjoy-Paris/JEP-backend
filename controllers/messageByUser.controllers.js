@@ -1,9 +1,10 @@
 const MessageByUser = require("../models/MessageByUser.model");
 
-const sendMessage = async (req, res) => {
+const sendMessageByUser = async (req, res) => {
   try {
+    const user = req.user;
     const { email, subject, message } = req.body;
-    const newMessage = new MessageByUser({ email, subject, message });
+    const newMessage = new MessageByUser({ email, subject, message, userId:user._id });
     await newMessage.save();
     res.status(201).json({ message: "Votre message a été envoyé avec succès !" });
   } catch (error) {
@@ -12,4 +13,4 @@ const sendMessage = async (req, res) => {
   }
 };
 
-module.exports = { sendMessage };
+module.exports = { sendMessageByUser };

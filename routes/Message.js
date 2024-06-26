@@ -11,8 +11,8 @@ messageRouter.post("/sendMessage", (req, res) => {
   sendMessage(req, res);
 });
 
-messageRouter.post("/user/sendMessage", isAuthenticated(), (req, res) => {
-  sendMessage(req, res);
+messageRouter.post("/user/sendMessage", isAuthenticated, (req, res) => {
+  sendMessageByUser(req, res);
 });
 
 messageRouter.get("/messages", (req, res) => {

@@ -42,13 +42,11 @@ app.use(cookieParser());
 const placesRoutes = require("./routes/Places");
 const userRoutes = require("./routes/User");
 const messageRoutes = require("./routes/Message");
-const messageByUserRoutes = require("./routes/MessageByUser");
 const resetRoutes = require("./routes/ResetRoutes");
 
 app.use(placesRoutes);
 app.use(userRoutes);
 app.use(messageRoutes);
-app.use(messageByUserRoutes);
 app.use(resetRoutes);
 
 app.all("*", (req, res) => {
