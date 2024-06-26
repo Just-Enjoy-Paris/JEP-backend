@@ -20,11 +20,6 @@ const messageSchema = new mongoose.Schema({
   },
 });
 
-messageSchema.methods.formatDate = function () {
-  const options = { year: "numeric", month: "long", day: "numeric" };
-  return new Date(this.date).toLocaleDateString("fr-FR", options);
-};
-
 const Message = mongoose.model("Message", messageSchema);
 
 module.exports = Message;

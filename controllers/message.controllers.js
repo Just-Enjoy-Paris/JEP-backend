@@ -1,4 +1,5 @@
 const Message = require("../models/Message.model");
+const UserMessage = require("../models/MessageByUser.model");
 
 const sendMessage = async (req, res) => {
   try {
@@ -14,12 +15,10 @@ const sendMessage = async (req, res) => {
 
 const getMessages = async (req, res) => {
   try {
-    const messages = await Message.find({});
-    const formattedMessages = messages.map((message) => {
-      const formattedDate = message.formatDate();
-      return { ...message.toObject(), date: formattedDate };
-    });
-    res.json(formattedMessages);
+    const messages = await Message.find().lean();
+    const usermessages = await UserMessage.find().lean();
+    const allMessages = [...messages, ...usermessages];
+    res.status(200).json(allMessages);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Une erreur est survenue lors de la récupération des messages." });
