@@ -7,10 +7,10 @@ const {
   getMessages
 } = require("../controllers/message.controllers");
 
-messageRouter.post("/user/sendMessage", (req, res) => {
+messageRouter.post("/sendMessage", (req, res) => {
   sendMessage(req, res)
 });
-messageRouter.get("/user/messages", (req, res) => {
+messageRouter.get("/messages", (req, res) => {
   getMessages(req, res)
 });
 

@@ -2,8 +2,8 @@ const Message = require("../models/Message.model");
 
 const addMessage = async (req, res) => {
   try {
-    const { username, email, message } = req.body;
-    const newMessage = new Message({ username, email, message });
+    const { email, subject, message } = req.body;
+    const newMessage = new Message({ email, subject, message });
     await newMessage.save();
     res.status(201).json({ message: "Votre message a été envoyé avec succès !" });
   } catch (error) {
