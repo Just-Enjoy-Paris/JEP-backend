@@ -15,8 +15,16 @@ const userSchema = new mongoose.Schema({
       { type: mongoose.Schema.Types.ObjectId, ref: "TouristPlaces" },
     ],
     favGardens: [{ type: mongoose.Schema.Types.ObjectId, ref: "GardenPlace" }],
+    favTourstPlaces: [
+      { type: mongoose.Schema.Types.ObjectId, ref: "TouristPlaces" },
+    ],
   },
   newsletter: { type: Boolean, default: false },
+  role: {
+    type: String,
+    enum: ["admin", "user", "superadmin"],
+    default: "user",
+  },
   hashpass: String,
 });
 
