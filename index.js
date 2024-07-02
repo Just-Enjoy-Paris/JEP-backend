@@ -41,10 +41,12 @@ app.use(cookieParser());
 // Import des routes
 const placesRoutes = require("./routes/Places");
 const userRoutes = require("./routes/User");
+const messageRoutes = require("./routes/Message");
 const resetRoutes = require("./routes/ResetRoutes");
 
 app.use(placesRoutes);
 app.use(userRoutes);
+app.use(messageRoutes);
 app.use(resetRoutes);
 
 app.all("*", (req, res) => {
