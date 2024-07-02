@@ -1,5 +1,5 @@
 const Message = require("../models/Message.model");
-const MessageByUser = require("../models/MessageByUser.model");
+const UserMessage = require("../models/MessageByUser.model");
 
 const sendMessage = async (req, res) => {
   try {
@@ -21,7 +21,7 @@ const sendMessageByUser = async (req, res) => {
   try {
     const user = req.user;
     const { email, subject, message } = req.body;
-    const newMessage = new MessageByUser({
+    const newMessage = new UserMessage({
       email,
       subject,
       message,
