@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
   account: {
     username: { type: String, required: true },
     avatar: { type: mongoose.Schema.Types.Mixed, default: "" },
-    favPlaces: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    favPlaces: [{ type: Object }],
     favTourstPlaces: [
       { type: mongoose.Schema.Types.ObjectId, ref: "TouristPlaces" },
     ],

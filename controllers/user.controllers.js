@@ -4,6 +4,7 @@ const { hashPassword, verifyPassword } = require("../utils/hashpass");
 const cloudinary = require("cloudinary").v2;
 const convertToBase64 = require("../utils/convertToBase64");
 require("dotenv").config();
+const Place = require("../models/Places.model");
 
 const getUser = async (req, res) => {
   try {
@@ -147,30 +148,80 @@ const updateprofile = async (req, res) => {
   }
 };
 
+// const addFav = async (req, res) => {
+//   try {
+//     const { id } = req.body;
+//     const user = req.user;
+
+//     if (!id) {
+//       return res.status(400).json({
+//         message: "Aucun favori à ajouter",
+//       });
+//     }
+
+//     const place = await Place.findById(id);
+
+//     if (!place) {
+//       return res.status(404).json({
+//         message: "Lieu non trouvé",
+//       });
+//     }
+
+//     console.log(place);
+//     if (user.account.favPlaces.includes(place.properties)) {
+//       return res.json({ message: "favori déja ajouté" });
+//     }
+//     if (!user.account.favPlaces.includes(place.properties)) {
+//       user.account.favPlaces.push(place.properties);
+
+//       await user.save();
+
+//       res.status(201).json({
+//         message: "Favori ajouté",
+//         favPlaces: user.account.favPlaces,
+//       });
+//     }
+//   } catch (err) {
+//     res.status(500).json({
+//       message: "Une erreur est survenue lors de la mise à jour des favoris.",
+//       error: err.message,
+//     });
+//   }
+// };
+
 const addFav = async (req, res) => {
   try {
     const { id } = req.body;
-    const user = req.user;
+    const userId = req.user._id;
 
     if (!id) {
       return res.status(400).json({
         message: "Aucun favori à ajouter",
       });
     }
-    if (user.account.favPlaces.includes(id)) {
-      return res.json({ message: "favori déja ajouté" });
-    }
-    if (!user.account.favPlaces.includes(id)) {
-      user.account.favPlaces.push(id);
 
-      await user.save();
-
-      console.log(user.account.favPlaces);
-      res.status(201).json({
-        message: "Favori ajouté",
-        favPlaces: user.account.favPlaces,
+    const place = await Place.findById(id).lean();
+    if (!place) {
+      return res.status(404).json({
+        message: "Lieu non trouvé",
       });
     }
+
+    // Utilisation de findOneAndUpdate pour ajouter le favori si ce n'est pas déjà dans la liste
+    const updatedUser = await User.findOneAndUpdate(
+      { _id: userId, "account.favPlaces": { $ne: place.properties } },
+      { $addToSet: { "account.favPlaces": place.properties } },
+      { new: true }
+    ).lean();
+
+    if (!updatedUser) {
+      return res.json({ message: "Favori déjà ajouté" });
+    }
+
+    res.status(201).json({
+      message: "Favori ajouté",
+      favPlaces: updatedUser.account.favPlaces,
+    });
   } catch (err) {
     res.status(500).json({
       message: "Une erreur est survenue lors de la mise à jour des favoris.",
@@ -182,31 +233,66 @@ const addFav = async (req, res) => {
 const rmFav = async (req, res) => {
   try {
     const { id } = req.body;
-    const user = req.user;
+    const userId = req.user._id;
 
     if (!id) {
       return res.status(400).json({
-        message: "Aucun ID reçu",
+        message: "Aucun favori à supprimer",
       });
     }
 
-    user.account.favPlaces = user.account.favPlaces.filter(
-      favId => favId !== id
-    );
-    await user.save();
-    console.log(user.account.favPlaces);
+    const place = await Place.findById(id).lean();
+    if (!place) {
+      return res.status(404).json({
+        message: "Lieu non trouvé",
+      });
+    }
+
+    // Utilisation de findOneAndUpdate pour supprimer le favori de la liste
+    const updatedUser = await User.findOneAndUpdate(
+      { _id: userId },
+      { $pull: { "account.favPlaces": place.properties } },
+      { new: true }
+    ).lean();
+
     res.status(200).json({
       message: "Favori supprimé",
-      favPlaces: user.account.favPlaces,
+      favPlaces: updatedUser.account.favPlaces,
     });
   } catch (err) {
     res.status(500).json({
-      message: "Une erreur est survenue lors de la suppression du favori.",
+      message: "Une erreur est survenue lors de la mise à jour des favoris.",
       error: err.message,
     });
   }
 };
 
+// const rmFav = async (req, res) => {
+//   try {
+//     const { id } = req.body;
+//     const user = req.user;
 
+//     if (!id) {
+//       return res.status(400).json({
+//         message: "Aucun ID reçu",
+//       });
+//     }
+
+//     user.account.favPlaces = user.account.favPlaces.filter(
+//       favId => favId !== id
+//     );
+//     await user.save();
+//     console.log(user.account.favPlaces);
+//     res.status(200).json({
+//       message: "Favori supprimé",
+//       favPlaces: user.account.favPlaces,
+//     });
+//   } catch (err) {
+//     res.status(500).json({
+//       message: "Une erreur est survenue lors de la suppression du favori.",
+//       error: err.message,
+//     });
+//   }
+// };
 
 module.exports = { getUser, signup, login, updateprofile, addFav, rmFav };
