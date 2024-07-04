@@ -32,6 +32,7 @@ const GardenPlaceSchema = new mongoose.Schema({
     positivePercentage: { type: Number, default: 0 },
     negativePercentage: { type: Number, default: 0 },
   },
+  id_JEP: { type: String, required: true },
 });
 
 const GardenPlace = mongoose.model("GardenPlace", GardenPlaceSchema);

@@ -6,7 +6,7 @@ const {
   getUser,
   signup,
   login,
-  updateprofile,
+  updateProfile,
   addFav,
   rmFav,
 } = require("../controllers/user.controllers");
@@ -24,7 +24,7 @@ userRouter.post("/login", (req, res) => {
 });
 
 userRouter.put("/updateprofile", isAuthenticated, fileUpload(), (req, res) => {
-  updateprofile(req, res);
+  updateProfile(req, res);
 });
 
 userRouter.put("/addFav", isAuthenticated, (req, res) => {

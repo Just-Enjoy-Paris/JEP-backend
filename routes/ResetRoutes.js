@@ -31,6 +31,7 @@ resetRouter.post(`/reset/places/${process.env.RESET_KEY}`, async (req, res) => {
         website: geoPlace.properties.website,
         description: geoPlace.properties.description,
       },
+      id_JEP: geoPlace.id_JEP,
     }));
 
     // Insérer en lot le documents
@@ -67,6 +68,7 @@ resetRouter.post(
           website: gardenPlace.properties.website,
           description: gardenPlace.properties.description,
         },
+        id_JEP: gardenPlace.id_JEP,
       }));
 
       await GardenPlace.insertMany(newGardenPlaces);
@@ -102,6 +104,7 @@ resetRouter.post(
           website: touristPlace.properties.website,
           description: touristPlace.properties.description,
         },
+        id_JEP: touristPlace.id_JEP,
       }));
 
       await TouristPlace.insertMany(newTouristPlaces);

@@ -1,143 +1,169 @@
 [
   {
     "geometry": {
-      "type": "Point",
+      "type": ["Point"],
       "coordinates": [2.3745366836419155, 48.85703395335041]
     },
     "properties": {
       "name": "Emma Duvéré",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1712184090/places2/emma-duver%C3%A9r%C3%A9.jpg",
       "address": "41 Rue Sedaine, 75011 Paris",
       "category": ["Pâtisserie", "Cantine"],
       "social_network": [
-        { "instagram": "https://www.instagram.com/emmaduvere/" }
+        {
+          "instagram": "https://www.instagram.com/emmaduvere/"
+        }
       ],
       "website": "https://www.emmaduvere.fr/",
-      "description": "Véritable commerce de quartier niché au cœur du 11ème arrondissement. Leur mission est de vous offrir une alimentation à la fois savoureuse, respectueuse de l'environnement et de votre santé.",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1712184090/places2/emma-duver%C3%A9r%C3%A9.jpg"
-    }
+      "description": "Véritable commerce de quartier niché au cœur du 11ème arrondissement. Leur mission est de vous offrir une alimentation à la fois savoureuse, respectueuse de l'environnement et de votre santé."
+    },
+    "id_JEP": "id_JEP_j0r8ytqqh"
   },
   {
     "geometry": {
-      "type": "Point",
+      "type": ["Point"],
       "coordinates": [2.362456597133869, 48.850183668969805]
     },
     "properties": {
       "name": "So/Paris Hotel",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207899/places2/So%20Paris%20Hotel.jpg",
       "address": "10 Rue Agrippa d'Aubigné, 75004 Paris",
       "category": ["Hotel", "Bar", "Restaurant", "Spa", "Bien-Être"],
       "social_network": [
-        { "instagram": "https://www.instagram.com/soparishotel/" },
-        { "facebook": "https://www.facebook.com/soparishotel/" },
+        {
+          "instagram": "https://www.instagram.com/soparishotel/"
+        },
+        {
+          "facebook": "https://www.facebook.com/soparishotel/"
+        },
         {
           "linkedIn": "https://www.linkedin.com/company/so-paris-hotel"
         }
       ],
       "website": "https://so-hotels.com/fr/paris/",
-      "description": "l’hôtel offre un panorama inédit sur tout Paris permettant de profiter d'une vue spectaculaire sur la capitale. Ce lieu propose également un restaurant/bar raffiné ainsi qu’un hammam et un spa offrant des soins luxueux dans un cadre apaisant.",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207899/places2/So%20Paris%20Hotel.jpg"
-    }
+      "description": "l’hôtel offre un panorama inédit sur tout Paris permettant de profiter d'une vue spectaculaire sur la capitale. Ce lieu propose également un restaurant/bar raffiné ainsi qu’un hammam et un spa offrant des soins luxueux dans un cadre apaisant."
+    },
+    "id_JEP": "id_JEP_9qica7ebz"
   },
   {
     "geometry": {
-      "type": "Point",
+      "type": ["Point"],
       "coordinates": [2.373408610626678, 48.857978494492556]
     },
     "properties": {
       "name": "Le Grand Breguet",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1713207901/places2/Le%20Grand%20Breguet.jpg",
       "address": "17 rue Bréguet, 75011 Paris",
       "category": ["Restaurant", "Bar", "Bar-Bio"],
       "social_network": [
-        { "instagram": "https://www.instagram.com/legrandbreguet/" },
-        { "facebook": "https://www.facebook.com/Legrandbreguet/" }
+        {
+          "instagram": "https://www.instagram.com/legrandbreguet/"
+        },
+        {
+          "facebook": "https://www.facebook.com/Legrandbreguet/"
+        }
       ],
       "website": "https://legrandbreguet.com/",
-      "description": "Le lieu idéal pour savourer des tapas, brunchs végans et bières artisanales dans un espace branché et coloré. Avec ses fresques murales vibrantes et sa terrasse accueillante, l'atmosphère y est à la fois conviviale et tendance. ",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1713207901/places2/Le%20Grand%20Breguet.jpg"
-    }
+      "description": "Le lieu idéal pour savourer des tapas, brunchs végans et bières artisanales dans un espace branché et coloré. Avec ses fresques murales vibrantes et sa terrasse accueillante, l'atmosphère y est à la fois conviviale et tendance. "
+    },
+    "id_JEP": "id_JEP_bl26qptpe"
   },
   {
     "geometry": {
-      "type": "Point",
+      "type": ["Point"],
       "coordinates": [2.3307822922390344, 48.85351153560422]
     },
     "properties": {
       "name": "Nina's Bagel",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1712136365/places2/nina-bagel.jpg",
       "address": "22 Rue du Dragon, 75006 Paris",
       "category": ["Restaurant"],
       "social_network": [
-        { "instagram": "https://www.instagram.com/ninas_bagel/" }
+        {
+          "instagram": "https://www.instagram.com/ninas_bagel/"
+        }
       ],
       "website": "https://ninasbagel.fr/",
-      "description": "Situé au cœur du 6ème arrondissement, ce lieu offre des bagels réalisés avec des produits bio et une charcuterie de chez Panzer, enseigne parisienne de renom. Profitez d’un moment convivial autour d’un délicieux bagel de qualité.",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1712136365/places2/nina-bagel.jpg"
-    }
+      "description": "Situé au cœur du 6ème arrondissement, ce lieu offre des bagels réalisés avec des produits bio et une charcuterie de chez Panzer, enseigne parisienne de renom. Profitez d’un moment convivial autour d’un délicieux bagel de qualité."
+    },
+    "id_JEP": "id_JEP_4yvw4fq7p"
   },
   {
     "geometry": {
-      "type": "Point",
+      "type": ["Point"],
       "coordinates": [2.33080508364171, 48.85353727880328]
     },
     "properties": {
       "name": "La Mercerie du 6ème",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207911/places2/La%20mercerie%20du%206%C2%B0.jpg",
       "address": "20 Rue du Dragon, 75006 Paris",
       "category": ["Restaurant"],
       "social_network": [],
       "website": "",
-      "description": "Petit restaurant de quartier, ce lieu charmant propose une cuisine authentique et savoureuse, parfaite pour un repas en famille ou entre amis. Avec ses plats préparés à partir de produits frais et locaux.",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207911/places2/La%20mercerie%20du%206%C2%B0.jpg"
-    }
+      "description": "Petit restaurant de quartier, ce lieu charmant propose une cuisine authentique et savoureuse, parfaite pour un repas en famille ou entre amis. Avec ses plats préparés à partir de produits frais et locaux."
+    },
+    "id_JEP": "id_JEP_nuaokdl1g"
   },
   {
     "geometry": {
-      "type": "Point",
+      "type": ["Point"],
       "coordinates": [2.3264544682978294, 48.84716637787654]
     },
     "properties": {
       "name": "Les Saisonniers",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207910/places2/Les%20Saisoniers.jpg",
       "address": "62 Rue Saint-Placide, 75006 Paris",
       "category": ["Primeur"],
       "social_network": [
         {
           "facebok": "https://www.facebook.com/LesSaisonniersParis/"
         },
-        { "instagram": "https://www.instagram.com/les_saisonniers/" }
+        {
+          "instagram": "https://www.instagram.com/les_saisonniers/"
+        }
       ],
       "website": "https://les-saisonniers.fr/",
-      "description": "Situé à Saint-Placide, Les Saisonniers voient le jour en 2019 avec une ambition : rapprocher les villes et les campagnes voisines. Fondé par Margaux et Thomas, ce supermarché paysan collabore avec une dizaine de producteurs de l’Île-de-France. ",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207910/places2/Les%20Saisoniers.jpg"
-    }
+      "description": "Situé à Saint-Placide, Les Saisonniers voient le jour en 2019 avec une ambition : rapprocher les villes et les campagnes voisines. Fondé par Margaux et Thomas, ce supermarché paysan collabore avec une dizaine de producteurs de l’Île-de-France. "
+    },
+    "id_JEP": "id_JEP_j2aysukfq"
   },
   {
     "geometry": {
-      "type": "Point",
+      "type": ["Point"],
       "coordinates": [2.3263676259696227, 48.84791763481688]
     },
     "properties": {
       "name": "Gudule",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207914/places2/Gudule.jpg",
       "address": "47 Rue Saint-Placide, 75006 Paris",
       "category": ["Bijouterie", "Boutique"],
       "social_network": [],
       "website": "https://www.gudule.com/",
-      "description": "Gudule sélectionne une large gamme de bijoux modernes et anciens à découvrir. Vous y trouverez des bijoux en argent, tels que bagues, bracelets, colliers, boucles d’oreilles, pendentifs et broches du monde entier, ainsi que des pierres fines et perles au détail, comme turquoise, ambre et corail. Les stocks de bijoux sont renouvelés tout au long de l’année.",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207914/places2/Gudule.jpg"
-    }
+      "description": "Gudule sélectionne une large gamme de bijoux modernes et anciens à découvrir. Vous y trouverez des bijoux en argent, tels que bagues, bracelets, colliers, boucles d’oreilles, pendentifs et broches du monde entier, ainsi que des pierres fines et perles au détail, comme turquoise, ambre et corail. Les stocks de bijoux sont renouvelés tout au long de l’année."
+    },
+    "id_JEP": "id_JEP_6ui5jnyla"
   },
   {
     "geometry": {
-      "type": "Point",
+      "type": ["Point"],
       "coordinates": [2.3262864971337827, 48.848025275454596]
     },
     "properties": {
       "name": "Dergenne",
+      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207916/places2/Degrenne.jpg",
       "address": "45 Rue Saint-Placide, 75006 Paris",
       "category": ["Boutique de Porcelaine"],
       "social_network": [],
       "website": "https://www.degrenne.fr/",
-      "description": "Le spécialiste de l'art de la table, transforme chaque instant en une occasion d'émotion. Avec panache, humour et élégance, DEGRENNE cultive l'Art de Vivre, offrant des créations qui subliment vos moments de convivialité.",
-      "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207916/places2/Degrenne.jpg"
-    }
+      "description": "Le spécialiste de l'art de la table, transforme chaque instant en une occasion d'émotion. Avec panache, humour et élégance, DEGRENNE cultive l'Art de Vivre, offrant des créations qui subliment vos moments de convivialité."
+    },
+    "id_JEP": "id_JEP_bmz8euu3v"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3245489301013436, 48.840741216297914]
+    },
     "properties": {
       "name": "Le Plomb du Cantal",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207918/places2/Le%20Plomb%20du%20Cantal.jpg",
@@ -147,12 +173,13 @@
       "website": "",
       "description": "Situé dans le 14ème arrondissement, ce restaurant offre une ambiance chaleureuse et authentique, parfaite pour déguster des spécialités régionales. De la truffade aux fromages affinés, chaque plat est préparé avec des produits locaux de qualité."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3245489301013436, 48.840741216297914]
-    }
+    "id_JEP": "id_JEP_xq2nctzq5"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3243072195745356, 48.84046490170536]
+    },
     "properties": {
       "name": "Le Tournesol",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207919/places2/Le%20Tournesol.jpg",
@@ -162,133 +189,155 @@
       "website": "",
       "description": "Idéalement situé entre la Maison de la Radio et le Trocadéro, en retrait des quais de Seine, le Tournesol vous accueille 7 jours sur 7, midi et soir, pour déguster des mets de sa carte, renouvelée au gré des saisons. Le restaurant a été entièrement décoré dans un esprit début XXe siècle."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3243072195745356, 48.84046490170536]
-    }
+    "id_JEP": "id_JEP_fxh3f9o25"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3363884236063086, 48.83947503003057]
+    },
     "properties": {
       "name": "Le Bullier",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207920/places2/Le%20Bullier.jpg",
       "address": "22 Av. de l'Observatoire, 75014 Paris",
       "category": ["Bar", "Brasserie", "Restaurant"],
-      "social_network": {
-        "facebok": "https://www.facebook.com/people/Bullier/100054201414421/",
-        "instagram": "https://www.instagram.com/lebullierparis/"
-      },
+      "social_network": [
+        {
+          "facebok": "https://www.facebook.com/people/Bullier/100054201414421/",
+          "instagram": "https://www.instagram.com/lebullierparis/"
+        }
+      ],
       "website": "https://lebullier.com/",
       "description": "Nommé en hommage au célèbre bal situé en face de la station « Port Royal », fait revivre l’esprit de convivialité qui animait autrefois le quartier. À l'angle du boulevard Montparnasse et de l’Observatoire, cet établissement propose une cuisine traditionnelle française avec une touche de modernité. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3363884236063086, 48.83947503003057]
-    }
+    "id_JEP": "id_JEP_a26gz7kr5"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3357590370451145, 48.83815330830655]
+    },
     "properties": {
       "name": "L'Artisanat Monastique",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207921/places2/L%27Artisanat%20Monastique%20de%20Paris.jpg",
       "address": "68 Bis Av. Denfert Rochereau, 75014 Paris",
       "category": ["Boutique d'objets religieux", "Boutique"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/artisanat.monastique/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/artisanat.monastique/"
+        }
+      ],
       "website": "https://www.artisanatmonastique.com/",
       "description": "L'Artisanat Monastique, c'est une aventure commune initiée en 1951 par des abbayes qui se regroupent pour diffuser ensemble leurs produits et reverser les bénéfices aux plus nécessiteux. Les produits des monastères, dont beaucoup sont labellisés bio, allient amour du travail bien fait et qualité."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3357590370451145, 48.83815330830655]
-    }
+    "id_JEP": "id_JEP_dayq749uf"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3448656924286695, 48.835143099215145]
+    },
     "properties": {
       "name": "Café Paulette",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207922/places2/Caf%C3%A9%20Paulette.jpg",
       "address": "48 Bd Arago, 75013 Paris",
       "category": ["Café", "Bar", "Restaurant"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/leCafépaulette/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/leCafépaulette/"
+        }
+      ],
       "website": "https://www.leCafépaulette.com/",
       "description": "Niché dans le 13ème arrondissement, le Café Paulette vous accueille dans une ambiance chaleureuse et conviviale. Que ce soit pour une pause matinale, un déjeuner entre amis ou un après-midi détente, le Café Paulette offre un havre de tranquillité au cœur de Paris. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3448656924286695, 48.835143099215145]
-    }
+    "id_JEP": "id_JEP_2dv2psgzb"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3456189446729354, 48.83480130130417]
+    },
     "properties": {
       "name": "Habibi",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207923/places2/Habibi.jpg",
       "address": "47 Bd Arago, 75013 Paris",
       "category": ["Restaurant"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/habibiresto.paris/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/habibiresto.paris/"
+        }
+      ],
       "website": "https://habibi-paris.fr/",
       "description": "Situé dans le 13ème arrondissement, Habibi vous invite à découvrir les saveurs authentiques de la cuisine syrienne. Plongez dans un univers de délices où les épices exotiques et les recettes traditionnelles se marient pour éveiller vos papilles. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3456189446729354, 48.83480130130417]
-    }
+    "id_JEP": "id_JEP_74pn5305a"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.345982319513098, 48.835193709600134]
+    },
     "properties": {
       "name": "THE IRISHMAN",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207926/places2/THE%20IRISHMAN.jpg",
       "address": "40 Bd Arago, 75013 Paris",
       "category": ["Pub"],
-      "social_network": {
-        "facebok": "https://www.facebook.com/theirishman.paris/",
-        "instagram": "https://www.instagram.com/theirishman.paris/"
-      },
+      "social_network": [
+        {
+          "facebok": "https://www.facebook.com/theirishman.paris/",
+          "instagram": "https://www.instagram.com/theirishman.paris/"
+        }
+      ],
       "website": "https://irishman.paris/",
       "description": "Votre destination irlandaise au cœur du 13ème arrondissement. Plongez dans une ambiance authentique où la convivialité règne en maître, accompagnée d'une sélection de bières pression et de whiskies irlandais. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.345982319513098, 48.835193709600134]
-    }
+    "id_JEP": "id_JEP_22a7tfxqg"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.363546419546253, 48.869423278815475]
+    },
     "properties": {
       "name": "La Factory",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207924/places2/La%20Factory.jpg",
       "address": "8 Rue Beaurepaire, 75010 Paris",
       "category": ["Boutique de vêtements"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/adresse.paris/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/adresse.paris/"
+        }
+      ],
       "website": "https://adresse.paris/",
       "description": "Véritable sanctuaire pour les amoureux de la mode éthique et éco-responsable. Leur sélection soigneusement choisie offre des vêtements fabriqués dans le respect de l'environnement et des conditions de travail équitables, leur boutique propose une gamme variée pour répondre à tous les styles et besoins. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.363546419546253, 48.869423278815475]
-    }
+    "id_JEP": "id_JEP_sr5wx07uy"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3647504571417244, 48.86265532258059]
+    },
     "properties": {
       "name": "ADN Concept",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207929/places2/ADN.jpg",
       "address": "104 Rue de Turenne, 75003 Paris",
       "category": ["Galerie d'art"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/adnconcept_paris/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/adnconcept_paris/"
+        }
+      ],
       "website": "",
       "description": "Située dans le 3ème arrondissement, ADN Concept offre une immersion dans l'art contemporain le plus innovant. Découvrez des artistes émergents et établis à travers des expositions captivantes pour les passionnés de peinture, de photographie ou de sculptures. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3647504571417244, 48.86265532258059]
-    }
+    "id_JEP": "id_JEP_n974mxkb3"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.362059801985197, 48.858822308773625]
+    },
     "properties": {
       "name": "Minimoi",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207925/places2/minimoi.jpg",
@@ -298,985 +347,1140 @@
       "website": "https://www.costa3d.fr/",
       "description": "Minimoi offre la possibilité de créer des figurines 3D à votre effigie ou celle de vos proches, chaque figurine est une reproduction fidèle qui capture l'essence de son modèle. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.362059801985197, 48.858822308773625]
-    }
+    "id_JEP": "id_JEP_3ic1csoqs"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.379289762912748, 48.86293960704188]
+    },
     "properties": {
       "name": "Chez Lui",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207946/places2/chez-lui.jpg",
       "address": "67 Rue Saint-Maur, 75011 Paris",
       "category": ["Bar", "Restaurant"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/bistrochezlui/",
-        "facebook": "https://www.facebook.com/bistrochezlui"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/bistrochezlui/",
+          "facebook": "https://www.facebook.com/bistrochezlui"
+        }
+      ],
       "website": "",
       "description": "Situé dans la rue Saint Maur, lieu de convivialité où l'atmosphère chaleureuse vous invite à la détente. Découvrez une sélection de plats délicieux accompagnés d'une cave à vins soigneusement choisie, que ce soit pour un dîner entre amis ou un verre après le travail. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.379289762912748, 48.86293960704188]
-    }
+    "id_JEP": "id_JEP_weosuqxe1"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.360638607558201, 48.86387919018239]
+    },
     "properties": {
       "name": "Bontemps",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207946/places2/bontemps.jpg",
       "address": "57 Rue de Bretagne, 75003 Paris",
       "category": ["Pâtisserie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/bontempsparis/",
-        "facebook": "https://www.facebook.com/bontempspatisserie"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/bontempsparis/",
+          "facebook": "https://www.facebook.com/bontempspatisserie"
+        }
+      ],
       "website": "https://bontemps.paris/",
       "description": "Franchissez la porte et entrez dans un monde rétro et enchanté où la vaisselle en porcelaine, les carreaux de grès anciens et les suspensions en opaline vous séduiront. Leurs délicieux gâteaux sont faits maison avec amour et passion. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.360638607558201, 48.86387919018239]
-    }
+    "id_JEP": "id_JEP_hgtiv6rr8"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.359310107263127, 48.85492457904061]
+    },
     "properties": {
       "name": "10SIGN ARTISANAT",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207944/places2/10sign.jpg",
       "address": "10 Rue de Fourcy, 75004 Paris",
       "category": ["Boutique de vêtements"],
-      "social_network": {
-        "instagram": "",
-        "facebook": ""
-      },
+      "social_network": [
+        {
+          "instagram": "",
+          "facebook": ""
+        }
+      ],
       "website": "https://www.cma-paris.fr/boutique/",
       "description": "La boutique 10SIGN Artisanat Paris est née de la volonté de la Chambre de Métiers et de l'Artisanat d'Île-de-France - Paris d'offrir aux artisans parisiens une vitrine en plein cœur de la ville. Située dans le 4ème arrondissement, cette boutique dans le quartier du Marais permet aux entreprises artisanales de présenter leurs savoir-faire et de vendre leurs créations. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.359310107263127, 48.85492457904061]
-    }
+    "id_JEP": "id_JEP_p49r8arw6"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.362266836455859, 48.85574170038092]
+    },
     "properties": {
       "name": "L'Atelier Parfum",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207943/places2/atelier-parfum.jpg",
       "address": "12 Rue de Sévigné, 75004 Paris",
       "category": ["Parfumerie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/latelierparfum/",
-        "facebook": "https://www.facebook.com/latelierparfum/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/latelierparfum/",
+          "facebook": "https://www.facebook.com/latelierparfum/"
+        }
+      ],
       "website": "https://latelierparfum.com/",
       "description": "L'Atelier Parfum célèbre la création d'émotions à travers ses fragrances uniques. Chaque rencontre avec un parfum est un moment suspendu, précieux, parfois bouleversant, aussi éphémère qu'éternel. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.362266836455859, 48.85574170038092]
-    }
+    "id_JEP": "id_JEP_dhmcyjpy0"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3575990889862624, 48.85150508612648]
+    },
     "properties": {
       "name": "Librairie Ulysse",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207942/places2/pays-et-voyage.jpg",
       "address": "26 Rue Saint-Louis en l'Île, 75004 Paris",
       "category": ["Librairie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/librairie_ulysse/",
-        "facebook": ""
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/librairie_ulysse/",
+          "facebook": ""
+        }
+      ],
       "website": "http://ulysse.fr/",
       "description": "Catherine Domain, exploratrice passionnée et fondatrice de multiples clubs et prix prestigieux, a décidé de créer une Librairie de Voyage, installée sur l'Île Saint Louis à Paris."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3575990889862624, 48.85150508612648]
-    }
+    "id_JEP": "id_JEP_87zi0p0up"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3462844572499364, 48.85240940196323]
+    },
     "properties": {
       "name": "Kozy",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207941/places2/kozy.jpg",
       "address": "6 Rue du Petit Pont, 75005 Paris",
       "category": ["Restaurant", "Brunch"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/kozyparis/",
-        "facebook": ""
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/kozyparis/",
+          "facebook": ""
+        }
+      ],
       "website": "https://www.kozy.fr/",
       "description": "Kozy Paris, c'est un lieu de rendez-vous incontournable pour les amateurs de brunch et de café. Dans une atmosphère chaleureuse, ils vous invitent à profiter de leur offre de petit-déjeuner et brunch disponibles toute la journée. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3462844572499364, 48.85240940196323]
-    }
+    "id_JEP": "id_JEP_d74or6u1u"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.34167069397148, 48.85330933907173]
+    },
     "properties": {
       "name": "Chez le Libanais",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207940/places2/chez-le-libanais.jpg",
       "address": "35 Rue Saint-André des Arts, 75006 Paris",
       "category": ["Restaurant", "Restaurant Libanais"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/chezlelibanais/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/chezlelibanais/"
+        }
+      ],
       "website": "",
       "description": "Situé dans le 6ème arrondissement, ce restaurant est un véritable petit coin de Liban à Paris. Allez découvrir leurs délicieux sandwichs, mezzés et pâtisseries typiques, à emporter ou à déguster sur place dans leur ambiance conviviale."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.34167069397148, 48.85330933907173]
-    }
+    "id_JEP": "id_JEP_rxqju9tiv"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.336263195887396, 48.851879864141104]
+    },
     "properties": {
       "name": "Marché Saint-Germain",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207939/places2/march%C3%A9-saint-germain.jpg",
       "address": "4-6 Rue Lobineau, 75006 Paris",
       "category": ["Primeur", "Restaurant"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/marchestgermain/",
-        "facebook": "https://www.facebook.com/marchestgermain/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/marchestgermain/",
+          "facebook": "https://www.facebook.com/marchestgermain/"
+        }
+      ],
       "website": "https://marchesaintgermain.fr/",
       "description": "Au cœur de Saint-Germain-des-Prés, le Marché Saint-Germain est un lieu emblématique de vie où se mêlent diverses grandes enseignes. N’y manquez pas le bistrot Avant-Comptoir du Marché, dirigé par le chef renommé Yves Camdeborde."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.336263195887396, 48.851879864141104]
-    }
+    "id_JEP": "id_JEP_iuy29a8z6"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3336349761482325, 48.85238303247894]
+    },
     "properties": {
       "name": "La Crêpe Rit du Clown",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207938/places2/la-crepe-rit-du-clown.jpg",
       "address": "6 Rue des Canettes, 75006 Paris",
       "category": ["Restaurant", "Crêperie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/creperieduclown/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/creperieduclown/"
+        }
+      ],
       "website": "",
       "description": "Savourez des crêpes, des galettes et du cidres dans un cadre accueillant, conviviale et décontractée, parfaite pour une pause gourmande entre amis ou en famille."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3336349761482325, 48.85238303247894]
-    }
+    "id_JEP": "id_JEP_aj97rzgl6"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.332562325955962, 48.85413433582491]
+    },
     "properties": {
       "name": "Café de Flore",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207937/places2/caf%C3%A9-de-flore.jpg",
       "address": "172 Bd Saint-Germain, 75006 Paris",
-      "category": "Café",
-      "social_network": {
-        "instagram": "https://www.instagram.com/leCafédeflore/",
-        "facebook": "https://www.facebook.com/Cafédefloreofficial/"
-      },
+      "category": ["Café"],
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/leCafédeflore/",
+          "facebook": "https://www.facebook.com/Cafédefloreofficial/"
+        }
+      ],
       "website": "https://Cafédeflore.fr/",
       "description": "Emblématique café-restaurant parisien du quartier Saint-Germain-des-Prés, est un véritable haut lieu de l'histoire parisienne. Cette institution incarne l'essence même du tout-Paris « rive gauche », associé à la culture littéraire, philosophique, artistique et au tourisme international."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.332562325955962, 48.85413433582491]
-    }
+    "id_JEP": "id_JEP_7cc9zlxlp"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.36229300026426, 48.85579569958972]
+    },
     "properties": {
       "name": "LDB",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207933/places2/LDB.jpg",
       "address": "12 Rue de Sévigné, 75004 Paris",
       "category": ["Boutique de vêtements"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/ldb_paris/",
-        "facebook": "https://www.facebook.com/ldbparis/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/ldb_paris/",
+          "facebook": "https://www.facebook.com/ldbparis/"
+        }
+      ],
       "website": "https://ldbparis.com/",
       "description": "LDB incarne l'art du prêt-à-porter français. Leurs vêtements sont confectionnés à partir de matières 100% naturelles, garantissant confort et qualité. Ils proposent une livraison internationale pour que chacun puisse profiter de leurs créations où qu'il soit dans le monde."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.36229300026426, 48.85579569958972]
-    }
+    "id_JEP": "id_JEP_12g1ahtut"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.334464680488395, 48.852264821833586]
+    },
     "properties": {
       "name": "Little Temple Bar",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207936/places2/Little-Temple-Bar.jpg",
       "address": "12 Rue Princesse, 75006 Paris",
       "category": ["Pub", "Irish Pub"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/littletemplebar/",
-        "facebook": "https://www.facebook.com/littletemplebarparis/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/littletemplebar/",
+          "facebook": "https://www.facebook.com/littletemplebarparis/"
+        }
+      ],
       "website": "https://www.littletemplebar.fr/",
       "description": "Au cœur du quartier Saint-Germain-des-Prés se trouve un authentique Irish Pub, c'est l'adresse incontournable des amateurs de pub anglo-saxon."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.334464680488395, 48.852264821833586]
-    }
+    "id_JEP": "id_JEP_pwyi1h6ca"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.361070468141442, 48.856368352047234]
+    },
     "properties": {
       "name": "Le Loir dans La Théière",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207931/places2/Le%20Loir%20dans%20La%20Th%C3%A9i%C3%A8re.jpg",
       "address": "3 Rue des Rosiers, 75004 Paris",
       "category": ["Salon de the"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/leloirdanslatheiereofficiel/",
-        "facebook": "https://www.facebook.com/leloirdanslatheiere75004/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/leloirdanslatheiereofficiel/",
+          "facebook": "https://www.facebook.com/leloirdanslatheiere75004/"
+        }
+      ],
       "website": "http://leloirdanslatheiere.com/",
       "description": "Niché dans le quartier du Marais, ce véritable havre de paix où l'on peut déguster de délicieuses pâtisseries maison dans une ambiance chaleureuse et conviviale. Avec son décor cosy et son menu varié, c'est l'endroit parfait pour une pause gourmande au cœur de Paris."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.361070468141442, 48.856368352047234]
-    }
+    "id_JEP": "id_JEP_xx0k969wh"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.347534696977298, 48.85836375261056]
+    },
     "properties": {
       "name": "Au Trappiste",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207907/places2/Au%20trappiste.jpg",
       "address": "4 Rue St Denis, 75001 Paris",
       "category": ["Bar", "Brasserie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/autrappiste/",
-        "facebook": "https://www.facebook.com/autrappisteparis/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/autrappiste/",
+          "facebook": "https://www.facebook.com/autrappisteparis/"
+        }
+      ],
       "website": "",
       "description": "Au Trappiste, découvrez une grande sélection de bières artisanales et trappistes belges, accompagnées de délicieuses moules-frites et grillades. Dans une ambiance décontractée et conviviale Le Trappiste vous invite à savourer l'authenticité de la cuisine belge et des bières d'exception."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.347534696977298, 48.85836375261056]
-    }
+    "id_JEP": "id_JEP_1aykw6cgn"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.347982610470057, 48.85955540868169]
+    },
     "properties": {
       "name": "Café Oz Australian Bar",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207906/places2/Caf%C3%A9%20Oz%20The%20Australian%20Bar.jpg",
       "address": "18 Rue St Denis, 75001 Paris",
       "category": ["Bar"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/Caféozchatelet/",
-        "facebook": "https://www.facebook.com/CaféOzChatelet/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/Caféozchatelet/",
+          "facebook": "https://www.facebook.com/CaféOzChatelet/"
+        }
+      ],
       "website": "https://Café-oz.com/",
       "description": "Plongez dans l'ambiance décontractée de l'Australie au cœur de Paris. Avec son décor typique et ses spécialités australiennes, c'est l'endroit idéal pour siroter un cocktail entre amis. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.347982610470057, 48.85955540868169]
-    }
+    "id_JEP": "id_JEP_sfsgjjq99"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.360432468141383, 48.855818480643585]
+    },
     "properties": {
       "name": "Clark Hot Dog",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207905/places2/Clark%20Hot%20Dog.jpg",
       "address": "6 rue du roi de Sicile, 75004 Paris",
       "category": ["Fast food", "Restaurant"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/clarkhotdog/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/clarkhotdog/"
+        }
+      ],
       "website": "https://clarkhotdog.fr/",
       "description": "Avec leurs créations uniques et leurs recettes savoureuses, c'est l'endroit parfait pour les amateurs de street food. Dégustez leurs délicieux hot-dogs dans un cadre accueillant et laissez-vous séduire par l'originalité de leurs saveurs."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.360432468141383, 48.855818480643585]
-    }
+    "id_JEP": "id_JEP_luiwye79d"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.353738552798607, 48.86114798835508]
+    },
     "properties": {
       "name": "Falafel Du Liban",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207904/places2/Falafel%20Du%20Liban.jpg",
       "address": "35 Rue Rambuteau, 75003 Paris",
       "category": ["Restaurant", "Restaurant libanais"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/lacourduFg/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/lacourduFg/"
+        }
+      ],
       "website": "",
       "description": "Plongez dans l'authenticité de la cuisine libanaise au cœur du 3ème arrondissement. Découvrez une explosion de saveurs méditerranéennes avec leurs délicieux falafels, préparés selon des recettes traditionnelles. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.353738552798607, 48.86114798835508]
-    }
+    "id_JEP": "id_JEP_l1ix1t4xi"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.374118080648118, 48.85001800106523]
+    },
     "properties": {
       "name": "La Cour du Faubourg",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207903/places2/La%20Cour%20du%20Faubourg.jpg",
       "address": "29 Rue du Fg Saint-Antoine, 75011 Paris",
       "category": ["Restaurant", "Hotel"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/lacourduFg/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/lacourduFg/"
+        }
+      ],
       "website": "https://la-cour-du-Fg.paris/",
       "description": "Explorez une cuisine raffinée et créative au cœur du 11ème arrondissement. Dans un cadre élégant et chaleureux, découvrez une carte inspirée par les saisons et les produits du terroir."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.374118080648118, 48.85001800106523]
-    }
+    "id_JEP": "id_JEP_tolye2fjp"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.368858581634894, 48.869637700785994]
+    },
     "properties": {
       "name": "Emmaüs Alternatives",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207902/places2/Emma%C3%BCs%20Alternatives%20Temple.jpg",
       "address": "43-45 Rue du Fg du Temple, 75010 Paris",
       "category": ["Association"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/emmaus_alternatives",
-        "facebook": "https://www.facebook.com/emmausalternatives"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/emmaus_alternatives",
+          "facebook": "https://www.facebook.com/emmausalternatives"
+        }
+      ],
       "website": "https://www.emmaus-alternatives.org/",
       "description": "Découvrez bien plus qu'un simple magasin de seconde main. C'est un lieu de solidarité et d'engagement social, offrant une large sélection d'articles d'occasion à des prix abordables. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.368858581634894, 48.869637700785994]
-    }
+    "id_JEP": "id_JEP_yy7c3mo57"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.356926083484756, 48.860095783015424]
+    },
     "properties": {
       "name": "Au Cœur du Marais",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207900/places2/Au%20C%C5%93ur%20du%20Marais.jpg",
       "address": "56 Rue des Archives, 75004 Paris",
       "category": ["Bar", "Bistro", "Café"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/aucoeurdumarais/?hl=fr",
-        "facebook": "https://www.facebook.com/aucoeurdumarais/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/aucoeurdumarais/?hl=fr",
+          "facebook": "https://www.facebook.com/aucoeurdumarais/"
+        }
+      ],
       "website": "",
       "description": "Découvrez une brasserie aux couleurs vives et à l'ambiance rétro. Dotée de tables en terrasse, elle vous invite à savourer des plats typiquement français dans un cadre convivial et animé. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.356926083484756, 48.860095783015424]
-    }
+    "id_JEP": "id_JEP_7ib5jkph1"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.347130296976979, 48.85273260054166]
+    },
     "properties": {
       "name": "Shakespeare and Cie",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207894/places2/Shakespeare%20and%20Company.jpg",
       "address": "37 rue de la Bûcherie, Paris, France 75005",
       "category": ["Librairie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/shakespeareandcoparis/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/shakespeareandcoparis/"
+        }
+      ],
       "website": "https://www.shakespeareandcompany.com/",
       "description": "Plongez dans l'univers magique de la littérature au cœur de Paris. Cette librairie emblématique, située sur les quais de la Seine, est un véritable trésor pour les amateurs de livres. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.347130296976979, 48.85273260054166]
-    }
+    "id_JEP": "id_JEP_r9eydei14"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3583800123204393, 48.85867343452612]
+    },
     "properties": {
       "name": "Bar du Marché",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207893/places2/Bar%20du%20March%C3%A9%20des%20Blancs%20Manteaux.jpg",
       "address": "53 Rue Vieille du Temple, 75004 Paris",
       "category": ["Restaurant"],
-      "social_network": {},
+      "social_network": [{}],
       "website": "",
       "description": "Situé dans le 4ème arrondissement, découvrez un lieu convivial et animé au cœur de Paris. Avec son ambiance chaleureuse et son atmosphère accueillante, c'est l'endroit idéal pour se retrouver entre amis ou pour une pause détente en solo. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3583800123204393, 48.85867343452612]
-    }
+    "id_JEP": "id_JEP_b49i828xc"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.362895181633725, 48.85043666661602]
+    },
     "properties": {
       "name": "TiTi Palacio",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207892/places2/TiTi%20Palacio.jpg",
       "address": "17 boulevard Morland 75004 Paris",
       "category": ["Restaurant"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/titi.palacio/",
-        "facebook": "https://www.facebook.com/titipalacioparis"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/titi.palacio/",
+          "facebook": "https://www.facebook.com/titipalacioparis"
+        }
+      ],
       "website": "https://www.titipalacio.com/",
       "description": "Une jungle urbaine colorée et conviviale près du Marais. Profitez de finger food toute la journée et d'une cuisine authentique en soirée. Avec sa programmation festive incluant concerts, DJ sets et Karaoké, le Titi est un lieu de rencontre animé pour les parisiens et les voyageurs de l'hôtel The People Paris Marais."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.362895181633725, 48.85043666661602]
-    }
+    "id_JEP": "id_JEP_nwg161s3l"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.380775777816775, 48.86067914730617]
+    },
     "properties": {
       "name": "Café Moderne",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207891/places2/Le%20Moderne.jpg",
       "address": "121 Rue du Chemin Vert, 75011 Paris",
       "category": ["Bar", "Brasserie"],
-      "social_network": {},
+      "social_network": [{}],
       "website": "",
       "description": "Un lieu contemporain et accueillant au cœur de la ville. Avec son ambiance chaleureuse et son décor élégant, c'est l'endroit idéal pour savourer un café ou se détendre avec des amis. Profitez d'une sélection de boissons chaudes et froides ainsi que de délicieuses pâtisseries faites maison. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.380775777816775, 48.86067914730617]
-    }
+    "id_JEP": "id_JEP_sxi1mj2vv"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.38398926814174, 48.862101994114454]
+    },
     "properties": {
       "name": "La Musardine",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207889/places2/La%20Musardine.jpg",
       "address": "122 Rue du Chemin Vert, 75011 Paris",
       "category": ["Librairie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/lamusardine.editions/",
-        "facebook": "https://www.facebook.com/edlamusardine/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/lamusardine.editions/",
+          "facebook": "https://www.facebook.com/edlamusardine/"
+        }
+      ],
       "website": "https://www.lamusardine.com/",
       "description": "Une librairie emblématique du 11ème arrondissement de Paris. Explorez ses rayons remplis de trésors littéraires et laissez-vous séduire par son charme et son ambiance conviviale. Un incontournable pour les passionnés de littérature et les curieux en quête de lectures captivantes."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.38398926814174, 48.862101994114454]
-    }
+    "id_JEP": "id_JEP_ekle0m8c8"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3802253411561134, 48.85716200342954]
+    },
     "properties": {
       "name": "Madame GUAN",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207888/places2/Madame%20GUAN.jpg",
       "address": "48 Rue Godefroy Cavaignac, 75011 Paris",
       "category": ["Restaurant", "Streetfood Chinoise"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/madameguan/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/madameguan/"
+        }
+      ],
       "website": "https://madameguan.eatbu.com/",
       "description": "Dans le 11ème arrondissement de Paris, plongez dans un voyage culinaire authentique avec ses raviolis faits maison, remplis de saveurs exquises. Situé dans un quartier animé, ce restaurant vous invite à savourer des plats traditionnels chinois dans une ambiance conviviale. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3802253411561134, 48.85716200342954]
-    }
+    "id_JEP": "id_JEP_biroh53vz"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.381947781633391, 48.844006426117815]
+    },
     "properties": {
       "name": "Le Remontalou",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207887/places2/Le%20Remontalou.jpg",
       "address": "82 Av. Daumesnil, 75012 Paris",
       "category": ["Restaurant", "Brasserie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/leremontalou/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/leremontalou/"
+        }
+      ],
       "website": "https://leremontalou.fr/",
       "description": "L'endroit idéal pour une soirée festive entre amis, offrant un cadre classique et raffiné. Découvrez une carte variée de boissons incluant bières, vins et cocktails classiques, avec des happy hours tous les jours de 17h à 21h. Plongez dans une ambiance atypique et savourez des plats succulents, à déguster sur place ou à emporter."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.381947781633391, 48.844006426117815]
-    }
+    "id_JEP": "id_JEP_h3pso7zr5"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3816460988268653, 48.844071065166645]
+    },
     "properties": {
       "name": "Ground Control",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1718792987/places2/ground%20control.jpg",
       "address": "81 Rue du Charolais, 75012 Paris",
       "category": ["Bar", "Boutique"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/groundcontrolparis",
-        "facebook": "https://www.facebook.com/RadioGroundControl/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/groundcontrolparis",
+          "facebook": "https://www.facebook.com/RadioGroundControl/"
+        }
+      ],
       "website": "https://www.groundcontrolparis.com/",
       "description": "Une destination incontournable dans le 12ème arrondissement de Paris. Plongez dans une ambiance conviviale, parfaite pour se retrouver entre amis. Profitez d'une sélection variée de boissons, dans un cadre moderne et accueillant. "
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3816460988268653, 48.844071065166645]
-    }
+    "id_JEP": "id_JEP_zmyjpdqnb"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.387173012319931, 48.850552507280334]
+    },
     "properties": {
       "name": "Bonjour Madame",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207884/places2/bonjour%20madame.jpg",
       "address": "40 Rue de Montreuil, 75011 Paris",
       "category": ["Bar", "Bar culturel militant féministe queer"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/bonjourmadame_paris/'",
-        "facebook": "https://www.facebook.com/bonjourmadame.paris11/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/bonjourmadame_paris/'",
+          "facebook": "https://www.facebook.com/bonjourmadame.paris11/"
+        }
+      ],
       "website": "",
       "description": "Bonjour Madame est un bar engagé féministe et queer situé en plein cœur de la ville. Ce lieu convivial et inclusif est dédié à la célébration et à la promotion de la diversité sous toutes ses formes."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.387173012319931, 48.850552507280334]
-    }
+    "id_JEP": "id_JEP_8241evv9w"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.406480483484218, 48.85156548503921]
+    },
     "properties": {
       "name": "Au levain des Pyrénées",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207883/places2/Au%20levain%20des%20Pyr%C3%A9n%C3%A9es.jpg",
       "address": "44 Rue des Pyrénées, 75020 Paris",
       "category": ["Boulangerie"],
-      "social_network": {},
+      "social_network": [{}],
       "website": "",
       "description": "Une boulangerie artisanale située dans le 20ème arrondissement de Paris. Spécialisée dans les pains au levain faits maison, cette boulangerie met l'accent sur la qualité, la tradition et le goût authentique."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.406480483484218, 48.85156548503921]
-    }
+    "id_JEP": "id_JEP_sg9bssnzp"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.395530296977213, 48.85519761086696]
+    },
     "properties": {
       "name": "Chez Tante Farida",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207882/places2/Chez%20Tante%20Farida.jpg",
       "address": "13 Rue de Bagnolet, 75020 Paris",
       "category": ["Restaurant", "Restaurant Algerien"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/chez_tante_farida/",
-        "facebook": "https://www.facebook.com/ChezTanteFarida/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/chez_tante_farida/",
+          "facebook": "https://www.facebook.com/ChezTanteFarida/"
+        }
+      ],
       "website": "",
       "description": "Découvrez les saveurs authentiques de l'Algérie à travers une street food généreuse et savoureuse. Préparées avec des ingrédients frais et de qualité, vous trouverez des spécialités comme les délicieux bourek, et les irrésistibles sandwiches garnis de viandes épicées et de légumes croquants."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.395530296977213, 48.85519761086696]
-    }
+    "id_JEP": "id_JEP_qe276rrs8"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.394985539305533, 48.85419079560704]
+    },
     "properties": {
       "name": "Mangez et cassez-vous",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1718792776/places2/mangz%20et%20cassez%20vous.jpg",
       "address": "64 Rue Alexandre Dumas, 75011 Paris",
       "category": ["Fast food", "Restaurant de Hamburgers"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/mangezetcassezvous/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/mangezetcassezvous/"
+        }
+      ],
       "website": "",
       "description": "Ce spot décontracté et branché est l'endroit idéal pour savourer des burgers gourmands, préparés avec des ingrédients frais et de qualité. Chaque burger, élaboré avec soin, met en avant des recettes créatives et délicieuses qui raviront les amateurs de bonnes choses."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.394985539305533, 48.85419079560704]
-    }
+    "id_JEP": "id_JEP_gv1oqq4qb"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.362265110469845, 48.855933212381785]
+    },
     "properties": {
       "name": "古早Guzao",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207878/places2/%E5%8F%A4%E6%97%A9Guzao.jpg",
       "address": "12 Rue de Sévigné, 75004 Paris",
       "category": ["Bubble tea", "Pâtisserie"],
-      "social_network": {},
+      "social_network": [{}],
       "website": "https://guzao-restaurant.eatbu.com/",
       "description": "Ce charmant établissement invite les gourmands à découvrir une variété de pâtisseries authentiques, préparées avec des ingrédients de haute qualité. De l'irrésistible tarte aux œufs aux délicates brioches vapeur, chaque création chez Guzao est un véritable hommage à l'art de la pâtisserie taïwanaise."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.362265110469845, 48.855933212381785]
-    }
+    "id_JEP": "id_JEP_ugergx520"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3613369681413894, 48.855847998817936]
+    },
     "properties": {
       "name": "Ciore",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207877/places2/Ciore.jpg",
       "address": "6 Rue Malher, 75004 Paris",
       "category": ["Restaurant", "Restaurant italien"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/ciore_pizzeria/",
-        "facebook": "https://www.facebook.com/ciore.pizzeria/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/ciore_pizzeria/",
+          "facebook": "https://www.facebook.com/ciore.pizzeria/"
+        }
+      ],
       "website": "",
       "description": "Ce charmant établissement offre une expérience gastronomique unique, mettant en avant des ingrédients frais et de qualité importée directement d'Italie. Le menu de Ciore propose une variété de spécialités italiennes avec une ambiance chaleureuse et un service attentionné."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3613369681413894, 48.855847998817936]
-    }
+    "id_JEP": "id_JEP_9pknd4slo"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.361395025812837, 48.853878959067444]
+    },
     "properties": {
       "name": "Japan Blue Paris",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207876/places2/Japan%20Blue%20Paris.jpg",
       "address": "25 Rue Saint-Paul, 75004 Paris",
       "category": ["Boutique de vêtements", "Boutique"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/japanblueparis/",
-        "facebook": "https://www.facebook.com/people/JAPAN-BLUE-PARIS/100064492460331/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/japanblueparis/",
+          "facebook": "https://www.facebook.com/people/JAPAN-BLUE-PARIS/100064492460331/"
+        }
+      ],
       "website": "",
       "description": "Cette boutique élégante et raffinée propose une sélection de vêtements confectionnés avec des textiles traditionnels japonais, célèbres pour leur durabilité, leur confort et leur esthétique unique. Les collections de Japan Blue Paris allient le savoir-faire artisanal japonais à des designs contemporains.tion55"
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.361395025812837, 48.853878959067444]
-    }
+    "id_JEP": "id_JEP_6aviyw53f"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.36851699512666, 48.85443107955812]
+    },
     "properties": {
       "name": "Rock Hair",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207875/places2/Rock%20Hair%20Bastille.jpg",
       "address": "7 Bd Beaumarchais, 75004 Paris",
       "category": ["Salon de coiffure"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/rockhairbastille/",
-        "facebook": "https://www.facebook.com/p/ROCK-HAIR-100064768248684/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/rockhairbastille/",
+          "facebook": "https://www.facebook.com/p/ROCK-HAIR-100064768248684/"
+        }
+      ],
       "website": "https://www.rockhairbastille.fr/",
       "description": "Salon de coiffure branché situé dans le quartier de Bastille à Paris. Connu pour son ambiance moderne et énergique, Rock Hair offre une gamme complète de services de coiffure, allant des coupes classiques aux styles les plus audacieux."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.36851699512666, 48.85443107955812]
-    }
+    "id_JEP": "id_JEP_82a166aat"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3652911816346824, 48.866139424489305]
+    },
     "properties": {
       "name": "Le Flâneur",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207873/places2/Le%20Fl%C3%A2neur.jpg",
       "address": "50 Bd du Temple, 75011 Paris",
       "category": ["Bar"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/leflaneurparis/",
-        "facebook": "https://www.facebook.com/leflaneurparis/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/leflaneurparis/",
+          "facebook": "https://www.facebook.com/leflaneurparis/"
+        }
+      ],
       "website": "",
       "description": "Café-bistrot charmant et accueillant, niché dans le 11ème arrondissement de Paris. Ce lieu convivial est parfait pour ceux qui aiment prendre leur temps, déguster une boisson chaude ou savourer une cuisine maison dans une ambiance décontractée."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3652911816346824, 48.866139424489305]
-    }
+    "id_JEP": "id_JEP_m0uc0zv2p"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.351406881634438, 48.86191046162887]
+    },
     "properties": {
       "name": "Glace Bachir",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207871/places2/Glace%20Bachir.jpg",
       "address": "58 Rue Rambuteau, 75003 Paris",
       "category": ["Marchand de glaces"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/glace_bachir/",
-        "facebook": "https://www.facebook.com/people/Glace-BACHIR/100064738720921/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/glace_bachir/",
+          "facebook": "https://www.facebook.com/people/Glace-BACHIR/100064738720921/"
+        }
+      ],
       "website": "https://bachir.fr/",
       "description": "Une oasis de délices glacés située au cœur de la ville. Réputée pour ses créations originales et rafraîchissantes, ce glacier libanais artisanale propose une variété de parfums uniques qui éveillent les papilles."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.351406881634438, 48.86191046162887]
-    }
+    "id_JEP": "id_JEP_gcyf9a39l"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3628243546487506, 48.856449051819496]
+    },
     "properties": {
       "name": "Monsieur Poulet",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207870/places2/Boutique%20Monsieur%20Poulet.jpg",
       "address": "24 Rue de Sévigné, 75004 Paris",
       "category": ["Boutique de vêtements", "Boutique"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/boutiquemonsieurpoulet/",
-        "facebook": "https://www.facebook.com/boutiquemonsieurpoulet"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/boutiquemonsieurpoulet/",
+          "facebook": "https://www.facebook.com/boutiquemonsieurpoulet"
+        }
+      ],
       "website": "https://www.biotifulapparel.com/",
       "description": "Monsieur Poulet est bien plus qu'une simple boutique de vêtements, c'est une ode à la durabilité et à l'éthique dans la mode. Spécialisée dans les vêtements bio et organiques, cette boutique propose une gamme de vêtements pour hommes, femmes et enfants, tous fabriqués avec des matériaux respectueux de l'environnement et des processus de production équitables."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3628243546487506, 48.856449051819496]
-    }
+    "id_JEP": "id_JEP_prn8fv0ip"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3643244104701373, 48.860806305859484]
+    },
     "properties": {
       "name": "Sobering",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207868/places2/Sobering.jpg",
       "address": "87 Rue de Turenne, 75003 Paris",
       "category": ["Galerie d'art"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/sobering_galerie/",
-        "facebook": "https://www.facebook.com/soberinggalerie/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/sobering_galerie/",
+          "facebook": "https://www.facebook.com/soberinggalerie/"
+        }
+      ],
       "website": "https://soberinggalerie.com/",
       "description": "Fondée sur le principe de soutenir et de promouvoir les artistes contemporains émergents, cette galerie offre une plateforme pour présenter des œuvres variées et inspirantes. La Sobering Galerie se distingue par son engagement envers la diversité des expressions artistiques."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3643244104701373, 48.860806305859484]
-    }
+    "id_JEP": "id_JEP_17qypi2it"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3606683969774003, 48.859917083494125]
+    },
     "properties": {
       "name": "Café La Perle",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207869/places2/Caf%C3%A9%20La%20Perle.jpg",
       "address": "78 Rue Vieille du Temple, 75003 Paris",
       "category": ["Café", "Brasserie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/Cafélaperle/",
-        "facebook": "https://www.facebook.com/Cafélaperleparis"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/Cafélaperle/",
+          "facebook": "https://www.facebook.com/Cafélaperleparis"
+        }
+      ],
       "website": "https://Cafélaperle.com/",
       "description": "Petit café situé à proximité du musée Picasso dans le 3ème arrondissement, offre un cadre idéal pour se détendre et profiter d'un moment de tranquillité après avoir exploré les trésors artistiques"
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3606683969774003, 48.859917083494125]
-    }
+    "id_JEP": "id_JEP_70eey9pbu"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.376839941156301, 48.86026745054626]
+    },
     "properties": {
       "name": "Le Bon",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207867/places2/Le-Bon_Patisserie.jpg",
       "address": "85 Bd Voltaire, 75011 Paris",
       "category": ["Pâtisserie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/lebon.patisserie/",
-        "facebook": "https://www.facebook.com/lebonpatisserieparis/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/lebon.patisserie/",
+          "facebook": "https://www.facebook.com/lebonpatisserieparis/"
+        }
+      ],
       "website": "",
       "description": "Une petite pâtisserie charmante nichée dans le 11ème arrondissement de Paris. Cet établissement est connu pour ses délices sucrés préparés avec amour et savoir-faire, l'endroit parfait pour satisfaire vos envies sucrées"
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.376839941156301, 48.86026745054626]
-    }
+    "id_JEP": "id_JEP_yokycqgiw"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.367222196977267, 48.85800365328831]
+    },
     "properties": {
       "name": "Caves Saint Gilles",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207866/places2/Caves%20Saint%20Gilles.jpg",
       "address": "4 Rue Saint-Gilles, 75003 Paris",
       "category": ["Restaurant", "Restaurant de tapas"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/cavessaintgillesofficiel/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/cavessaintgillesofficiel/"
+        }
+      ],
       "website": "https://www.cavessaintgilles.com/",
       "description": "1er bar à tapas parisien depuis 1992. Retrouvez toute l'atmosphère d'une bodega Espagnole au cœur du Marais, L'atmosphère chaleureuse et conviviale vous invite à la détente et à la socialisation autour de délicieux tapas et de verres de vin."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.367222196977267, 48.85800365328831]
-    }
+    "id_JEP": "id_JEP_ghp65zfyh"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3721693258133905, 48.86372297329678]
+    },
     "properties": {
       "name": "Green Owl",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207866/places2/Green%20Owl.jpg",
       "address": "41 Rue de la Folie Méricourt, 75011 Paris",
       "category": ["Boutique de CBD", "Magasin d'aromathérapie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/greenowl_france/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/greenowl_france/"
+        }
+      ],
       "website": "https://greenowl.fr/",
       "description": "Cette enseigne propose une large gamme de produits à base de cannabidiol (CBD), offrant aux clients une expérience unique et apaisante. Que ce soit pour des huiles, des capsules, des cosmétiques ou des produits comestibles, sélectionné soigneusement auprès de fournisseurs réputés pour leur qualité et leur pureté."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3721693258133905, 48.86372297329678]
-    }
+    "id_JEP": "id_JEP_p2e4ow8c7"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.389817568142409, 48.87292896204867]
+    },
     "properties": {
       "name": "Les Cascades",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207864/places2/Bistrot%20Litt%C3%A9raire%20Les%20Cascades.jpg",
       "address": "82 Rue des Cascades, 75020 Paris",
       "category": ["Bar", "Restaurant"],
-      "social_network": {
-        "facebook": "https://fr-fr.facebook.com/people/Bistrot-litt%C3%A9raire-Les-Cascades/100063786423491/"
-      },
+      "social_network": [
+        {
+          "facebook": "https://fr-fr.facebook.com/people/Bistrot-litt%C3%A9raire-Les-Cascades/100063786423491/"
+        }
+      ],
       "website": "https://bistrotlitterairelescascades.eatbu.com/",
       "description": "Avec son atmosphère chaleureuse et son décor traditionnel, cette brasserie incarne l'esprit convivial et authentique des bistros parisiens. Le menu de la Brasserie Les Cascades propose une cuisine française classique, mettant en valeur des plats savoureux et généreux."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.389817568142409, 48.87292896204867]
-    }
+    "id_JEP": "id_JEP_259khxjbn"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3735247104702166, 48.862349767994736]
+    },
     "properties": {
       "name": "Hamady Gaye",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207863/places2/Hamady%20Gaye.jpg",
       "address": "56 Rue Saint-Sébastien, 75011 Paris",
       "category": ["Bijouterie", "Créateur bijoutier"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/hamady.gaye.bijoutier/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/hamady.gaye.bijoutier/"
+        }
+      ],
       "website": "",
       "description": "Artisan créateur de bijoux spécialisé dans le filigrane, une technique délicate de travail du métal. Transmis de père en fils, cet artisan perpétue un savoir-faire artisanal précieux et traditionnel."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3735247104702166, 48.862349767994736]
-    }
+    "id_JEP": "id_JEP_7c0q16iib"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3723513546491666, 48.86371064736223]
+    },
     "properties": {
       "name": "L'Annexe Kawa",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207862/places2/L%27%20Annexe%20Kawa.jpg",
       "address": "39 Rue de la Folie Méricourt, 75011 Paris",
       "category": ["Café", "Bar", "Brasserie"],
-      "social_network": {
-        "facebook": "https://m.facebook.com/people/Lannexe-kawa/100063581590092/"
-      },
+      "social_network": [
+        {
+          "facebook": "https://m.facebook.com/people/Lannexe-kawa/100063581590092/"
+        }
+      ],
       "website": "",
       "description": "L'Annexe Kawa est un lieu prisé par de nombreux visiteurs avides de découvrir un couscous aussi délicieux qu'authentique. Cette adresse incontournable attire les gourmets en quête de saveurs exquises et de traditions culinaires bien ancrées"
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3723513546491666, 48.86371064736223]
-    }
+    "id_JEP": "id_JEP_qhkv6hc2d"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3727834258133824, 48.86349578371998]
+    },
     "properties": {
       "name": "Acid Violette",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207861/places2/Acid%20Violette.jpg",
       "address": "38 rue de la Folie Méricourt, 75011",
       "category": ["Boutique de vêtements", "Boutique de vêtements vintage"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/acidviolettevintage/",
-        "facebook": "https://www.facebook.com/people/Acid-Violette-Vintage/100076321682614/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/acidviolettevintage/",
+          "facebook": "https://www.facebook.com/people/Acid-Violette-Vintage/100076321682614/"
+        }
+      ],
       "website": "",
       "description": "Située dans un quartier animé de la ville, cette friperie propose une sélection soigneusement choisie de vêtements, accessoires et objets rétro des décennies passées. Des pièces uniques des années 60 aux tendances grunges des années 90, c'est une véritable caverne d'Ali Baba pour les amoureux de la mode vintage."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3727834258133824, 48.86349578371998]
-    }
+    "id_JEP": "id_JEP_6wcdyfmzv"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3828652123204734, 48.85927334385437]
+    },
     "properties": {
       "name": "Vélo Vintage Paris",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207861/places2/V%C3%A9lo%20Vintage%20Paris.jpg",
       "address": "18 rue Pache, 75011 Paris",
       "category": ["Vente et réparation de cycles"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/velovintageparis/",
-        "facebook": "https://www.facebook.com/velovintageparis/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/velovintageparis/",
+          "facebook": "https://www.facebook.com/velovintageparis/"
+        }
+      ],
       "website": "https://velovintageparis.com/",
       "description": "La boutique idéal pour la réparation et l’achat de vélo vintage sur paris, allant des vélos de courses classiques aux vélos de villes élégants. Les passionnés peuvent également trouver des accessoires rétro et des pièces détachées pour personnaliser leur monture."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3828652123204734, 48.85927334385437]
-    }
+    "id_JEP": "id_JEP_najajkow2"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3822348123204344, 48.858758545306294]
+    },
     "properties": {
       "name": "FACE B",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207860/places2/FACE%20B.jpg",
       "address": "7 Rue Pache, 75011 Paris",
       "category": ["Bar"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/face_b___/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/face_b___/"
+        }
+      ],
       "website": "",
       "description": "un bar animé et branché qui offre une expérience nocturne unique. Avec son ambiance décontractée et sa décoration éclectique, ce bar est un lieu de rendez-vous prisé par les habitants du quartier et les noctambules en quête d'animations."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3822348123204344, 48.858758545306294]
-    }
+    "id_JEP": "id_JEP_dah9d4z5w"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3672197546487856, 48.85680057898182]
+    },
     "properties": {
       "name": "Chez Janou",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713894562/places2/Chez%20Janou.jpg",
       "address": "2 Rue Roger Verlomme, 75003 Paris",
       "category": ["Restaurant", "Bistro", "Restaurant provençale"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/chezjanou/",
-        "facebook": "https://www.facebook.com/pages/Chez-Janou/556351424411518"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/chezjanou/",
+          "facebook": "https://www.facebook.com/pages/Chez-Janou/556351424411518"
+        }
+      ],
       "website": "https://www.chezjanou.com",
       "description": "une adresse prisée par les amoureux de la cuisine provençale et méditerranéenne. Avec son ambiance chaleureuse et son décor rustique, Chez Janou vous transporte dans un véritable coin de Provence au cœur de la capitale."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3672197546487856, 48.85680057898182]
-    }
+    "id_JEP": "id_JEP_jp1diinb3"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3503654681419506, 48.86555419514682]
+    },
     "properties": {
       "name": "Mala Bavo",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713895018/places2/Mala%20Bavo.jpg",
       "address": "171 Rue St Denis, 75002 Paris",
       "category": ["Restaurant", "Bistro"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/malabavo/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/malabavo/"
+        }
+      ],
       "website": "https://mala-bavo-paris.fr/",
       "description": "Une adresse appréciée pour sa cuisine authentique et ses saveurs envoûtantes venues tout droit du Kurdistan. Dans une atmosphère conviviale et chaleureuse, les convives peuvent déguster une variété de plats traditionnels préparés avec des ingrédients frais et des épices aromatiques."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3503654681419506, 48.86555419514682]
-    }
+    "id_JEP": "id_JEP_7hfhm4vyx"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3864370969768527, 48.85083048409006]
+    },
     "properties": {
       "name": "Patrick's Le Ballon Vert",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713895992/places2/Patrick%27s%20-%20Le%20Ballon%20Vert.jpg",
       "address": "33 Rue de Montreuil, 75011 Paris",
       "category": ["Bar", "Pub", "Irish Pub"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/patricksparis/",
-        "facebook": "https://www.facebook.com/patricksparis/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/patricksparis/",
+          "facebook": "https://www.facebook.com/patricksparis/"
+        }
+      ],
       "website": "",
       "description": "Un authentique pub irlandais situé dans le cœur de Paris, réputé pour son ambiance chaleureuse et son atmosphère conviviale. Inspiré par les pubs traditionnels d'Irlande, cet établissement est le lieu idéal pour les amateurs de rugby."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3864370969768527, 48.85083048409006]
-    }
+    "id_JEP": "id_JEP_f491wujq3"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3751254681407485, 48.86327736599366]
+    },
     "properties": {
       "name": "Le Bec Salé",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713895269/places2/Le%20Bec%20Sal%C3%A9.jpg",
       "address": "1 Rue Pétion, 75011 Paris",
       "category": ["Bar", "Restaurant", "Restaurant français"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/lebecsaleparis/",
-        "facebook": "https://www.facebook.com/lebecsaleparis"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/lebecsaleparis/",
+          "facebook": "https://www.facebook.com/lebecsaleparis"
+        }
+      ],
       "website": "https://www.lebecsale.com/",
       "description": "une brasserie conviviale située dans le quartier animé du 11ème arrondissement de Paris. Cette adresse, appréciée des habitants du quartier et des visiteurs, propose une cuisine française traditionnelle dans un cadre décontracté et accueillant."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3751254681407484, 48.86327736599366]
-    }
+    "id_JEP": "id_JEP_vhsxm3vri"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.349730639305863, 48.860063417204636]
+    },
     "properties": {
       "name": "La Comédie Café",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713207895/places2/La%20Com%C3%A9die%20Caf%C3%A9.jpg",
       "address": "9 Rue de la Reynie, 75001 Paris",
       "category": ["Café", "Café-Théâtre"],
-      "social_network": {},
+      "social_network": [{}],
       "website": "website39",
       "description": "La Comédie Café est un lieu animé situé dans le 1er arrondissement de Paris, offrant une combinaison unique de divertissement et de gastronomie. Ce café-théâtre propose une programmation variée comprenant des spectacles d'humour, des concerts, des performances artistiques et bien plus encore."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.349730639305863, 48.860063417204636]
-    }
+    "id_JEP": "id_JEP_ou80bb4o8"
   },
   {
+    "geometry": {
+      "type": ["Point"],
+      "coordinates": [2.3645966258138675, 48.87180962223345]
+    },
     "properties": {
       "name": "Chez Prune",
       "picture": "https://res.cloudinary.com/daxicbm7j/image/upload/v1713962358/places2/Chez%20Prune.jpg",
       "address": "36 Rue Beaurepaire, 75010 Paris",
       "category": ["Bar", "Brasserie"],
-      "social_network": {
-        "instagram": "https://www.instagram.com/chez_prune_bistrot_canal/"
-      },
+      "social_network": [
+        {
+          "instagram": "https://www.instagram.com/chez_prune_bistrot_canal/"
+        }
+      ],
       "website": "",
       "description": "Un bistrot emblématique du 10ème arrondissement de Paris, situé dans le quartier animé du Canal Saint-Martin. Ouvert depuis les années 1920, ce bistrot traditionnel a conservé son charme d'antan avec son décor authentique, ses grandes vitrines et son ambiance conviviale."
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.3645966258138675, 48.87180962223345]
-    }
+    "id_JEP": "id_JEP_i8sk8navu"
   }
 ]

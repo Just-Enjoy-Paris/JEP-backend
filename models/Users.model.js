@@ -10,11 +10,9 @@ const userSchema = new mongoose.Schema({
   account: {
     username: { type: String, required: true },
     avatar: { type: mongoose.Schema.Types.Mixed, default: "" },
-    favPlaces: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
-    favTourstPlaces: [
-      { type: mongoose.Schema.Types.ObjectId, ref: "TouristPlaces" },
-    ],
-    favGardens: [{ type: mongoose.Schema.Types.ObjectId, ref: "GardenPlace" }],
+    favPlaces: [{ type: Object }],
+    favTourstPlaces: [{ type: Object }],
+    favGardens: [{ type: Object }],
     favTourstPlaces: [
       { type: mongoose.Schema.Types.ObjectId, ref: "TouristPlaces" },
     ],
