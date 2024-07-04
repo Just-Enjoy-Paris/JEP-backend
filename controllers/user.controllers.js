@@ -101,12 +101,60 @@ const login = async (req, res) => {
   }
 };
 
-const updateprofile = async (req, res) => {
+// const updaterofile = async (req, res) => {
+//   try {
+//     const { newEmail, newPassword, newUsername } = req.body;
+//     const user = req.user;
+
+//     // Mise à jour de l'email si fourni et s'il est différent de l'actuel
+//     if (newEmail && newEmail !== user.email) {
+//       const emailExists = await User.findOne({ email: newEmail });
+//       if (emailExists) {
+//         return res.status(400).json({
+//           message: "L'email est déjà utilisé par un autre compte.",
+//         });
+//       }
+//       user.email = newEmail;
+//     }
+
+//     // Mise à jour de l'avatar si fourni
+//     if (req.files && req.files.newAvatar) {
+//       const avatarFile = req.files.newAvatar;
+//       const AvatarToString = convertToBase64(avatarFile);
+//       const avatarToSave = await cloudinary.uploader.upload(AvatarToString, {
+//         folder: "jep/users/avatar",
+//       });
+//       user.account.avatar = avatarToSave.secure_url;
+//     }
+
+//     // Mise à jour du mot de passe si fourni
+//     if (newPassword) {
+//       user.hashpass = hashPassword(newPassword);
+//     }
+
+//     // Mise à jour de username si fourni
+//     if (newUsername) {
+//       user.account.username = newUsername;
+//     }
+
+//     await user.save();
+
+//     res.status(200).json({ message: "Profil mis à jour avec succès." });
+//   } catch (err) {
+//     res.status(500).json({
+//       message: "Une erreur est survenue lors de la mise à jour du profil.",
+//       error: err.message,
+//     });
+//   }
+// };
+
+const updateProfile = async (req, res) => {
   try {
     const { newEmail, newPassword, newUsername } = req.body;
     const user = req.user;
+    const updates = {};
 
-    // Mise à jour de l'email si fourni et s'il est différent de l'actuel
+    // Vérification et mise à jour de l'email si fourni et différent de l'actuel
     if (newEmail && newEmail !== user.email) {
       const emailExists = await User.findOne({ email: newEmail });
       if (emailExists) {
@@ -114,32 +162,39 @@ const updateprofile = async (req, res) => {
           message: "L'email est déjà utilisé par un autre compte.",
         });
       }
-      user.email = newEmail;
+      updates.email = newEmail;
     }
 
-    // Mise à jour de l'avatar si fourni
+    // Vérification et mise à jour de l'avatar si fourni
     if (req.files && req.files.newAvatar) {
       const avatarFile = req.files.newAvatar;
-      const AvatarToString = convertToBase64(avatarFile);
-      const avatarToSave = await cloudinary.uploader.upload(AvatarToString, {
+      const avatarToString = convertToBase64(avatarFile);
+      const avatarToSave = await cloudinary.uploader.upload(avatarToString, {
         folder: "jep/users/avatar",
       });
-      user.account.avatar = avatarToSave.secure_url;
+      updates["account.avatar"] = avatarToSave.secure_url;
     }
 
     // Mise à jour du mot de passe si fourni
     if (newPassword) {
-      user.hashpass = hashPassword(newPassword);
+      updates.hashpass = await hashPassword(newPassword);
     }
 
-    // Mise à jour de username si fourni
+    // Mise à jour du username si fourni
     if (newUsername) {
-      user.account.username = newUsername;
+      updates["account.username"] = newUsername;
     }
 
-    await user.save();
+    // Utilisation de findOneAndUpdate pour appliquer les modifications
+    const updatedUser = await User.findOneAndUpdate(
+      { _id: user._id },
+      { $set: updates },
+      { new: true }
+    );
 
-    res.status(200).json({ message: "Profil mis à jour avec succès." });
+    res
+      .status(200)
+      .json({ message: "Profil mis à jour avec succès.", user: updatedUser });
   } catch (err) {
     res.status(500).json({
       message: "Une erreur est survenue lors de la mise à jour du profil.",
@@ -147,47 +202,6 @@ const updateprofile = async (req, res) => {
     });
   }
 };
-
-// const addFav = async (req, res) => {
-//   try {
-//     const { id } = req.body;
-//     const user = req.user;
-
-//     if (!id) {
-//       return res.status(400).json({
-//         message: "Aucun favori à ajouter",
-//       });
-//     }
-
-//     const place = await Place.findById(id);
-
-//     if (!place) {
-//       return res.status(404).json({
-//         message: "Lieu non trouvé",
-//       });
-//     }
-
-//     console.log(place);
-//     if (user.account.favPlaces.includes(place.properties)) {
-//       return res.json({ message: "favori déja ajouté" });
-//     }
-//     if (!user.account.favPlaces.includes(place.properties)) {
-//       user.account.favPlaces.push(place.properties);
-
-//       await user.save();
-
-//       res.status(201).json({
-//         message: "Favori ajouté",
-//         favPlaces: user.account.favPlaces,
-//       });
-//     }
-//   } catch (err) {
-//     res.status(500).json({
-//       message: "Une erreur est survenue lors de la mise à jour des favoris.",
-//       error: err.message,
-//     });
-//   }
-// };
 
 const addFav = async (req, res) => {
   try {
@@ -209,10 +223,10 @@ const addFav = async (req, res) => {
 
     // Utilisation de findOneAndUpdate pour ajouter le favori si ce n'est pas déjà dans la liste
     const updatedUser = await User.findOneAndUpdate(
-      { _id: userId, "account.favPlaces": { $ne: place.properties } },
-      { $addToSet: { "account.favPlaces": place.properties } },
+      { _id: userId, "account.favPlaces": { $ne: place.id_JEP } },
+      { $addToSet: { "account.favPlaces": place.id_JEP } },
       { new: true }
-    ).lean();
+    );
 
     if (!updatedUser) {
       return res.json({ message: "Favori déjà ajouté" });
@@ -220,7 +234,6 @@ const addFav = async (req, res) => {
 
     res.status(201).json({
       message: "Favori ajouté",
-      favPlaces: updatedUser.account.favPlaces,
     });
   } catch (err) {
     res.status(500).json({
@@ -251,13 +264,18 @@ const rmFav = async (req, res) => {
     // Utilisation de findOneAndUpdate pour supprimer le favori de la liste
     const updatedUser = await User.findOneAndUpdate(
       { _id: userId },
-      { $pull: { "account.favPlaces": place.properties } },
+      { $pull: { "account.favPlaces": place.id_JEP } },
       { new: true }
-    ).lean();
+    );
+
+    if (!updatedUser) {
+      return res.status(404).json({
+        message: "Utilisateur non trouvé ou favori déjà supprimé",
+      });
+    }
 
     res.status(200).json({
       message: "Favori supprimé",
-      favPlaces: updatedUser.account.favPlaces,
     });
   } catch (err) {
     res.status(500).json({
@@ -267,32 +285,4 @@ const rmFav = async (req, res) => {
   }
 };
 
-// const rmFav = async (req, res) => {
-//   try {
-//     const { id } = req.body;
-//     const user = req.user;
-
-//     if (!id) {
-//       return res.status(400).json({
-//         message: "Aucun ID reçu",
-//       });
-//     }
-
-//     user.account.favPlaces = user.account.favPlaces.filter(
-//       favId => favId !== id
-//     );
-//     await user.save();
-//     console.log(user.account.favPlaces);
-//     res.status(200).json({
-//       message: "Favori supprimé",
-//       favPlaces: user.account.favPlaces,
-//     });
-//   } catch (err) {
-//     res.status(500).json({
-//       message: "Une erreur est survenue lors de la suppression du favori.",
-//       error: err.message,
-//     });
-//   }
-// };
-
-module.exports = { getUser, signup, login, updateprofile, addFav, rmFav };
+module.exports = { getUser, signup, login, updateProfile, addFav, rmFav };
